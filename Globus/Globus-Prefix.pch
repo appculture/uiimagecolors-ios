@@ -1,0 +1,70 @@
+//
+// Prefix header for all source files of the 'Globus' target in the 'Globus' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+	#import <CoreData/CoreData.h>
+#endif
+
+#define isPhone568 ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568)
+
+//#define kServerAddress @"http://localhost:9997"
+//#define kServerAddress @"https://testcrm.globuscard.ch"
+//#define kServerPingHost @"https://testcrm.globuscard.ch/ping.txt"
+
+
+#if STAGING
+
+#define kServerAddress @"https://testcardservice.globuscard.ch"
+#define kServerPingHost @"https://testcardservice.globuscard.ch/ping.txt"
+
+#else //Live
+
+#define kServerAddress @"https://cardservice.globuscard.ch"
+#define kServerPingHost @"https://cardservice.globuscard.ch/ping.txt"
+
+#endif
+
+
+//Username and Password in SystemUserSingleton.m
+
+#define ShowActivityNotification @"showActivityNot"
+#define HideActivityNotification @"hideActivityNot"
+
+#define kMapAnnotationsKey @"Annotations"
+#define kMapDistanceDataKey @"DistanceData"
+#define kMapDistanceDataTitleKey @"DistanceDataTitle"
+#define kMapDistanceLimitKey @"DistanceLimit"
+#define kMapAnnotationNameKey @"MapAnnotationName"
+#define kMapAnnotationSubtitileKey @"MapAnnotationSubtitle"
+#define kMapAnnotationLatitude @"MapAnnotationLatitude"
+#define kMapAnnotationLongitude @"MapAnnotationLongitude"
+
+#define kErrorDesc @"errorDescription"
+
+#define kBonusCouponKey @"bonusCoupons"
+#define kPromoCouponKey @"promoCoupons"
+
+#define kNewImageMinutesShow 2*24*60 //two days
+
+#define kBonusCouponTime 24 * 60 * 60
+#define kPromoCouponTime 12 * 60 * 60
+#define kActivationCheckInvalidSeconds 24 * 60 * 60 + 10
+//#define kActivationCheckInvalidSeconds 70
+//#define kBonusCouponTime 60
+//#define kPromoCouponTime 30
+
+
+#define kGlobusCardBarcodeResolution 163
+#define kGlobusCardBarcodeResolutionRetina 326
+#define kGlobusCardBarHighMM 14.02
+
+#define kUserNotActivatedErrorCode -4223

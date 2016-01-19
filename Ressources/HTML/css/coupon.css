@@ -1,0 +1,91 @@
+body{
+    font-family: 'GillSansAltOne';
+    font-size:18px;
+    margin:5px 0;
+    color:#000000;
+}
+a img{
+  border:none;
+}
+
+.main{
+  margin:0 auto;
+  width:245px;
+}
+.topimg{
+  height:125px;
+  width:245px;
+  margin:0 0 5px;
+}
+h1{
+   font-size:25px;
+   display:block;
+   height:50px;
+   text-align:center;
+}
+.barcodeimg{
+clear: both;
+  width:201px;
+  text-align: center;
+  margin: auto;
+}
+.barcodeimg img {
+	width: 201px;
+	height: 89px;
+	margin: auto;
+}
+.underbarcode{
+  text-align:left;
+  display:block;
+  height:32px;
+  font-size:14px;
+  letter-spacing:0.1em;
+}
+.discountarea{
+  font-family: 'GillSansAltOneLight';
+  text-align:center;
+}
+.discountarea div{
+  padding:0 0 0;
+}
+.discountarea .value{
+  margin:-30px 0 0 0;
+  font-size:70px;
+}
+.discountarea .infotxt{
+  margin:-10px 0 0 0;
+  font-size:20px;
+  line-height:22px;
+}
+.smalltxtarea{
+  margin-top:12px;
+  font-size:11px;
+  line-height:13px;
+  text-align:center;
+}
+.footer{
+  margin:50px 0 0 0;
+  height:110px;
+  width:320px;
+  background:url(MobileFooter.png) no-repeat center center;
+}
+
+/* \/ for 16_640.html - START - \/ */
+
+body.reduced{
+	margin:5px 0;
+}
+
+body.reduced .topimg{
+	margin:0 0 5px;
+}
+
+/* Detect iOS Retina Display */
+@media screen and (-webkit-device-pixel-ratio: 2) 
+{
+    .footer {
+        -webkit-background-size: 320px auto;
+        background: transparent url('MobileFooter@2x.png') no-repeat center center;
+		background-size: 100%;
+    }
+}

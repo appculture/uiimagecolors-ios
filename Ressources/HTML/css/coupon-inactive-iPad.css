@@ -1,0 +1,83 @@
+body{
+    font-family: 'GillSansAltOne';
+    font-size:36px;
+    margin:10px 0;
+    color:#000000;
+}
+a img{
+  border:none;
+}
+
+.main{
+  margin:0 auto;
+  width:490px;
+  opacity:0.5;
+}
+.topimg{
+  height:250px;
+  width:490px;
+  margin:0 0 10px;
+}
+h1{
+   font-size:50px;
+   display:block;
+   height:100px;
+   text-align:center;
+}
+.barcodeimg{
+clear: both;
+  width:402px;
+  text-align: center;
+  margin: auto;
+}
+.barcodeimg img {
+	width: 402px;
+	height: 178px;
+	margin: auto;
+}
+.underbarcode{
+  text-align:left;
+  display:block;
+  height:64px;
+  font-size:28px;
+  letter-spacing:0.1em;
+}
+.discountarea{
+  font-family: 'GillSansAltOneLight';
+  text-align:center;
+}
+.discountarea div{
+  padding:0 0 0;
+}
+.discountarea .value{
+  margin:-60px 0 0 0;
+  font-size:140px;
+}
+.discountarea .infotxt{
+  margin:-20px 0 0 0;
+  font-size:40px;
+  line-height:44px;
+}
+.smalltxtarea{
+  margin-top:24px;
+  font-size:22px;
+  line-height:26px;
+  text-align:center;
+}
+.footer{
+  margin:100px 0 0 0;
+  height:234px;
+  width:768px;
+  background:url(MobileFooter_iPad.png) no-repeat center center;
+  opacity:0.5;
+}
+
+/* \/ for 16_640.html - START - \/ */
+
+body.reduced{
+	margin:10px 0;
+}
+
+body.reduced .topimg{
+	margin:0 0 10px;
+}

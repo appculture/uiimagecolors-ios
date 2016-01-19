@@ -1,0 +1,261 @@
+/* 
+  Localizable.strings
+  Globus
+
+  Created by Patrik Oprandi on 03.02.12.
+  Copyright (c) 2012 youngculture AG. All rights reserved.
+*/
+
+"TabBarItem0" = "Customer card";
+"TabBarItem1" = "Vouchers";
+"TabBarItem2" = "Branches";
+
+"All.CancelText" = "Cancel";
+"All.SaveText" = "Save";
+"All.DoneText" = "Done";
+"All.OKText" = "OK";
+"All.SendText" = "Send";
+"All.OpenInSafariText" = "Open in safari";
+"All.ConnectErrorText" = "Could not connect to Globus. Please check your Internet connection or try again later.";
+"All.Back" = "Back";
+"All.ForgetPasswordText" = "Forgotten password";
+"All.CallText" = "Call";
+"All.YesText" = "Yes";
+"All.NoText" = "No";
+"All.Activate" = "Redeem";
+"All.LanguageCode" = "en";
+
+"Alert.Registration.TitleText" = "Registration";
+"Alert.Registration.IncorrectRegistration.MessageText" = "Please check whether you have selected the language, completed all required fields and accepted the GTCs.";
+"Alert.Registration.WrongConfirmEmail.MessageText" = "The email addresses do no match. Please check your entry.";
+"Alert.Registration.WrongConfirmPassword.MessageText" = "The passwords do not match. Please check your entry.";
+"Alert.Registration.UsernameExists.MessageText" = "The email already exists. Please choose a different one.";
+"Alert.Registration.PasswordToShort.MessageText" = "The password is too short. It must have between 6 and 15 characters.";
+"Alert.Registration.NotAssignableOrNotValid.MessageText" = "The GlobusCard / CRC number is incorrect or already assigned.";
+"Alert.Registration.AssignableAndValid.MessageText" = "The GlobusCard number is valid.";
+"Alert.Registration.NoHousnumberAvailable.MessageText" = "The house number is empty. Do you have a house number?";
+"Alert.Registration.NumberInFirstName.MessageText" = "No numbers are permitted in the firstname.";
+"Alert.Registration.NumberInLastName.MessageText" = "No numbers are permitted in the lastname.";
+"Alert.Registration.UnsupportedCountry.MessageText" = "Only addresses in Switzerland, Germany, France, Austria, Italy and Liechtenstein can be accepted.";
+
+"Alert.Registration.UserCreated.MessageText" = "Your user has been created. You will shortly receive an email with a confirmation link to activate the user.";
+"Alert.Login.TitleText" = "Login";
+"Alert.Login.WrongUsernameOrPassword.MessageText" = "Email or password incorrect";
+"Alert.Login.UsernameOrPasswordAreMisssing.MessageText" = "Email and password must be completed.";
+"Alert.Login.WrongUsername.MessageText" = "Email incorrect";
+
+"Alert.Coupons.Language.TitleText" = "Voucher language";
+"Alert.Coupons.Language.BodyText" = "Which language would you prefer for vouchers?";
+
+"Alert.ChangeEmail.TitleText" = "Change email";
+"Alert.ChangeEmail.MissingFields.MessageText" = "Please complete all the required fields correctly to register.";
+"Alert.ChangeEmail.WrongConfirmEmail.MessageText" = "The email addresses do not match. Please check your entry.";
+"Alert.ChangeEmail.NotValidEmail.MessageText" = "The email address is not valid. Please check your entry.";
+"Alert.ChangeEmail.EmailChanged.MessageText" = "Your email has been changed successfully. Please use the new email when you next login.";
+"Alert.ChangeEmail.UsernameExists.MessageText" = "The email already exists. Please choose a different name.";
+
+"Alert.ChangePassword.TitleText" = "Change password";
+"Alert.ChangePassword.MissingFields.MessageText" = "Please complete all the required fields correctly to register.";
+"Alert.ChangePassword.WrongConfirmPassword.MessageText" = "The passwords do not match. Please check your entry.";
+"Alert.ChangePassword.PasswordToShort.MessageText" = "The password is too short. It must have between 6 and 15 characters.";
+"Alert.ChangePassword.PasswordChanged.MessageText" = "Your password has been changed successfully. Please use the new password when you next login.";
+
+"Alert.EditProfile.TitleText" = "Change personal details";
+"Alert.EditProfile.TelToShort.MessageText" = "The telephone number is too short.";
+"Alert.EditProfile.IncorrectProfileUpdate.MessageText" = "Please complete all the required fields correctly to register.";
+"Alert.EditProfile.NumberInFirstName.MessageText" = "No numbers are permitted in the firstname.";
+"Alert.EditProfile.NumberInLastName.MessageText" = "No numbers are permitted in the lastname.";
+"Alert.EditProfile.ProfileUpdated.MessageText" = "Your personal details have been successfully changed.";
+"Alert.Activation.TitleText" = "Activate";
+"Alert.Activation.ActivationOK.MessageText" = "You have been sent another activation email.";
+"Alert.Activation.ResendActivationTitleText" = "The user has not been activated.";
+"Alert.Activation.ResendActivationBodyText" = "The user has not been activated. Would you like to receive another activation email?";
+"Alert.Activation.CancelButtonText" = "Cancel";
+"Alert.Activation.SendButtonText" = "Send";
+
+"CustomerCard.GlobusCard.TitleText" = "Your personal customer card";
+
+"CustomerCard.Info.TitleText" = "Welcome to GlobusCard, your personal customer card";
+"CustomerCard.Info.MessageText" = "Simply enjoy: the advantages of the GlobusCard. Benefit from bonus vouchers, a 10% shopping day and much more besides. In your Globus and Herren Globus now.";
+
+"Login.TitleText" = "Login";
+"Login.GlobusAccountText" = "Please login";
+"Login.EMailAddressText" = "Email";
+"Login.PasswordText" = "Password";
+"Login.PasswordResetShortText" = "Forgotten?";
+"Login.PasswordReset.TitleText" = "Forgotten password";
+"Login.PasswordReset.Url" = "https://www.globuscard.ch/de/forgotpw.html";
+"Login.PasswordReset.Fr.Url" = "https://www.globuscard.ch/fr/forgotpw.html";
+
+"Registration.ViewTitleText" = "Register now";
+"Registration.GlobusCardAvailable" = "GlobusCard available?";
+"Registration.CardNumberText" = "Card number";
+"Registration.CRCText" = "CRC";
+"Registration.LanguageInformationText" = "Please state your preferred language for correspondence.";
+"Registration.LanguageText" = "Language";
+"Registration.LanguageGermanText" = "German";
+"Registration.LanguageFrenchText" = "French";
+"Registration.LanguageItalianText" = "Italian";
+"Registration.ChooseContactText" = "Select contact";
+"Registration.AutoFillInformationText" = "You can select your contact from the address book and complete the fields with your data.";
+"Registration.EMailAddressText" = "Email";
+"Registration.EMailAddressConfirmText" = "Confirm";
+"Registration.PasswordText" = "Password";
+"Registration.PasswordConfirmText" = "Confirm";
+"Registration.EmailAddressInformationText" = "The email address is also your user name.";
+"Registration.SalutationText" = "Form of address";
+"Registration.SalutationMsText" = "Ms";
+"Registration.SalutationMrText" = "Mr";
+"Registration.SalutationCompanyText" = "Company";
+"Registration.SalutationFamilyText" = "Family";
+"Registration.SalutationMrAndMrsTex" = "Mr and Mrs";
+"Registration.TitleText" = "Title";
+"Registration.TitleDoctorText" = "Dr.";
+"Registration.TitleProfessorText" = "Prof.";
+"Registration.TitleProfessorDoctorText" = "Prof. Dr.";
+"Registration.TitlePriestText" = "Revd/Father";
+"Registration.FirstNameText" = "Firstname";
+"Registration.LastNameText" = "Lastname";
+"Registration.StreetText" = "Address";
+"Registration.StreetNumberText" = "No.";
+"Registration.AdditionalAddressText" = "Address (contd.)";
+"Registration.ZIPText" = "Postal code";
+"Registration.CityText" = "Town";
+"Registration.CountryText" = "Country";
+"Registration.CountrySwitzerlandText" = "Switzerland";
+"Registration.CountryGermanyText" = "Germany";
+"Registration.CountryFranceText" = "France";
+"Registration.CountryAustriaText" = "Austria";
+"Registration.CountryItalyText" = "Italy";
+"Registration.CountryLichtensteinText" = "Liechtenstein";
+"Registration.PhoneText" = "Tel.mobile";
+"Registration.DateOfBirthText" = "Date of birth";
+"Registration.RegistrationText" = "Register";
+"Registration.CustomerNumberText" = "Customer number";
+"Registration.LanguageText" = "Language";
+"Registration.TermsText" = "Accept GTCs";
+
+"ValidationError.ToShortText" = "%@ is too short.";
+"ValidationError.OutOfRangeText" = "%@: You must be at least 12 years old.";
+"ValidationError.InvalidText" = "%@ is invalid.";
+"ValidationError.ToLongText" = "%@ is too long.";
+
+"Profile.TitleText" = "My account";
+"Profile.EmailAddressText" = "Email";
+"Profile.GlobusCardText" = "Customer number";
+"Profile.ChangePasswordText" = "Change password";
+"Profile.ChangeEmailText" = "Change email";
+"Profile.EditProfileText" = "Personal details";
+
+"ChangeEmail.TitleText" = "Change email";
+"ChangeEmail.NewEmailText" = "New email";
+"ChangeEmail.ConfirmNewEmailText" = "Confirm";
+
+"ChangePassword.TitleText" = "Change password";
+"ChangePassword.NewPasswordText" = "New password";
+"ChangePassword.ConfirmNewPasswordText" = "Confirm";
+
+
+"EditProfile.TitleText" = "Personal details";
+
+"LoadingText" = "Loading";
+
+"Contact.Title" = "Contact";
+"Contact.HeaderText" = "Magazine zum Globus AG";
+"Contact.PhoneButton" = "Phone";
+"Contact.PhoneButton.Value" = "+41 58 455 27 53";
+"Contact.PhoneCallText" = "Do you really want to call?";
+"Contact.PhoneNotPossibleTitle" = "Call";
+"Contact.PhoneNotPossibleText" = "You cannot call with this device.";
+"Contact.EmailButton" = "Email";
+"Contact.EmailButton.Value" = "globuscard@globus.ch";
+"Contact.MapButton" = "Address";
+"Contact.MapButton.Value" = "Industriestrasse 171\n8957 Spreitenbach";
+"Contact.ContactButton" = "GTCs";
+"Contact.YoungcultureUrl" = "www.youngculture-mobile.com";
+"Contact.WebsiteText" = "You can find out more about GlobusCard\nby visiting";
+"Contact.WebsiteUrl" = "https://www.globuscard.ch/web-d";
+"Contact.WebsiteUrl.Fr" = "https://www.globuscard.ch/web-f";
+
+"ErrorCodes.AUTH_MISSING" = "Email or password incorrect";
+"ErrorCodes.AUTH_ILLEGAL" = "Email or password incorrect";
+"ErrorCodes.AUTH_INVALID" = "Email or password incorrect";
+"ErrorCodes.AUTH_TYP_ILLEGAL" = "Email or password incorrect";
+"ErrorCodes.AUTH_NONCE_INVALID" = "Email or password incorrect";
+"ErrorCodes.AUTH_MISSING_USER_OR_PWD" = "Email or password missing";
+"ErrorCodes.CLIENT_NOT_ACTIVATED" = "The user has not been activated yet.";
+"ErrorCodes.CLIENT_OR_CARD_ALREADY_USED" = "The email or customer card is already registered.";
+
+"ValidationErrorCodes.OUT_OF_RANGE.Geburtsdatum" = "You must be at least 12 years old.";
+"ValidationErrorCodes.TO_SHORT.Plz" = "Postal code is too short.";
+"ValidationErrorCodes.INVALID.Globus_Card" = "The GlobusCard or CRC number is invalid.";
+
+"StoreDetails.TitleText" = "Info";
+"StoreDetails.WorkingHours" = "Opening hours";
+"StoreDetails.WorkingDaysNames" = "Monday<new_line>Tuesday<new_line>Wednesday<new_line>Thursday<new_line>Friday<new_line>Saturday<new_line>Sunday";
+
+"LocationList.AllLocationsText" = "All branches";
+"LocationList.HolidaysText" = "Public holidays";
+"Locations.UpdatingText" = "Localising...";
+"Holidays.TitleText" = "Public holidays";
+
+"Coupons.bonusCoupons.TitleText" = "Bonus voucher";
+"Coupons.promoCoupons.TitleText" = "Offer voucher";
+"Coupons.bonusCoupon.TitleText" = "Bonus voucher";
+"Coupons.promoCoupon.TitleText" = "Offer voucher";
+"Coupons.Active" = "Active";
+"Coupons.Used" = "Used";
+"Coupons.emptyList.Text" = "No vouchers are currently available. Please try again later.";
+
+"Coupon.TitleText" = "Voucher";
+"Coupon.AcitvateButton.Text" = "Redeem voucher";
+"Coupon.Alert.ActivateTitle" = "Please note";
+"Coupon.Alert.ActivateText" = "The voucher can only be redeemed once. After activation, this %@ can be seen. Do you want to redeem it now?";
+"Coupon.Alert.BonusCoupon.TimeText" = "24 hours";
+"Coupon.Alert.PromoCoupon.TimeText" = "12 hours";
+
+"DaysOfWeek.Montag" = "Monday";
+"DaysOfWeek.Dienstag" = "Tuesday";
+"DaysOfWeek.Mittwoch" = "Wednesday";
+"DaysOfWeek.Donnerstag" = "Thursday";
+"DaysOfWeek.Freitag" = "Friday";
+"DaysOfWeek.Samstag" = "Saturday";
+"DaysOfWeek.Sonntag" = "Sunday";
+
+"WorkingHours.Closed" = "closed";
+
+"Alert.PhoneCall.TitleText" = "Calling not possible";
+"Alert.PhoneCall.NoPhoneCall.MessageText" = "It is not possible to make a call with this device.";
+
+
+// Version 1.1
+
+"Profile.ReminderInformationText" = "Switch the reminder function for the vouchers on and off.";
+"Profile.ReminderText" = "Voucher reminder";
+
+"Alarm.TitleShow" = "Voucher reminder";
+"Alarm.SeveralVoucherText" = "Several vouchers will expire in 7 days.";
+"Alarm.MessageText" = "The voucher \"%@\" will expire in 7 days.";
+
+"All.ShowButton" = "Show";
+
+"Alert.Coupons.Push.TitleText" = "Error loading";
+"Alert.Coupons.Push.BodyText" = "The coupon requested has been redeemed or cannot be found.";
+
+"Push.TitleShow" = "";
+
+
+// Version 1.2
+
+"Push.MarketingLanding.Url" = "http://www.globuscard.ch/";
+"Profile.PushDisabledInformationText" = "Push notifications have been disabled. They can be turned on in the settings.";
+"Profile.PushEnabledInformationText" = "Push notifications are enabled. They can be turned off in the settings.";
+"Profile.PushText" = "Push notifications";
+"ErrorCodes.CLIENT_ALREADY_EXISTS" = "The email already exists. Please choose a different one.";
+
+
+// Version 1.3
+
+"StoreDetails.ShopClosed" = "This branch is currently closed for renovation. More information is available at «Special opening hours.»";
+"StoreDetails.Holidays.NoItems" = "No special opening hours are planned for the time being.";
+"Contact.ManagerText" = "";
