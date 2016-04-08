@@ -104,11 +104,13 @@ NSString *const kEANCodeCellId = @"EANCodeCellId";
     if (urlString != nil)
     {
         _eanCodeView.remoteURL = [NSURL URLWithString:urlString];
+        UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+        
 		if ([[GlobusController sharedInstance] is_iPad])
 		{
 			_eanCodeView.frame = CGRectMake((rect.size.width / 2) - (284 / 2), 38.0, 284, 180.0);
-			
-			if(UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation]))
+
+			if(UIInterfaceOrientationIsLandscape(orientation))
 				_barCodeLabel.frame = CGRectMake(293.0, 232.0, 200.0, 21.0);
 			else
 				_barCodeLabel.frame = CGRectMake(195.0, 234.0, 200.0, 21.0);
@@ -116,7 +118,7 @@ NSString *const kEANCodeCellId = @"EANCodeCellId";
 		{	
 			_eanCodeView.frame = CGRectMake((rect.size.width / 2) - (190 / 2), 19.0, 190, 90.0);
 			
-			if(UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation]))
+			if(UIInterfaceOrientationIsLandscape(orientation))
 				_barCodeLabel.frame = CGRectMake(92.0, 117.0, 200.0, 21.0);
 			else
 				_barCodeLabel.frame = CGRectMake(52.0, 117.0, 200.0, 21.0);

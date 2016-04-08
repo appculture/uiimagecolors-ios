@@ -105,7 +105,7 @@
 	[changePasswordJSONReader stop];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 		return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);

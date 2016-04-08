@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kBBButtonCount @"count"
+#define kBBButtonPosition @"position"
 #define kBBFrame @"frame"
 #define kBBWidth @"width"
 #define kBBHeight @"height"

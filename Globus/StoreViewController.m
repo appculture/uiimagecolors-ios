@@ -190,7 +190,7 @@
     [super viewDidDisappear:animated];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 		return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
@@ -390,7 +390,7 @@
         labelX = 55;
         labelY = 20;
     }
-    GlobusSectionHeaderView *headerSectionView = [[GlobusSectionHeaderView alloc] initWithFrame:CGRectMake(0, 0, theTableView.frame.size.width, headerHeight)];
+    GlobusSectionHeaderView *headerSectionView = [[GlobusSectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, theTableView.frame.size.width, headerHeight)];
     headerSectionView.headerLabel.frame = CGRectMake(labelX, labelY, headerSectionView.headerLabel.frame.size.width, headerSectionView.headerLabel.frame.size.height);
     headerSectionView.backgroundColor = [UIColor clearColor];
     if(section == 0) {
@@ -411,13 +411,19 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     if(indexPath.section == 0 && indexPath.row == kAddressCellRow) {
         return [[GlobusController sharedInstance] is_iPad] ? 88 : 66;
     } else if(indexPath.section == 1 && indexPath.row == 0) {
 		int height = 0;
 		for (NSDictionary *stores in _store.openingTimes) {
-			if (stores[@"title"])
-				height = height + 26;
+            if (stores[@"title"]) {
+                int size = [[GlobusController sharedInstance] is_iPad] ? 33 : 26;
+                height = height + size;
+            }
+            if([[GlobusController sharedInstance] is_iPad]) {
+                height = height + 35.0;
+            }
 			height = height + ([stores[@"days"] count] * 24);
 		}
 		

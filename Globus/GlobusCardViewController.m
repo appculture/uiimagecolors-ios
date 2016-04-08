@@ -232,7 +232,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 		return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
@@ -331,7 +331,7 @@
             self.eanCodeCell = cell;
             _eanCodeCell.eanCodeView.delegate = self;
         }
-        if(UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
+        if(UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])) {
             CGRect oldFrame = _eanCodeCell.frame;
             _eanCodeCell.frame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, oldFrame.size.width-60.0, oldFrame.size.height);
         }

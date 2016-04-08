@@ -55,7 +55,7 @@
 	// table view customizing
 	tableView.backgroundColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableViewBackground"];
 	
-	cancelButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.CancelText", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(cancelAction)];
+	cancelButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.CancelText", @"") style:UIBarButtonItemStylePlain target:self action:@selector(cancelAction)];
 	saveButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"All.SaveText", @"") style:UIBarButtonItemStyleDone target:self action:@selector(saveAction)];
 }
 

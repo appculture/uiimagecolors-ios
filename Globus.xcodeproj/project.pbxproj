@@ -1386,8 +1386,6 @@
 		80A99E1D14E1536D004A9D20 /* Webservices */ = {
 			isa = PBXGroup;
 			children = (
-				80AA544F14FD0C3E00026C37 /* CheckLoginJSONReader.h */,
-				80AA545014FD0C3E00026C37 /* CheckLoginJSONReader.m */,
 				8049436D152DA5490057C96B /* CheckGlobusCardJSONReader.h */,
 				8049436E152DA5490057C96B /* CheckGlobusCardJSONReader.m */,
 				80A99E1E14E1539A004A9D20 /* UserJSONReader.h */,
@@ -2264,10 +2262,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Globus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2282,11 +2282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Globus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2306,7 +2308,8 @@
 					armv7s,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -2314,6 +2317,7 @@
 				);
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "GlobusStaging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2333,12 +2337,14 @@
 					armv7s,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: youngculture AG";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "GlobusStaging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2359,11 +2365,13 @@
 					armv7s,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "GlobusStaging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2415,11 +2423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Globus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",

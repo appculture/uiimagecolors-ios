@@ -35,6 +35,7 @@ static const char *kTrustNames[kSecTrustResultOtherError + 1] = {
 
 - (SecTrustRef)trust {
     if(_trust == nil) {
+            
         NSString *dataPath = [[NSBundle mainBundle] pathForResource:@"cacert" ofType:@"der"];
         NSData *certData = [NSData dataWithContentsOfFile:dataPath];
         
@@ -66,12 +67,11 @@ static const char *kTrustNames[kSecTrustResultOtherError + 1] = {
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge 
 {	     
 	if ([challenge previousFailureCount] < 2) {
-		if([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault]) {
+		if([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault] || [challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodHTTPBasic]) {
             NSAssert(_dataSource, @"you need to set _dataSource");
             NSURLCredential *newCredential = [NSURLCredential credentialWithUser:[_dataSource username] password:[_dataSource password] persistence:NSURLCredentialPersistenceNone];
             [[challenge sender] useCredential:newCredential forAuthenticationChallenge:challenge];
         } else if([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
-            
             SecTrustRef trust = self.trust;
             
             NSDate *            date;

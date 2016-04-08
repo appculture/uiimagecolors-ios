@@ -111,7 +111,7 @@ static LocationController *sharedLocationController = nil;
 	else
 		self.currentLocation = newLocation;
 	
-	if (abs(howRecent) < localizationTimeout && newLocation.horizontalAccuracy > 0 && newLocation.horizontalAccuracy < localizationAccuracy)
+	if (fabs(howRecent) < localizationTimeout && newLocation.horizontalAccuracy > 0 && newLocation.horizontalAccuracy < localizationAccuracy)
 	{
 		[timer invalidate];
 		[[NSNotificationCenter defaultCenter] postNotificationName:LocationControllerDidChangeLocationNotification object:currentLocation];

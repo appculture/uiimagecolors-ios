@@ -113,7 +113,7 @@
     _webView.backgroundColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableViewBackground"];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 		return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
@@ -125,7 +125,7 @@
 {	
     NSString *fontSize = [NSString stringWithFormat:@"%dpx",[[GlobusController sharedInstance] is_iPad] ? 20 : 16];
     NSString *padding = [NSString stringWithFormat:@"%dpx",[[GlobusController sharedInstance] is_iPad] ? 45 : 10];
-    NSString *width = [NSString stringWithFormat:@"%dpx",[[GlobusController sharedInstance] is_iPad] ? 678 : 300];
+    NSString *width = [NSString stringWithFormat:@"%fpx", [[GlobusController sharedInstance] is_iPad] ? (self.view.frame.size.width - 80.0) : (self.view.frame.size.width - 20.0)];
 //    NSMutableArray *newHolidaysArray = [NSMutableArray arrayWithCapacity:[_holidayArray count]];
 	int storeCount = 1;
 	
@@ -145,7 +145,7 @@
 			NSDate *date = [[GlobusController sharedInstance] dateFromEnglishDateString:dic[@"date"]];
 			NSDate *tillDate = [[GlobusController sharedInstance] dateFromEnglishDateString:dic[@"date2"]];
 		
-			NSDateComponents *componentsToday = [[NSCalendar currentCalendar] components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:[NSDate date]];
+			NSDateComponents *componentsToday = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
 			NSDate *today = [[NSCalendar currentCalendar] dateFromComponents:componentsToday];
 			
 			NSDateComponents *components= [[NSDateComponents alloc] init];

@@ -238,7 +238,7 @@
 			break;
 			
 		case ABWebserviceReturnObjectTypeNSPropertyList:
-			return [NSPropertyListSerialization propertyListFromData:theData mutabilityOption:NSPropertyListImmutable format:nil errorDescription:nil];
+            return [NSPropertyListSerialization propertyListWithData:theData options:NSPropertyListImmutable format:nil error:nil];
 			break;
 
 		case ABWebserviceReturnObjectTypeOther:

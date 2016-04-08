@@ -188,11 +188,27 @@
     return [UIColor colorWithRed:r green:g blue:b alpha:a];
 }
 - (CGRect)frameWithFormatedDic:(NSDictionary *)formatedDictionary {
-    CGRect frame = CGRectMake(
-                              [formatedDictionary objectForKey:kBBX] ? [[formatedDictionary objectForKey:kBBX] floatValue] : 0,
-                              [formatedDictionary objectForKey:kBBY] ? [[formatedDictionary objectForKey:kBBY] floatValue] : 0,
-                              [formatedDictionary objectForKey:kBBWidth] ? [[formatedDictionary objectForKey:kBBWidth] floatValue] : 0,
-                              [formatedDictionary objectForKey:kBBHeight] ? [[formatedDictionary objectForKey:kBBHeight] floatValue] : 0);
+    CGRect frame;
+    
+    if ([formatedDictionary objectForKey:kBBButtonCount] != nil) {
+        float tableWidth = [UIScreen mainScreen].bounds.size.width;
+        float count = [[formatedDictionary objectForKey:kBBButtonCount] floatValue];
+        float buttonWidth = (tableWidth - 30.0)  / count;
+        int position = [[formatedDictionary objectForKey:kBBButtonPosition] intValue];
+        float x = 15.0 + (buttonWidth * position);
+        
+        frame = CGRectMake(
+                           x,
+                           [formatedDictionary objectForKey:kBBY] ? [[formatedDictionary objectForKey:kBBY] floatValue] : 0,
+                           buttonWidth,
+                           [formatedDictionary objectForKey:kBBHeight] ? [[formatedDictionary objectForKey:kBBHeight] floatValue] : 0);
+    } else {
+        frame = CGRectMake(
+                           [formatedDictionary objectForKey:kBBX] ? [[formatedDictionary objectForKey:kBBX] floatValue] : 0,
+                           [formatedDictionary objectForKey:kBBY] ? [[formatedDictionary objectForKey:kBBY] floatValue] : 0,
+                           [formatedDictionary objectForKey:kBBWidth] ? [[formatedDictionary objectForKey:kBBWidth] floatValue] : 0,
+                           [formatedDictionary objectForKey:kBBHeight] ? [[formatedDictionary objectForKey:kBBHeight] floatValue] : 0);
+    }
     return frame;
 }
 - (CGSize)sizeForText:(NSString *)textString andFont:(UIFont *)font {

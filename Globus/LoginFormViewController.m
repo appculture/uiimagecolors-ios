@@ -139,7 +139,7 @@ NSString *const GlobusLoginNotification = @"GlobusLoginNotification";
 	[userJSONReader stop];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 		return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
@@ -306,7 +306,6 @@ NSString *const GlobusLoginNotification = @"GlobusLoginNotification";
 				
 			}
 		}
-        
 	}
 }
 
@@ -314,7 +313,6 @@ NSString *const GlobusLoginNotification = @"GlobusLoginNotification";
 {
 	if (theWebservice == userJSONReader)
 	{
-        
         if(theError.code == -1012){
             [[GlobusController sharedInstance] setLoggedUser:[[ManagedUser sharedInstance] userData]];
             [[GlobusController sharedInstance] alertWithType:@"Login" messageKey:@"WrongUsernameOrPassword"];

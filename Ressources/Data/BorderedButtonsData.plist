@@ -720,6 +720,10 @@
 			<integer>36</integer>
 			<key>width</key>
 			<integer>150</integer>
+			<key>count</key>
+			<integer>2</integer>
+			<key>position</key>
+			<integer>0</integer>
 		</dict>
 		<key>states</key>
 		<dict>
@@ -806,6 +810,10 @@
 			<integer>44</integer>
 			<key>width</key>
 			<integer>339</integer>
+			<key>count</key>
+			<integer>2</integer>
+			<key>position</key>
+			<integer>0</integer>
 		</dict>
 		<key>states</key>
 		<dict>
@@ -892,6 +900,10 @@
 			<integer>36</integer>
 			<key>width</key>
 			<integer>150</integer>
+			<key>count</key>
+			<integer>2</integer>
+			<key>position</key>
+			<integer>1</integer>
 		</dict>
 		<key>states</key>
 		<dict>
@@ -978,6 +990,10 @@
 			<integer>44</integer>
 			<key>width</key>
 			<integer>339</integer>
+			<key>count</key>
+			<integer>2</integer>
+			<key>position</key>
+			<integer>1</integer>
 		</dict>
 		<key>states</key>
 		<dict>

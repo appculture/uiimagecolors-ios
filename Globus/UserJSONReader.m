@@ -87,9 +87,7 @@
         return error;
     }
     
-	UserResult *userResult = [[UserResult alloc] initWithDictionary:dictionary];
-	
-	
+	UserResult *userResult = [[UserResult alloc] initWithDictionary:dictionary];	
     
     if(![[self.dataSource username] isEqualToString:userResult.email]){
         [[GlobusController sharedInstance] alertWithType:@"Login" messageKey:@"WrongUsernameOrPassword"];

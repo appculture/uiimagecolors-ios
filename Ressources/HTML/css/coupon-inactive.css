@@ -85,7 +85,8 @@ body.reduced .topimg{
 @media screen and (-webkit-device-pixel-ratio: 2)
 {
     .footer {
-        -webkit-background-size: 320px auto;
+        -webkit-background-size: auto auto;
+        margin: 25px auto;
         background: transparent url('MobileFooter@2x.png') no-repeat center center;
 		background-size: 100%;
     }

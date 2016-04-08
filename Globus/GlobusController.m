@@ -264,9 +264,9 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 - (BOOL)is_iPad
 {
     BOOL iPad = NO;
-#ifdef UI_USER_INTERFACE_IDIOM
+//#ifdef UI_USER_INTERFACE_IDIOM
     iPad = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
-#endif
+//#endif
     return iPad;
 }
 
@@ -495,7 +495,7 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 
 - (BOOL)pushNotificationsEnabled
 {
-	return (self.deviceToken && [[UIApplication sharedApplication] enabledRemoteNotificationTypes] != UIRemoteNotificationTypeNone);
+	return (self.deviceToken && [[UIApplication sharedApplication] isRegisteredForRemoteNotifications]);
 }
 
 
@@ -556,7 +556,7 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
         if(theError.code == -1012){
             [[GlobusController sharedInstance] setLoggedUser:[[ManagedUser sharedInstance] userData]];
 			[[NSNotificationCenter defaultCenter] postNotificationName:GlobusControllerStartLoginNotification object:nil];
-        } else if (theError.code == -1004 || theError.code == -1009) {
+        } else if (theError.code == -1004 || theError.code == -1009 || theError.code == -1022) {
             [[GlobusController sharedInstance] setLoggedUser:[[ManagedUser sharedInstance] userData]];
             [[GlobusController sharedInstance] alertWithType:@"Login" message:NSLocalizedString(@"All.ConnectErrorText", @"")];
         }
