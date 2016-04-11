@@ -110,8 +110,6 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActiveNotification:) name:UIApplicationWillResignActiveNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackgroundNotification:) name:UIApplicationDidEnterBackgroundNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminateNotification:) name:UIApplicationWillTerminateNotification object:nil];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fcAuthenticatedNotification:) name:[[FloatingCloudKit sharedInstance] apiSessionVerifiedNotification] object:nil];
-		
 
 		self.couponLanguage = [[NSUserDefaults standardUserDefaults] valueForKey:@"couponLanguage"];
 		
@@ -193,27 +191,18 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 		uniqueKey = _loggedUser.email;
 	
 	if (self.deviceToken)
-		[[FloatingCloudKit sharedInstance] registerWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
+        [[FloatingCloudKit sharedInstance] registerWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey isActive:YES completion:^(BOOL success) {
+            NSLog(@"Registered with success: %d, device token: %@", success, [[FloatingCloudKit sharedInstance] deviceToken]);
+        }];
 }
 
 - (void)floatingcloudAuthenticateAndRegister
 {
-    NSString *currentLang = [self userSelectedLang];
-	NSString *uniqueKey = nil;
-	if (_loggedUser)
-		uniqueKey = _loggedUser.email;
-	
 	if (self.deviceToken)
-		[[FloatingCloudKit sharedInstance] authenticateAndRegisterWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
+        [[FloatingCloudKit sharedInstance] authenticate:^(BOOL success) {
+            NSLog(@"Authenticated with success: %d, device token: %@", success, [[FloatingCloudKit sharedInstance] deviceToken]);
+        }];
 }
-
-#pragma mark - Floatingcloud Notifications
-
-- (void)fcAuthenticatedNotification:(NSNotification *)theNotification
-{
-    NSLog(@"Registered with device token: %@", [[FloatingCloudKit sharedInstance] deviceToken]);
-}
-
 
 #pragma mark - Notifications
 
