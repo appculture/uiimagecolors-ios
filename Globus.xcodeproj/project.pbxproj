@@ -1619,7 +1619,7 @@
 		8095AD9114DA9FC700874AB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					80E771F717CCCF1A00C2E7BC = {
 						DevelopmentTeam = XKJD2EDZFP;
@@ -2182,21 +2182,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2225,19 +2225,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_THUMB_SUPPORT = NO;
@@ -2273,6 +2272,7 @@
 					"$(PROJECT_DIR)/Globus/floatingcloud",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.globus.globus;
 				PRODUCT_NAME = Globus;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2294,6 +2294,7 @@
 					"$(PROJECT_DIR)/Globus/floatingcloud",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.globus.globus;
 				PRODUCT_NAME = Globus;
 				PROVISIONING_PROFILE = "939050BF-AF1D-4BA7-A37C-7F9DCD59EC32";
 				WRAPPER_EXTENSION = app;
@@ -2303,10 +2304,6 @@
 		80E7730917CCCF1A00C2E7BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				ENABLE_BITCODE = NO;
@@ -2324,6 +2321,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youngculture.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GlobusStaging;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2332,10 +2330,6 @@
 		80E7730A17CCCF1A00C2E7BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: youngculture AG";
@@ -2351,6 +2345,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youngculture.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GlobusStaging;
 				PROVISIONING_PROFILE = "1564C1AB-1B15-4548-8C7B-377728708B8E";
 				WRAPPER_EXTENSION = app;
@@ -2360,10 +2355,6 @@
 		80E7730B17CCCF1A00C2E7BC /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				ENABLE_BITCODE = NO;
@@ -2378,6 +2369,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youngculture.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = GlobusStaging;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2387,19 +2379,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -2435,6 +2426,7 @@
 					"$(PROJECT_DIR)/Globus/floatingcloud",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.globus.globus;
 				PRODUCT_NAME = Globus;
 				PROVISIONING_PROFILE = "4A72A6D9-ABC0-4E13-BFC8-A76A69DBE54C";
 				WRAPPER_EXTENSION = app;
