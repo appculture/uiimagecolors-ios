@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>FCS_WEBSERVICE_API_URL</key>
+	<key>FC_WEBSERVICE_API_URL</key>
 	<string>https://floatingcloud.ch/</string>
-	<key>FCS_APP_KEY</key>
+	<key>FC_APP_KEY</key>
 	<string>Uezh0vonMjPQy80OatDShWGZZbnvSMrm</string>
 </dict>
 </plist>

@@ -11,7 +11,7 @@
 #import "GlobusController.h"
 #import "BorderedView.h"
 #import "BorderedButtonController.h"
-#import "FloatingCloudLib.h"
+#import "FloatingCloudKit.h"
 
 
 @interface ContactViewController ()
@@ -237,7 +237,7 @@
     {
 		NSString *subject = @"";
 		if([[GlobusController sharedInstance] isLoggedIn])
-			subject = [[FloatingCloudLib sharedInstance] deviceToken];
+			subject = [[FloatingCloudKit sharedInstance] deviceToken];
 		
 		[[GlobusController sharedInstance] analyticsTrackEvent:@"Info" action:@"Click" label:@"Mail" value:@0];
 		[self composeMailTo:NSLocalizedString(@"Contact.EmailButton.Value", @"") withSubject:subject body:@""];

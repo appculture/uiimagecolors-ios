@@ -16,7 +16,7 @@
 #import "StoreResult.h"
 #import "SystemUserSingleton.h"
 #import "AppDelegate.h"
-#import "FloatingCloudLib.h"
+#import "FloatingCloudKit.h"
 #import "GAI.h"
 #import "GAIFields.h"
 #import "GAIDictionaryBuilder.h"
@@ -110,7 +110,7 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActiveNotification:) name:UIApplicationWillResignActiveNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackgroundNotification:) name:UIApplicationDidEnterBackgroundNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminateNotification:) name:UIApplicationWillTerminateNotification object:nil];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fcAuthenticatedNotification:) name:[[FloatingCloudLib sharedInstance] apiSessionVerifiedNotification] object:nil];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fcAuthenticatedNotification:) name:[[FloatingCloudKit sharedInstance] apiSessionVerifiedNotification] object:nil];
 		
 
 		self.couponLanguage = [[NSUserDefaults standardUserDefaults] valueForKey:@"couponLanguage"];
@@ -193,7 +193,7 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 		uniqueKey = _loggedUser.email;
 	
 	if (self.deviceToken)
-		[[FloatingCloudLib sharedInstance] registerWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
+		[[FloatingCloudKit sharedInstance] registerWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
 }
 
 - (void)floatingcloudAuthenticateAndRegister
@@ -204,14 +204,14 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 		uniqueKey = _loggedUser.email;
 	
 	if (self.deviceToken)
-		[[FloatingCloudLib sharedInstance] authenticateAndRegisterWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
+		[[FloatingCloudKit sharedInstance] authenticateAndRegisterWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
 }
 
 #pragma mark - Floatingcloud Notifications
 
 - (void)fcAuthenticatedNotification:(NSNotification *)theNotification
 {
-    NSLog(@"Registered with device token: %@", [[FloatingCloudLib sharedInstance] deviceToken]);
+    NSLog(@"Registered with device token: %@", [[FloatingCloudKit sharedInstance] deviceToken]);
 }
 
 
