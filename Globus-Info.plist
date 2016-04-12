@@ -69,6 +69,8 @@
 		<string>GillSansAltOne.otf</string>
 		<string>GillSansAltOneBold.otf</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
