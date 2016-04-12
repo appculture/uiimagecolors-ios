@@ -171,7 +171,7 @@
 "Contact.MapButton" = "Adresse";
 "Contact.MapButton.Value" = "Industriestrasse 171\n8957 Spreitenbach";
 "Contact.ContactButton" = "Conditions générales";
-"Contact.Appculture.Url" = "http://www.appculture.com";
+"Contact.Appculture.Url" = "www.appculture.com";
 "Contact.WebsiteText" = "Vous trouverez de plus amples informations\nconcernant GlobusCard sur";
 "Contact.WebsiteUrl" = "https://www.globuscard.ch/web-f";
 

@@ -7,10 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController">
             <connections>
+                <outlet property="appcultureButton" destination="13" id="JtU-SI-TV0"/>
                 <outlet property="browserNC" destination="15" id="22"/>
                 <outlet property="tableView" destination="5" id="7"/>
                 <outlet property="view" destination="4" id="6"/>
-                <outlet property="youngcultureButton" destination="13" id="14"/>
             </connections>
         </placeholder>
         <view contentMode="scaleToFill" id="4">
@@ -54,7 +54,7 @@
                 <color key="titleColor" white="0.29999999999999999" alpha="1" colorSpace="calibratedWhite"/>
             </state>
             <connections>
-                <action selector="youngcultureBtnTouched:" destination="-1" eventType="touchUpInside" id="20"/>
+                <action selector="appcultureBtnTouched:" destination="-1" eventType="touchUpInside" id="YvT-lz-vsr"/>
             </connections>
         </button>
     </objects>

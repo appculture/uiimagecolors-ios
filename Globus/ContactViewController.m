@@ -73,7 +73,7 @@
 	[[BorderedButtonController sharedInstance] registerTarget:self andAction:@selector(doneBtnTouched) forBorderedView:doneButton];
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:doneButton];
 	
-	[self.view addSubview:youngcultureButton];
+	[self.view addSubview:appcultureButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -81,7 +81,7 @@
     [super viewWillAppear:animated];
     self.navigationItem.rightBarButtonItem.customView.alpha = 1.0;
 	tableView.scrollEnabled = NO;
-	youngcultureButton.frame = CGRectMake(0.0, tableView.frame.size.height - 40.0, tableView.frame.size.width, 40.0);
+	appcultureButton.frame = CGRectMake(0.0, tableView.frame.size.height - 40.0, tableView.frame.size.width, 40.0);
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -155,7 +155,7 @@
 	[self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)youngcultureBtnTouched:(id)sender {
+- (IBAction)appcultureBtnTouched:(id)sender {
 	
 	[[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:[[GlobusController sharedInstance] getWebsiteURLForString:NSLocalizedString(@"Contact.Appculture.Url", @"")]];
 	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"appculture"];

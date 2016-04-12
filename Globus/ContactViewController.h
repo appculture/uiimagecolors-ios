@@ -17,7 +17,7 @@
 @interface ContactViewController : ABViewController <SectionTableViewDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 {
     IBOutlet SectionTableView *tableView;
-	IBOutlet UIButton *youngcultureButton;
+	IBOutlet UIButton *appcultureButton;
 	IBOutlet UINavigationController *browserNC;
     
     NSMutableArray *sectionArray;
@@ -25,6 +25,6 @@
 	WebViewController *webViewController;
 }
 
-- (IBAction)youngcultureBtnTouched:(id)sender;
+- (IBAction)appcultureBtnTouched:(id)sender;
 
 @end
