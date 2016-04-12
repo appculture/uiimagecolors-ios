@@ -157,8 +157,8 @@
 
 - (IBAction)youngcultureBtnTouched:(id)sender {
 	
-	[[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:[[GlobusController sharedInstance] getWebsiteURLForString:NSLocalizedString(@"Contact.YoungcultureUrl", @"")]];
-	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"youngculture mobile"];
+	[[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:[[GlobusController sharedInstance] getWebsiteURLForString:NSLocalizedString(@"Contact.Appculture.Url", @"")]];
+	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"appculture"];
     if ([[GlobusController sharedInstance] is_iPad])
     {
         browserNC.modalPresentationStyle = UIModalPresentationPageSheet;

@@ -60,8 +60,6 @@
 	
 	navigationToolbar.hidden = !showToolBar;
 	[self updateToolbarButtons];
-	
-	//self.title = @"youngculture mobile";
 }
 
 - (void)viewDidAppear:(BOOL)animated
