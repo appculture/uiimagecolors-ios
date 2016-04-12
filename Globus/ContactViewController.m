@@ -237,7 +237,7 @@
     {
 		NSString *subject = @"";
 		if([[GlobusController sharedInstance] isLoggedIn])
-			subject = [[FloatingCloudKit sharedInstance] deviceToken];
+			subject = [[FloatingCloudKit sharedInstance] deviceTokenString];
 		
 		[[GlobusController sharedInstance] analyticsTrackEvent:@"Info" action:@"Click" label:@"Mail" value:@0];
 		[self composeMailTo:NSLocalizedString(@"Contact.EmailButton.Value", @"") withSubject:subject body:@""];

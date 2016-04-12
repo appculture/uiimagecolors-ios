@@ -41,7 +41,7 @@
     {
         NSObject *value;
 		
-        value = [NSNumber numberWithInt:[[theDictionary objectForKey:@"id"] integerValue]];
+        value = [NSNumber numberWithInt:(int)[[theDictionary objectForKey:@"id"] integerValue]];
         if (value && value != 0)
 		self.storeId = (NSNumber *)value;
         
@@ -77,7 +77,7 @@
         if (value && value != [NSNull null])
 		self.email = (NSString *)value;
         
-        value = [NSNumber numberWithInt:[[theDictionary objectForKey:@"zip"] integerValue]];
+        value = [NSNumber numberWithInt:(int)[[theDictionary objectForKey:@"zip"] integerValue]];
         if (value && value != 0)
 		self.zip = (NSNumber *)value;
         

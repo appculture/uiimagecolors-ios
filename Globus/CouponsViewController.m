@@ -65,7 +65,7 @@
 - (void)updateCouponsGroups;
 - (void)updateCouponsFromWebservice;
 - (enum CouponListState)listStateForCoupon:(Coupon*)coupon;
-- (UICellBackgroundViewPosition)viewPositionForRow:(int)row inRows:(int)rows;
+- (UICellBackgroundViewPosition)viewPositionForRow:(NSUInteger)row inRows:(NSUInteger)rows;
 - (BOOL)isCouponNew:(Coupon*)coupon;
 - (void)receivedLocalNotification:(NSNotification *)theNotification;
 
@@ -311,7 +311,7 @@
         cell = [[CouponCellWithDate alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kCouponCellId];
     }
     
-    int rows = [[CouponsController sharedInstance] numberOfRowsInSection:indexPath.section forState:_listState];
+    NSUInteger rows = [[CouponsController sharedInstance] numberOfRowsInSection:indexPath.section forState:_listState];
     Coupon *coupon = [[CouponsController sharedInstance] couponForIndexPath:indexPath forState:_listState];
     
     if (coupon.validFrom)
@@ -364,7 +364,7 @@
 }
 
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    int couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
+    NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
     if(couponCount == 0) {
         return @"";
     }
@@ -382,7 +382,7 @@
         labelX = 40;
         labelY = 10;
     }
-    int couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
+    NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
     if(couponCount == 0) {
         return nil;
     }
@@ -396,7 +396,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    int couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
+    NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
     if(couponCount == 0) {
         return 0;
     }
@@ -421,7 +421,7 @@
 	[self.navigationController pushViewController:_couponWebViewController animated:YES];  
 }
 
-- (UICellBackgroundViewPosition)viewPositionForRow:(int)row inRows:(int)rows {
+- (UICellBackgroundViewPosition)viewPositionForRow:(NSUInteger)row inRows:(NSUInteger)rows {
     UICellBackgroundViewPosition bgPosition;
     if(row == 0){
         if(row == rows-1){

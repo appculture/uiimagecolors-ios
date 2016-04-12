@@ -89,7 +89,7 @@
 		[webservice stop];
 	}
 	
-	self.cacheKey = [NSString stringWithFormat:@"ri_%u", [remoteURL.absoluteString hash]];
+	self.cacheKey = [NSString stringWithFormat:@"ri_%lu", (unsigned long)[remoteURL.absoluteString hash]];
 	
 	if (remoteURL && [[CacheController sharedInstance] isDataCachedForKey:cacheKey])
 	{

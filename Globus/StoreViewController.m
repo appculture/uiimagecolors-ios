@@ -415,7 +415,7 @@
     if(indexPath.section == 0 && indexPath.row == kAddressCellRow) {
         return [[GlobusController sharedInstance] is_iPad] ? 88 : 66;
     } else if(indexPath.section == 1 && indexPath.row == 0) {
-		int height = 0;
+		NSUInteger height = 0;
 		for (NSDictionary *stores in _store.openingTimes) {
             if (stores[@"title"]) {
                 int size = [[GlobusController sharedInstance] is_iPad] ? 33 : 26;

@@ -108,7 +108,7 @@
 	
 	self.response = theResponse;
 	
-	int statusCode = ((NSHTTPURLResponse *)theResponse).statusCode;
+	NSInteger statusCode = ((NSHTTPURLResponse *)theResponse).statusCode;
     
     __block BOOL isValidCode = NO;
     

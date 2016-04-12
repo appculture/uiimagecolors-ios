@@ -223,7 +223,7 @@
 
 - (void)drawGradient:(CGRect)rect
 {
-    int totalColors = [gradientColors count];
+    NSUInteger totalColors = [gradientColors count];
     
     CGColorSpaceRef rgb = CGColorSpaceCreateDeviceRGB();
     
@@ -238,7 +238,7 @@
     {
         CGColorRef colRef = [col CGColor];
         components = CGColorGetComponents(colRef);
-        int numComponents = CGColorGetNumberOfComponents(colRef);
+        NSUInteger numComponents = CGColorGetNumberOfComponents(colRef);
         
         for (int i=0; i<numComponents; i++)
         {
