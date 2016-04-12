@@ -1622,7 +1622,7 @@
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					80E771F717CCCF1A00C2E7BC = {
-						DevelopmentTeam = XKJD2EDZFP;
+						DevelopmentTeam = 6R55RBD8VC;
 					};
 				};
 			};
@@ -2304,6 +2304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2318,8 +2319,9 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.youngculture.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appculture.globus-stage";
 				PRODUCT_NAME = GlobusStaging;
+				PROVISIONING_PROFILE = "a43e7df5-60c1-4db8-9bf1-a3e8dabe7bc7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2329,7 +2331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: youngculture AG";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
@@ -2341,9 +2343,9 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.youngculture.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appculture.globus-stage";
 				PRODUCT_NAME = GlobusStaging;
-				PROVISIONING_PROFILE = "1564C1AB-1B15-4548-8C7B-377728708B8E";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2353,6 +2355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
@@ -2364,7 +2367,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.youngculture.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appculture.globus-stage";
 				PRODUCT_NAME = GlobusStaging;
 				WRAPPER_EXTENSION = app;
 			};
