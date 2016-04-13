@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
                BuildableName = "GlobusStaging.app"
-               BlueprintName = "GlobusStaging"
+               BlueprintName = "Globus Stage"
                ReferencedContainer = "container:Globus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
             BuildableName = "GlobusStaging.app"
-            BlueprintName = "GlobusStaging"
+            BlueprintName = "Globus Stage"
             ReferencedContainer = "container:Globus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
             BuildableName = "GlobusStaging.app"
-            BlueprintName = "GlobusStaging"
+            BlueprintName = "Globus Stage"
             ReferencedContainer = "container:Globus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
             BuildableName = "GlobusStaging.app"
-            BlueprintName = "GlobusStaging"
+            BlueprintName = "Globus Stage"
             ReferencedContainer = "container:Globus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

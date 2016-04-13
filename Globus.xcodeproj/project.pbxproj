@@ -725,7 +725,7 @@
 		80E2E03D19599F2E003D670A /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		80E2E0441959C366003D670A /* TrackingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingTableViewController.h; sourceTree = "<group>"; };
 		80E2E0451959C366003D670A /* TrackingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingTableViewController.m; sourceTree = "<group>"; };
-		80E7730C17CCCF1A00C2E7BC /* GlobusStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobusStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E7730C17CCCF1A00C2E7BC /* Globus Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Globus Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FAAF39195AFD5700C3C18B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		80FAAF3B195AFE3E00C3C18B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -843,7 +843,7 @@
 		F833354118E9BE41006273C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/PushHelp@2x.png"; sourceTree = "<group>"; };
 		F833354218E9BF19006273C1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fr; path = "fr.lproj/PushHelp@2x.png"; sourceTree = "<group>"; };
 		F845D98E18C4B93F007E483D /* Globus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Globus-Info.plist"; sourceTree = SOURCE_ROOT; };
-		F845D98F18C4B93F007E483D /* GlobusStaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlobusStaging-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F845D98F18C4B93F007E483D /* Globus-Stage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Globus-Stage-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F845D99C18C4BA4A007E483D /* GlobusCardViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "GlobusCardViewController-iPad.xib"; path = "Globus/GlobusCardViewController-iPad.xib"; sourceTree = SOURCE_ROOT; };
 		F845D99F18C4BA52007E483D /* TermsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "TermsViewController~ipad.xib"; path = "Globus/TermsViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		F8630DCA18C9CDAB00FB1718 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Globus/main.m; sourceTree = SOURCE_ROOT; };
@@ -1031,7 +1031,7 @@
 			isa = PBXGroup;
 			children = (
 				8095AD9A14DA9FC700874AB7 /* Globus.app */,
-				80E7730C17CCCF1A00C2E7BC /* GlobusStaging.app */,
+				80E7730C17CCCF1A00C2E7BC /* Globus Stage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1079,7 +1079,7 @@
 				F8630DCD18C9CDC100FB1718 /* Globus-Prefix.pch */,
 				F8630DCA18C9CDAB00FB1718 /* main.m */,
 				F845D98E18C4B93F007E483D /* Globus-Info.plist */,
-				F845D98F18C4B93F007E483D /* GlobusStaging-Info.plist */,
+				F845D98F18C4B93F007E483D /* Globus-Stage-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1596,9 +1596,9 @@
 			productReference = 8095AD9A14DA9FC700874AB7 /* Globus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		80E771F717CCCF1A00C2E7BC /* GlobusStaging */ = {
+		80E771F717CCCF1A00C2E7BC /* Globus Stage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80E7730817CCCF1A00C2E7BC /* Build configuration list for PBXNativeTarget "GlobusStaging" */;
+			buildConfigurationList = 80E7730817CCCF1A00C2E7BC /* Build configuration list for PBXNativeTarget "Globus Stage" */;
 			buildPhases = (
 				80E771F817CCCF1A00C2E7BC /* Sources */,
 				80E7726E17CCCF1A00C2E7BC /* Frameworks */,
@@ -1608,9 +1608,9 @@
 			);
 			dependencies = (
 			);
-			name = GlobusStaging;
+			name = "Globus Stage";
 			productName = Globus;
-			productReference = 80E7730C17CCCF1A00C2E7BC /* GlobusStaging.app */;
+			productReference = 80E7730C17CCCF1A00C2E7BC /* Globus Stage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1640,7 +1640,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80E771F717CCCF1A00C2E7BC /* GlobusStaging */,
+				80E771F717CCCF1A00C2E7BC /* Globus Stage */,
 				8095AD9914DA9FC700874AB7 /* Globus */,
 			);
 		};
@@ -2306,7 +2306,7 @@
 		80E7730917CCCF1A00C2E7BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -2316,7 +2316,7 @@
 					STAGING,
 				);
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "GlobusStaging-Info.plist";
+				INFOPLIST_FILE = "Globus-Stage-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2324,7 +2324,7 @@
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appculture.globus-stage";
-				PRODUCT_NAME = GlobusStaging;
+				PRODUCT_NAME = "Globus Stage";
 				PROVISIONING_PROFILE = "a43e7df5-60c1-4db8-9bf1-a3e8dabe7bc7";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2333,14 +2333,14 @@
 		80E7730A17CCCF1A00C2E7BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "GlobusStaging-Info.plist";
+				INFOPLIST_FILE = "Globus-Stage-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2348,7 +2348,7 @@
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appculture.globus-stage";
-				PRODUCT_NAME = GlobusStaging;
+				PRODUCT_NAME = "Globus Stage";
 				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2357,14 +2357,14 @@
 		80E7730B17CCCF1A00C2E7BC /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "GlobusStaging-Info.plist";
+				INFOPLIST_FILE = "Globus-Stage-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
@@ -2372,7 +2372,7 @@
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appculture.globus-stage";
-				PRODUCT_NAME = GlobusStaging;
+				PRODUCT_NAME = "Globus Stage";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -2459,7 +2459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80E7730817CCCF1A00C2E7BC /* Build configuration list for PBXNativeTarget "GlobusStaging" */ = {
+		80E7730817CCCF1A00C2E7BC /* Build configuration list for PBXNativeTarget "Globus Stage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80E7730917CCCF1A00C2E7BC /* Debug */,
