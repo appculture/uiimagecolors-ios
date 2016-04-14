@@ -11,3 +11,5 @@ AppBundleID = ch.globus.globus
 
 // Backend
 ServerAddress = cardservice.globuscard.ch
+ServerUsername = app
+ServerPassword = PbICkxAKFRAH95qksmsS

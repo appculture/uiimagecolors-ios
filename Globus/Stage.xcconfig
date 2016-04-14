@@ -11,3 +11,5 @@ AppBundleID = com.appculture.globus-stage
 
 // Backend
 ServerAddress = testcardservice.globuscard.ch
+ServerUsername = app
+ServerPassword = secret

@@ -65,6 +65,10 @@
 		<string>$(CONFIGURATION)</string>
 		<key>ServerAddress</key>
 		<string>https://$(ServerAddress)</string>
+		<key>ServerUsername</key>
+		<string>$(ServerUsername)</string>
+		<key>ServerPassword</key>
+		<string>$(ServerPassword)</string>
 	</dict>
 	<key>NSMainNibFile</key>
 	<string>MainWindow_iPhone</string>

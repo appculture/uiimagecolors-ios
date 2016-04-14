@@ -13,6 +13,8 @@
 #pragma mark - API
 
 + (NSString *)serverAddress;
++ (NSString *)serverUsername;
++ (NSString *)serverPassword;
 
 + (BOOL)isDebug;
 + (BOOL)isStage;

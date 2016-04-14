@@ -13,8 +13,15 @@
 #pragma mark - API
 
 + (NSString *)serverAddress {
-    NSString *url = [[self customSettings] objectForKey:@"ServerAddress"];
-    return url;
+    return [self customSettingForKey:@"ServerAddress"];
+}
+
++ (NSString *)serverUsername {
+    return [self customSettingForKey:@"ServerUsername"];
+}
+
++ (NSString *)serverPassword {
+    return [self customSettingForKey:@"ServerPassword"];
 }
 
 + (BOOL)isStage {
@@ -33,9 +40,13 @@
     return settings;
 }
 
++ (id)customSettingForKey:(NSString *)key {
+    id setting = [[self customSettings] objectForKey:key];
+    return setting;
+}
+
 + (NSString *)appConfiguration {
-    NSString *configuration = [[self customSettings] objectForKey:@"Configuration"];
-    return configuration;
+    return [self customSettingForKey:@"Configuration"];
 }
 
 + (BOOL)configurationContainsString:(NSString *)string {

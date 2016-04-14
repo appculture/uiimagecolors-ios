@@ -17,8 +17,6 @@
 
 #define isPhone568 ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568)
 
-//Username and Password in SystemUserSingleton.m
-
 #define ShowActivityNotification @"showActivityNot"
 #define HideActivityNotification @"hideActivityNot"
 

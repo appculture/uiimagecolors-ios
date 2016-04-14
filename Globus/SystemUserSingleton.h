@@ -9,5 +9,10 @@
 #import "WebserviceWithAuth.h"
 
 @interface SystemUserSingleton : NSObject <WebserviceAuthDataSource>
-+ (SystemUserSingleton*) sharedInstance;
+
++ (instancetype)sharedInstance;
+
+- (NSString *)username;
+- (NSString *)password;
+
 @end
