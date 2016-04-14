@@ -56,11 +56,11 @@
 
 					[validationErrorArray addObject:ve];
 				}
-		
-#if DEBUG
-		if (errorMessages.count > 0)
-			NSLog(@"ResultStatusError: %@", [errorMessages objectAtIndex:0]);
-#endif
+        
+        if ([UIApplication isDebug]) {
+            if (errorMessages.count > 0)
+                NSLog(@"ResultStatusError: %@", [errorMessages objectAtIndex:0]);
+        }
 	}
 	
 	return self;

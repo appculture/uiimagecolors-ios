@@ -14,9 +14,9 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
-                     BuildableName = "GlobusStaging.app"
-                     BlueprintName = "Globus Stage"
+                     BlueprintIdentifier = "8095AD9914DA9FC700874AB7"
+                     BuildableName = "Globus.app"
+                     BlueprintName = "Globus"
                      ReferencedContainer = "container:Globus.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -32,16 +32,16 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
-               BuildableName = "GlobusStaging.app"
-               BlueprintName = "Globus Stage"
+               BlueprintIdentifier = "8095AD9914DA9FC700874AB7"
+               BuildableName = "Globus.app"
+               BlueprintName = "Globus"
                ReferencedContainer = "container:Globus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Debug-Stage"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
-            BuildableName = "GlobusStaging.app"
-            BlueprintName = "Globus Stage"
+            BlueprintIdentifier = "8095AD9914DA9FC700874AB7"
+            BuildableName = "Globus.app"
+            BlueprintName = "Globus"
             ReferencedContainer = "container:Globus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,7 +60,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Debug-Stage"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -73,9 +73,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
-            BuildableName = "GlobusStaging.app"
-            BlueprintName = "Globus Stage"
+            BlueprintIdentifier = "8095AD9914DA9FC700874AB7"
+            BuildableName = "Globus.app"
+            BlueprintName = "Globus"
             ReferencedContainer = "container:Globus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -83,7 +83,7 @@
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Release-Stage"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -92,18 +92,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "80E771F717CCCF1A00C2E7BC"
-            BuildableName = "GlobusStaging.app"
-            BlueprintName = "Globus Stage"
+            BlueprintIdentifier = "8095AD9914DA9FC700874AB7"
+            BuildableName = "Globus.app"
+            BlueprintName = "Globus"
             ReferencedContainer = "container:Globus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Debug-Stage">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Release-Stage"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

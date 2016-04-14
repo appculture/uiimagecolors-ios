@@ -17,7 +17,8 @@
     if(![self.dataSource respondsToSelector:@selector(username)]){
         return;
     }
-    NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@",kServerAddress,[self.dataSource username]];
+    NSString *serverAddress = [UIApplication serverAddress];
+    NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@", serverAddress,[self.dataSource username]];
 	
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
 	[request setURL:[NSURL URLWithString:requestURLString]];

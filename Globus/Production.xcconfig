@@ -1,0 +1,15 @@
+//
+//  Production.xcconfig
+//  Globus
+//
+//  Created by Marko Tadic on 4/14/16.
+//
+//
+
+// App
+AppBundleID = ch.globus.globus
+
+// Backend
+ServerAddress = cardservice.globuscard.ch
+ServerUsername = app
+ServerPassword = PbICkxAKFRAH95qksmsS

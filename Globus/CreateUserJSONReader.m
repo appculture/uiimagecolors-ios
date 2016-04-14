@@ -29,7 +29,8 @@
 {
 	NSString *requestURLString;
     
-    requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/?lang=%@",kServerAddress, lang];
+    NSString *serverAddress = [UIApplication serverAddress];
+    requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/?lang=%@", serverAddress, lang];
     if (crc && crc.length > 0) {
         requestURLString = [NSString stringWithFormat:@"%@&crc=%@",requestURLString, crc];
     }
@@ -40,22 +41,23 @@
 	[request setValue: @"application/json" forHTTPHeaderField: @"Content-Type"];
 	[request setValue:@"application/vnd.globus.gcard.kunde-v01+json" forHTTPHeaderField:@"Accept"];
 	[request setHTTPBody: [body dataUsingEncoding: NSUTF8StringEncoding]];
-	
-#if STAGING
-	NSLog(@"Create User: %@", requestURLString);
-	NSLog(@"Body: %@", body);
-#endif
+    
+    if ([UIApplication isStage]) {
+        NSLog(@"Create User: %@", requestURLString);
+        NSLog(@"Body: %@", body);
+    }
 	
 	[super startWithRequest:request];
 }
 
 - (void)checkUsername:(NSString *)username
 {
-	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@",kServerAddress, username];
-	
-#if STAGING
-	NSLog(@"Check User: %@", requestURLString);
-#endif
+    NSString *serverAddress = [UIApplication serverAddress];
+	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@", serverAddress, username];
+    
+    if ([UIApplication isStage]) {
+        NSLog(@"Check User: %@", requestURLString);
+    }
 	
 	[super startWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:requestURLString]]];
 }

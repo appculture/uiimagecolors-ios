@@ -658,7 +658,8 @@
     //NSString *requestURLString = @"http://mtest.youngculture.com/g/coupon-mtest.json";
 	//NSString *requestURLString = @"http://mtest.youngculture.com/globus/coupon.json";
 	
-	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/coupon/%@?resolution=%d&barHighMM=%.2f&lang=%@",kServerAddress, [self username],resolution,kGlobusCardBarHighMM, lang];
+    NSString *serverAddress = [UIApplication serverAddress];
+	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/coupon/%@?resolution=%d&barHighMM=%.2f&lang=%@", serverAddress, [self username],resolution,kGlobusCardBarHighMM, lang];
 	
 	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
 	[request setURL:[NSURL URLWithString:requestURLString]];
