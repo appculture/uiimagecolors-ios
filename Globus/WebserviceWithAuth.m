@@ -20,7 +20,6 @@
 @synthesize dataSource = _dataSource;
 @synthesize trust = _trust;
 
-#if DEBUG
 static const char *kTrustNames[kSecTrustResultOtherError + 1] = {
     "Invalid",
     "Proceed",
@@ -31,7 +30,6 @@ static const char *kTrustNames[kSecTrustResultOtherError + 1] = {
     "FatalTrustFailure",
     "OtherError"
 };
-#endif
 
 - (SecTrustRef)trust {
     if(_trust == nil) {
@@ -87,14 +85,13 @@ static const char *kTrustNames[kSecTrustResultOtherError + 1] = {
             err = SecTrustEvaluate(trust, &result);
             assert(err == noErr);
             
-#if DEBUG
-            
-            if (result < (sizeof(kTrustNames) / sizeof(*kTrustNames))) {
-                NSLog(@"result = %s", kTrustNames[result]);
-            } else {
-                NSLog(@"result = unknown (%zu)", (size_t) result);
+            if ([UIApplication isDebug]) {
+                if (result < (sizeof(kTrustNames) / sizeof(*kTrustNames))) {
+                    NSLog(@"result = %s", kTrustNames[result]);
+                } else {
+                    NSLog(@"result = unknown (%zu)", (size_t) result);
+                }
             }
-#endif
             
             NSURLCredential *credential = [NSURLCredential credentialForTrust:trust];
             [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];

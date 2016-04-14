@@ -29,9 +29,9 @@
     NSString *serverAddress = [UIApplication serverAddress];
 	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@", serverAddress, username];
 	
-#if STAGING
-	NSLog(@"Check User: %@", requestURLString);
-#endif
+    if ([UIApplication isStage]) {
+        NSLog(@"Check User: %@", requestURLString);
+    }
 	
 	[super startWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:requestURLString]]];
 }

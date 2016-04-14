@@ -31,10 +31,10 @@
     {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error])
         {
-            #if DEBUG
+            if ([UIApplication isDebug]) {
                 NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
                 abort();
-            #endif
+            }
         } 
     }
 }
@@ -99,10 +99,10 @@
     
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error])
     {
-        #if DEBUG
+        if ([UIApplication isDebug]) {
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
-        #endif
+        }
     }    
     
     return __persistentStoreCoordinator;

@@ -811,11 +811,11 @@
 		8095ADA514DA9FC700874AB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F8630DCD18C9CDC100FB1718 /* Globus-Prefix.pch */,
 				F8630DCA18C9CDAB00FB1718 /* main.m */,
-				F845D98E18C4B93F007E483D /* Info.plist */,
+				F8630DCD18C9CDC100FB1718 /* Globus-Prefix.pch */,
 				8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */,
 				8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */,
+				F845D98E18C4B93F007E483D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1750,10 +1750,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					DEBUG,
-					STAGING,
-				);
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -1775,7 +1771,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (

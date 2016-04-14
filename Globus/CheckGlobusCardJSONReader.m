@@ -24,10 +24,10 @@
 	
     NSString *serverAddress = [UIApplication serverAddress];
 	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/isAssignableAndValid.json?globuscard=%@&crc=%@", serverAddress, customerNumber, crc];
-	
-#if STAGING
-	NSLog(@"Check Globuscard with CRC: %@", requestURLString);
-#endif
+    
+    if ([UIApplication isStage]) {
+        NSLog(@"Check Globuscard with CRC: %@", requestURLString);
+    }
 	
 	[super startWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:requestURLString]]];
 }

@@ -48,10 +48,10 @@
 		[request setValue: @"application/json" forHTTPHeaderField: @"Content-Type"];	
 		[request setHTTPBody: [body dataUsingEncoding: NSUTF8StringEncoding]];
 		
-#if STAGING
-		NSLog(@"Change Password: %@", requestURLString);
-		NSLog(@"Body: %@", body);
-#endif
+        if ([UIApplication isStage]) {
+            NSLog(@"Change Password: %@", requestURLString);
+            NSLog(@"Body: %@", body);
+        }
 		
 		[super startWithRequest:request];
 	}
