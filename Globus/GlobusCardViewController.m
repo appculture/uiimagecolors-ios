@@ -345,8 +345,10 @@
 				resolution = kGlobusCardBarcodeResolutionRetina;
 			else
 				resolution = kGlobusCardBarcodeResolution;
+            
+            NSString *serverAddress = [UIApplication serverAddress];
             ((EANCodeCell *)cell).urlString = [NSString stringWithFormat:@"%@/gcard/barcode/card.png?cardNbr=%@&resolution=%d&barHighMM=%f",
-                                               kServerAddress,cardNumber,resolution,kGlobusCardBarHighMM]; 
+                                               serverAddress,cardNumber,resolution,kGlobusCardBarHighMM];
         }
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -401,7 +403,8 @@
     NSNumber *cardNumber = [[[GlobusController sharedInstance] loggedUser] globusCard];
     if(cardNumber){
         int resolution = _isRetinaDisplay ? kGlobusCardBarcodeResolutionRetina : kGlobusCardBarcodeResolution;
-        _eanCodeCell.urlString = [NSString stringWithFormat:@"%@/gcard/barcode/card.png?cardNbr=%@&resolution=%d&barHighMM=%f",kServerAddress,cardNumber,resolution,kGlobusCardBarHighMM];
+        NSString *serverAddress = [UIApplication serverAddress];
+        _eanCodeCell.urlString = [NSString stringWithFormat:@"%@/gcard/barcode/card.png?cardNbr=%@&resolution=%d&barHighMM=%f",serverAddress,cardNumber,resolution,kGlobusCardBarHighMM];
         _eanCodeCell.eanCodeView.remoteURL = [NSURL URLWithString:_eanCodeCell.urlString];
     }
     if([[[GlobusController sharedInstance] loggedUser] firstName] && 

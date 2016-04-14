@@ -59,6 +59,13 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>CustomSettings</key>
+	<dict>
+		<key>Configuration</key>
+		<string>$(CONFIGURATION)</string>
+		<key>ServerAddress</key>
+		<string>https://$(ServerAddress)</string>
+	</dict>
 	<key>NSMainNibFile</key>
 	<string>MainWindow_iPhone</string>
 	<key>NSMainNibFile~ipad</key>

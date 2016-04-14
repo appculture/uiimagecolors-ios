@@ -26,7 +26,8 @@
 
 - (void)checkUsername:(NSString *)username
 {
-	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@",kServerAddress, username];
+    NSString *serverAddress = [UIApplication serverAddress];
+	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@", serverAddress, username];
 	
 #if STAGING
 	NSLog(@"Check User: %@", requestURLString);

@@ -42,7 +42,9 @@
     
     NSString *userEmail = [self.dataSource username];
     if(userEmail) {
-        NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@",kServerAddress, userEmail];
+        
+        NSString *serverAddress = [UIApplication serverAddress];
+        NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@", serverAddress, userEmail];
         
 		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
 		[request setURL:[NSURL URLWithString:requestURLString]];

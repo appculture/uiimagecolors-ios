@@ -173,6 +173,7 @@
 		80FAAF42195AFE8800C3C18B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */; };
 		80FAAF43195AFE9000C3C18B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3F195AFE5B00C3C18B /* libz.dylib */; };
 		8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */; };
+		8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */; };
 		B60C01C71519E8880006877E /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
 		B60C01CA1519EA880006877E /* BorderedButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C01C91519EA880006877E /* BorderedButtonController.m */; };
 		B618A137152DC9B9002EC38E /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B618A135152DC9B7002EC38E /* StoreViewController.m */; };
@@ -492,6 +493,8 @@
 		8B6F0D991CBBF712002ED42B /* FloatingCloudKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FloatingCloudKit.h; path = headers/FloatingCloudKit.h; sourceTree = "<group>"; };
 		8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
 		8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		8BC3A5881CBFA4B9003E9DFD /* UIApplication+CustomSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CustomSettings.h"; sourceTree = "<group>"; };
+		8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CustomSettings.m"; sourceTree = "<group>"; };
 		B60C01C61519E8880006877E /* BorderedButtonsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BorderedButtonsData.plist; sourceTree = "<group>"; };
 		B60C01C81519EA880006877E /* BorderedButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorderedButtonController.h; sourceTree = "<group>"; };
 		B60C01C91519EA880006877E /* BorderedButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderedButtonController.m; sourceTree = "<group>"; };
@@ -1277,6 +1280,8 @@
 			children = (
 				8095ADAD14DA9FC700874AB7 /* AppDelegate.h */,
 				8095ADAE14DA9FC700874AB7 /* AppDelegate.m */,
+				8BC3A5881CBFA4B9003E9DFD /* UIApplication+CustomSettings.h */,
+				8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */,
 				F8955D6E18C76E470071A8FB /* Controllers */,
 				8095AE1814DAEE9E00874AB7 /* ViewControllers */,
 				B69CAB941518BE7700FFEB53 /* Views */,
@@ -1572,6 +1577,7 @@
 				B6372D29153D91A1005F1E75 /* Coupon.m in Sources */,
 				B6372D2C153D98A7005F1E75 /* CouponsWebservice.m in Sources */,
 				801DBEE515415F4C00C000E7 /* HTMLTemplateParser.m in Sources */,
+				8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */,
 				801DBF091541B8DF00C000E7 /* CouponWebViewController.m in Sources */,
 				80B5BBE4192F9CF50099AF8C /* StoreInfoTextCell.m in Sources */,
 				80AA37671551575E00C644DA /* TermsViewController.m in Sources */,

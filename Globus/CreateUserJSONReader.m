@@ -29,7 +29,8 @@
 {
 	NSString *requestURLString;
     
-    requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/?lang=%@",kServerAddress, lang];
+    NSString *serverAddress = [UIApplication serverAddress];
+    requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/?lang=%@", serverAddress, lang];
     if (crc && crc.length > 0) {
         requestURLString = [NSString stringWithFormat:@"%@&crc=%@",requestURLString, crc];
     }
@@ -51,7 +52,8 @@
 
 - (void)checkUsername:(NSString *)username
 {
-	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@",kServerAddress, username];
+    NSString *serverAddress = [UIApplication serverAddress];
+	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/exists.json?loginid=%@", serverAddress, username];
 	
 #if STAGING
 	NSLog(@"Check User: %@", requestURLString);
