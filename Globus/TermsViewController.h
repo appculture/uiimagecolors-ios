@@ -18,7 +18,6 @@ extern NSString *const UserDidAcceptTermsNotification;
     
 }
 
-- (void)loadWebViewContent;
 - (IBAction)didAcceptTermsAndConditions:(id)sender;
 
 @end
