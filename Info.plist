@@ -22,6 +22,17 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CustomSettings</key>
+	<dict>
+		<key>Configuration</key>
+		<string>$(CONFIGURATION)</string>
+		<key>ServerAddress</key>
+		<string>https://$(ServerAddress)</string>
+		<key>ServerPassword</key>
+		<string>$(ServerPassword)</string>
+		<key>ServerUsername</key>
+		<string>$(ServerUsername)</string>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -59,17 +70,6 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>CustomSettings</key>
-	<dict>
-		<key>Configuration</key>
-		<string>$(CONFIGURATION)</string>
-		<key>ServerAddress</key>
-		<string>https://$(ServerAddress)</string>
-		<key>ServerUsername</key>
-		<string>$(ServerUsername)</string>
-		<key>ServerPassword</key>
-		<string>$(ServerPassword)</string>
-	</dict>
 	<key>NSMainNibFile</key>
 	<string>MainWindow_iPhone</string>
 	<key>NSMainNibFile~ipad</key>
@@ -80,6 +80,8 @@
 		<string>GillSansAltOne.otf</string>
 		<string>GillSansAltOneBold.otf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
