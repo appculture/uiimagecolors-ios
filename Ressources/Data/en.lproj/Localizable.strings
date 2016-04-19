@@ -259,3 +259,7 @@
 "StoreDetails.ShopClosed" = "This branch is currently closed for renovation. More information is available at «Special opening hours.»";
 "StoreDetails.Holidays.NoItems" = "No special opening hours are planned for the time being.";
 "Contact.ManagerText" = "";
+
+// Version 1.4
+
+"Globus.Terms.URL" = "https://www.globuscard.ch/en/terms.html";
