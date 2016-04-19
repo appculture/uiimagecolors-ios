@@ -10,7 +10,6 @@
 #import "ABTableViewController.h"
 #import "LoginFormViewController.h"
 #import "UIRemoteImageView.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @class EANCodeCell;
 
@@ -30,8 +29,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *welcomeTextLabel;
 @property (nonatomic, strong) IBOutlet UIButton *loginButton;
 @property (nonatomic, strong) IBOutlet UIButton *registerButton;
-@property (nonatomic, strong) IBOutlet UIView *videoView;
-@property (nonatomic, strong) MPMoviePlayerController *player;
 
 -(IBAction)loginButtonClicked:(id)sender;
 -(IBAction)registrationButtonClicked:(id)sender;

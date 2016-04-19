@@ -37,7 +37,6 @@
 		805FD92B14ED48ED00EC9377 /* RegistrationForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92A14ED48ED00EC9377 /* RegistrationForm.plist */; };
 		805FD93114ED541000EC9377 /* AddressBookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92D14ED541000EC9377 /* AddressBookButton.png */; };
 		805FD93214ED541000EC9377 /* AddressBookButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92E14ED541000EC9377 /* AddressBookButton@2x.png */; };
-		8061ABAC16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */; };
 		8088FE0F15623CC60021D978 /* agb.html in Resources */ = {isa = PBXBuildFile; fileRef = 8088FE1115623CC60021D978 /* agb.html */; };
 		808C128D153C352E00F04ECB /* StoreViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808C128C153C352D00F04ECB /* StoreViewController~ipad.xib */; };
 		808CFF6F1553C29E00940E13 /* globuslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF6B1553C29E00940E13 /* globuslogo.png */; };
@@ -82,10 +81,8 @@
 		8091A2C8152319FE007F3EC6 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C6152319FE007F3EC6 /* Phone.png */; };
 		8091A2C9152319FE007F3EC6 /* Phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C7152319FE007F3EC6 /* Phone@2x.png */; };
 		8091A2CF15235478007F3EC6 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */; };
-		80922FBE155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */; };
 		8093ABB9154561020057C5B7 /* coupon_inactive.html in Resources */ = {isa = PBXBuildFile; fileRef = 8093ABB8154561020057C5B7 /* coupon_inactive.html */; };
 		8093ABBC154579960057C5B7 /* coupon-inactive.css in Resources */ = {isa = PBXBuildFile; fileRef = 8093ABBB154579960057C5B7 /* coupon-inactive.css */; };
-		8093B4E61540007B00F7A20F /* GlobusCard_Animation.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */; };
 		8095AD9F14DA9FC700874AB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AD9E14DA9FC700874AB7 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8095ADA114DA9FC700874AB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095ADA014DA9FC700874AB7 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8095ADA314DA9FC700874AB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095ADA214DA9FC700874AB7 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -172,6 +169,7 @@
 		80FAAF41195AFE8200C3C18B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3B195AFE3E00C3C18B /* AdSupport.framework */; };
 		80FAAF42195AFE8800C3C18B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */; };
 		80FAAF43195AFE9000C3C18B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3F195AFE5B00C3C18B /* libz.dylib */; };
+		8B1512511CC6347E0057F3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */; };
 		8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */; };
 		8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */; };
 		B60C01C71519E8880006877E /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
@@ -290,7 +288,6 @@
 		805FD92A14ED48ED00EC9377 /* RegistrationForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RegistrationForm.plist; sourceTree = "<group>"; };
 		805FD92D14ED541000EC9377 /* AddressBookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddressBookButton.png; sourceTree = "<group>"; };
 		805FD92E14ED541000EC9377 /* AddressBookButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AddressBookButton@2x.png"; sourceTree = "<group>"; };
-		8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlobusCard_Animation_5.mov; sourceTree = "<group>"; };
 		8088FE1015623CC60021D978 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/agb.html; sourceTree = "<group>"; };
 		8088FE1315623CCB0021D978 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/agb.html; sourceTree = "<group>"; };
 		8088FE1415623CCD0021D978 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = fr; path = fr.lproj/agb.html; sourceTree = "<group>"; };
@@ -343,10 +340,8 @@
 		8091A2C6152319FE007F3EC6 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
 		8091A2C7152319FE007F3EC6 /* Phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone@2x.png"; sourceTree = "<group>"; };
 		8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow_iPad.xib; path = Globus/MainWindow_iPad.xib; sourceTree = SOURCE_ROOT; };
-		80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "GlobusCard_Animation-ipad.mov"; sourceTree = "<group>"; };
 		8093ABB8154561020057C5B7 /* coupon_inactive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_inactive.html; sourceTree = "<group>"; };
 		8093ABBB154579960057C5B7 /* coupon-inactive.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "coupon-inactive.css"; sourceTree = "<group>"; };
-		8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlobusCard_Animation.mov; sourceTree = "<group>"; };
 		8095AD9A14DA9FC700874AB7 /* Globus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Globus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8095AD9E14DA9FC700874AB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8095ADA014DA9FC700874AB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -489,6 +484,7 @@
 		80FAAF3B195AFE3E00C3C18B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		80FAAF3F195AFE5B00C3C18B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = FloatingCloudKit.a; path = Globus/floatingcloud/FloatingCloudKit.a; sourceTree = "<group>"; };
 		8B6F0D991CBBF712002ED42B /* FloatingCloudKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FloatingCloudKit.h; path = headers/FloatingCloudKit.h; sourceTree = "<group>"; };
 		8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
@@ -743,17 +739,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		8093B4E31540007B00F7A20F /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */,
-				8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */,
-				80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */,
-			);
-			name = Videos;
-			path = Video;
-			sourceTree = "<group>";
-		};
 		8095AD8F14DA9FC700874AB7 = {
 			isa = PBXGroup;
 			children = (
@@ -870,7 +855,6 @@
 				8095ADDC14DAB93400874AB7 /* Forms */,
 				8095ADEF14DABA2900874AB7 /* XIB */,
 				8095ADDE14DAB93400874AB7 /* Images */,
-				8093B4E31540007B00F7A20F /* Videos */,
 				808FB6EE151B309B00FE4FED /* Fonts */,
 				801DBEE71541608900C000E7 /* HTML */,
 				B6E4C268152AF4E500F1C55D /* Certificates */,
@@ -908,6 +892,7 @@
 		8095ADEF14DABA2900874AB7 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */,
 				8095ADF314DABA6600874AB7 /* MainWindow_iPhone.xib */,
 				8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */,
 				8095ADF014DABA3600874AB7 /* ViewControllers */,
@@ -1367,6 +1352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8095ADF414DABA6600874AB7 /* MainWindow_iPhone.xib in Resources */,
+				8B1512511CC6347E0057F3AF /* LaunchScreen.storyboard in Resources */,
 				809C619F14DC3BF600FD3AFC /* TabBarItem1@2x.png in Resources */,
 				809C61A114DC3CB000FD3AFC /* TabBarItem1.png in Resources */,
 				809C61AE14DC3F8600FD3AFC /* Localizable.strings in Resources */,
@@ -1439,7 +1425,6 @@
 				B6372D26153D777F005F1E75 /* CouponsViewController.xib in Resources */,
 				B6C7EB33153FF9CE00CFFEED /* new.png in Resources */,
 				B6C7EB38153FFA6400CFFEED /* new@2x.png in Resources */,
-				8093B4E61540007B00F7A20F /* GlobusCard_Animation.mov in Resources */,
 				F845D99E18C4BA4A007E483D /* GlobusCardViewController-iPad.xib in Resources */,
 				801DBEE91541608900C000E7 /* globus.html in Resources */,
 				801DBEEB1541660E00C000E7 /* holidays.html in Resources */,
@@ -1483,14 +1468,12 @@
 				808CFFA01553FF1000940E13 /* images_en-iPad.css in Resources */,
 				808CFFA11553FF1000940E13 /* images_fr-iPad.css in Resources */,
 				808CFFA21553FF1000940E13 /* images_it-iPad.css in Resources */,
-				80922FBE155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov in Resources */,
 				809C20A315667EB2006EBCA8 /* StoreListViewController.xib in Resources */,
 				8016784B156D0BE00016CD4D /* Pin.png in Resources */,
 				8016784C156D0BE00016CD4D /* Pin@2x.png in Resources */,
 				8016785B156D49950016CD4D /* DefaultStoreQuery_de.json in Resources */,
 				8016785C156D49950016CD4D /* DefaultStoreQuery_fr.json in Resources */,
 				B6ACC2D51636B9D200A4DE09 /* CouponsDB.sqlite in Resources */,
-				8061ABAC16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov in Resources */,
 				80D7BF4C17CB9E3F00113609 /* FloatingCloudConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1747,7 +1730,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1767,7 +1749,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1827,7 +1808,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1895,7 +1875,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1954,7 +1933,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
