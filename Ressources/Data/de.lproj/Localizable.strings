@@ -259,3 +259,7 @@
 "StoreDetails.ShopClosed" = "Diese Filiale ist wegen Umbau im Moment geschlossen. Weitere Informationen finden Sie unter „Sonderöffnungszeiten“.";
 "StoreDetails.Holidays.NoItems" = "Zur Zeit sind keine Sonderöffnungszeiten geplant.";
 "Contact.ManagerText" = "";
+
+// Version 1.4
+
+"Globus.Terms.URL" = "https://www.globuscard.ch/de/agb.html";

@@ -122,15 +122,19 @@
 		
 	} else
 		url = [NSURL URLWithString:NSLocalizedString(@"Contact.WebsiteUrl", @"")];
-		
+
+    [self presentBrowserWithTitle:@"GlobusCard" andURL:url];
+}
+
+- (void)presentBrowserWithTitle:(NSString *)title andURL:(NSURL *)url {
     [[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:url];
-	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"GlobusCard"];
+    [[browserNC.viewControllers objectAtIndex:0] setTitle:title];
     if ([[GlobusController sharedInstance] is_iPad])
     {
         browserNC.modalPresentationStyle = UIModalPresentationPageSheet;
         browserNC.modalInPopover = YES;
     }
-	[self presentViewController:browserNC animated:YES completion:nil];
+    [self presentViewController:browserNC animated:YES completion:nil];
 }
 
 - (void)openWebView
@@ -250,7 +254,10 @@
 	else if ([action isEqualToString:@"OpenWebView"])
 	{
 		[[GlobusController sharedInstance] analyticsTrackEvent:@"Info" action:@"Click" label:@"GTC" value:@0];
-		[self openWebView];
+        NSString *termsTitle = NSLocalizedString(@"Contact.ContactButton", @"");
+        NSString *urlString = NSLocalizedString(@"Globus.Terms.URL", @"");
+        NSURL *url = [NSURL URLWithString:urlString];
+        [self presentBrowserWithTitle:termsTitle andURL:url];
 	}
 	
 	[theTableView deselectRowAtIndexPath:theTableView.indexPathForSelectedRow animated:YES];
