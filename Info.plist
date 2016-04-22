@@ -68,6 +68,15 @@
 				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
+			<key>appculture.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 		</dict>
 	</dict>
 	<key>NSMainNibFile</key>
