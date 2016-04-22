@@ -40,6 +40,7 @@ static LocationController *sharedLocationController = nil;
 	if (self)
 	{
 		locationManager = [[CLLocationManager alloc] init];
+        [locationManager requestWhenInUseAuthorization];
 		locationManager.delegate = self;
 		locationValid = NO;
 		locationTracking = NO;
