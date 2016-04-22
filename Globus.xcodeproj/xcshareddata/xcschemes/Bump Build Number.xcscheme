@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cd $PROJECT_DIR&#10;&#10;OLD_BUILD=$(agvtool what-version -terse)&#10;&#10;agvtool next-version -all&#10;&#10;VERSION=$(agvtool what-marketing-version -terse1)&#10;NEW_BUILD=$(agvtool what-version -terse)&#10;&#10;echo &quot;Bumped build from $OLD_BUILD to $NEW_BUILD [Version: $VERSION Build: $NEW_BUILD]&quot; | pbcopy&#10;">
+               scriptText = "cd $PROJECT_DIR&#10;&#10;OLD_BUILD=$(agvtool what-version -terse)&#10;&#10;agvtool next-version -all&#10;&#10;VERSION=$(agvtool what-marketing-version -terse1)&#10;NEW_BUILD=$(agvtool what-version -terse)&#10;&#10;echo &quot;Bumped build from $OLD_BUILD to $NEW_BUILD [Version: $VERSION Build: $NEW_BUILD]&quot; | pbcopy">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
