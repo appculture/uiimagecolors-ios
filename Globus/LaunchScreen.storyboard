@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -22,23 +24,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchGradient" translatesAutoresizingMaskIntoConstraints="NO" id="9EA-Le-1Pp">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GLOBUS" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="164" y="195" width="416" height="48"/>
-                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-Wl-IH6">
-                                <rect key="frame" x="164" y="243" width="87" height="37"/>
-                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="32"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBall" translatesAutoresizingMaskIntoConstraints="NO" id="sVb-oB-19q">
-                                <rect key="frame" x="24" y="243" width="120" height="240"/>
+                                <rect key="frame" x="20" y="228" width="150" height="294"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="7Zb-cJ-cUK"/>
-                                    <constraint firstAttribute="width" constant="120" id="Qba-2Z-7fc"/>
+                                    <constraint firstAttribute="width" secondItem="sVb-oB-19q" secondAttribute="height" multiplier="51:100" id="sfu-Ep-n0G"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GlobuscardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="uWI-ta-6XO">
+                                <rect key="frame" x="190" y="179" width="286" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uWI-ta-6XO" secondAttribute="height" multiplier="180:61" id="Pvn-lJ-Mys"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -46,15 +41,14 @@
                         <constraints>
                             <constraint firstItem="9EA-Le-1Pp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1Tn-2z-WvZ"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9EA-Le-1Pp" secondAttribute="bottom" id="8s2-6f-Xqa"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="sVb-oB-19q" secondAttribute="trailing" constant="20" id="GgW-y8-MTz"/>
                             <constraint firstItem="9EA-Le-1Pp" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:2" id="L7y-vZ-nna"/>
-                            <constraint firstItem="HRy-Wl-IH6" firstAttribute="top" secondItem="GJd-Yh-RWb" secondAttribute="bottom" id="OUN-Py-YEK"/>
-                            <constraint firstItem="HRy-Wl-IH6" firstAttribute="leading" secondItem="GJd-Yh-RWb" secondAttribute="leading" id="Q0Z-2O-mqh"/>
+                            <constraint firstItem="uWI-ta-6XO" firstAttribute="leading" secondItem="sVb-oB-19q" secondAttribute="trailing" constant="20" id="PAJ-vS-J2m"/>
+                            <constraint firstItem="sVb-oB-19q" firstAttribute="width" secondItem="9EA-Le-1Pp" secondAttribute="width" multiplier="1:4" id="W0X-Hr-a32"/>
+                            <constraint firstItem="9EA-Le-1Pp" firstAttribute="top" secondItem="uWI-ta-6XO" secondAttribute="bottom" constant="24" id="W7P-UT-hNL"/>
                             <constraint firstAttribute="trailing" secondItem="9EA-Le-1Pp" secondAttribute="trailing" id="acq-Mi-Ixi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GJd-Yh-RWb" secondAttribute="trailing" id="mE2-DE-L70"/>
-                            <constraint firstItem="9EA-Le-1Pp" firstAttribute="top" secondItem="HRy-Wl-IH6" secondAttribute="bottom" constant="20" id="qsX-92-whx"/>
-                            <constraint firstItem="sVb-oB-19q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="24" id="yaR-YW-XPC"/>
-                            <constraint firstItem="sVb-oB-19q" firstAttribute="top" secondItem="HRy-Wl-IH6" secondAttribute="top" id="zDo-Lx-gNa"/>
+                            <constraint firstItem="uWI-ta-6XO" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1:2.1" id="bTd-FO-w9A"/>
+                            <constraint firstItem="sVb-oB-19q" firstAttribute="top" secondItem="uWI-ta-6XO" secondAttribute="centerY" id="cqD-Tl-nnq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sVb-oB-19q" secondAttribute="leading" id="viB-Lp-SdR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -64,7 +58,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchBall" width="120" height="240"/>
+        <image name="GlobuscardLogo" width="256" height="87"/>
+        <image name="LaunchBall" width="153" height="300"/>
         <image name="LaunchGradient" width="736" height="368"/>
     </resources>
 </document>
