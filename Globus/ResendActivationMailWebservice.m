@@ -38,7 +38,8 @@
 	
 	NSString *lang = [[GlobusController sharedInstance] userSelectedLang];
 	
-	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@/resendActivationMail?lang=%@",kServerAddress,userEmail,lang];
+    NSString *serverAddress = [UIApplication serverAddress];
+	NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@/resendActivationMail?lang=%@", serverAddress,userEmail,lang];
     
     NSMutableDictionary *dicToSend = [NSMutableDictionary dictionaryWithCapacity:1];
     

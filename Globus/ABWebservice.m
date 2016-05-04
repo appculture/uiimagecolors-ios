@@ -67,10 +67,11 @@
 		
 		if ([delegate respondsToSelector:@selector(webserviceWillStart:)])
 			[delegate webserviceWillStart:self];
+        
+        if ([UIApplication isDebug]) {
+            NSLog(@"ABWebservice started with request URL: %@", theRequest.URL.absoluteString);
+        }
 
-#if DEBUG
-		NSLog(@"ABWebservice started with request URL: %@", theRequest.URL.absoluteString);
-#endif
 		self.connection = [NSURLConnection connectionWithRequest:theRequest delegate:self];
 	}
 }
@@ -81,9 +82,10 @@
 	
 	if (running)
 	{
-#if DEBUG
-		NSLog(@"ABWebservice cancelled with request URL: %@", request.URL.absoluteString);
-#endif
+        if ([UIApplication isDebug]) {
+            NSLog(@"ABWebservice cancelled with request URL: %@", request.URL.absoluteString);
+        }
+
 		self.request = nil;
 		
 		canStop = NO;
@@ -108,7 +110,7 @@
 	
 	self.response = theResponse;
 	
-	int statusCode = ((NSHTTPURLResponse *)theResponse).statusCode;
+	NSInteger statusCode = ((NSHTTPURLResponse *)theResponse).statusCode;
     
     __block BOOL isValidCode = NO;
     
@@ -166,12 +168,12 @@
 	if ([delegate respondsToSelector:@selector(webserviceDidFinishLoading:)])
 		[delegate webserviceDidFinishLoading:self];
 	
-#if DEBUG
-	if (returnObjectType == ABWebserviceReturnObjectTypeNSString || returnObjectType == ABWebserviceReturnObjectTypeNSPropertyList || returnObjectType == ABWebserviceReturnObjectTypeOther)
-		NSLog(@"Webservice returned with response: %@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
-	else
-		NSLog(@"Webservice returned with binary response of length: %lu", (unsigned long)responseData.length);
-#endif
+    if ([UIApplication isDebug]) {
+        if (returnObjectType == ABWebserviceReturnObjectTypeNSString || returnObjectType == ABWebserviceReturnObjectTypeNSPropertyList || returnObjectType == ABWebserviceReturnObjectTypeOther)
+            NSLog(@"Webservice returned with response: %@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+        else
+            NSLog(@"Webservice returned with binary response of length: %lu", (unsigned long)responseData.length);
+    }
 
 	if (backgroundProcessingEnabled)
 		[NSThread detachNewThreadSelector:@selector(buildObjectThreadedWithData:) toTarget:self withObject:responseData];

@@ -16,7 +16,7 @@
 #import "StoreResult.h"
 #import "SystemUserSingleton.h"
 #import "AppDelegate.h"
-#import "FloatingCloudLib.h"
+#import "FloatingCloudKit.h"
 #import "GAI.h"
 #import "GAIFields.h"
 #import "GAIDictionaryBuilder.h"
@@ -110,8 +110,6 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActiveNotification:) name:UIApplicationWillResignActiveNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackgroundNotification:) name:UIApplicationDidEnterBackgroundNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminateNotification:) name:UIApplicationWillTerminateNotification object:nil];
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fcAuthenticatedNotification:) name:[[FloatingCloudLib sharedInstance] apiSessionVerifiedNotification] object:nil];
-		
 
 		self.couponLanguage = [[NSUserDefaults standardUserDefaults] valueForKey:@"couponLanguage"];
 		
@@ -193,27 +191,18 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 		uniqueKey = _loggedUser.email;
 	
 	if (self.deviceToken)
-		[[FloatingCloudLib sharedInstance] registerWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
+        [[FloatingCloudKit sharedInstance] registerWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey isActive:YES completion:^(BOOL success) {
+            NSLog(@"Registered with success: %d, device token: %@", success, [[FloatingCloudKit sharedInstance] deviceToken]);
+        }];
 }
 
 - (void)floatingcloudAuthenticateAndRegister
 {
-    NSString *currentLang = [self userSelectedLang];
-	NSString *uniqueKey = nil;
-	if (_loggedUser)
-		uniqueKey = _loggedUser.email;
-	
 	if (self.deviceToken)
-		[[FloatingCloudLib sharedInstance] authenticateAndRegisterWithDeviceToken:self.deviceToken languageKey:currentLang uniqueKey:uniqueKey];
+        [[FloatingCloudKit sharedInstance] authenticate:^(BOOL success) {
+            NSLog(@"Authenticated with success: %d, device token: %@", success, [[FloatingCloudKit sharedInstance] deviceToken]);
+        }];
 }
-
-#pragma mark - Floatingcloud Notifications
-
-- (void)fcAuthenticatedNotification:(NSNotification *)theNotification
-{
-    NSLog(@"Registered with device token: %@", [[FloatingCloudLib sharedInstance] deviceToken]);
-}
-
 
 #pragma mark - Notifications
 
@@ -599,78 +588,73 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 
 - (void)analyticsStartTracking
 {
-#if DEBUG
-	NSLog(@"No google analytics tracking");
-#endif
-	
-#if !DEBUG
-	// Optional: automatically send uncaught exceptions to Google Analytics.
-	[GAI sharedInstance].trackUncaughtExceptions = YES;
-	
-	// Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-	[GAI sharedInstance].dispatchInterval = kGoogleAnalyticsDispatchPeriodSec;
-	
-	// Optional: set Logger to VERBOSE for debug information.
-	[[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelNone];
-	
-	// Initialize tracker. Replace with your tracking ID.
-	[[GAI sharedInstance] trackerWithTrackingId:kGoogleAnalyticsAccountId];
-	
-	// May return nil if a tracker has not yet been initialized.
-	id tracker = [[GAI sharedInstance] defaultTracker];
-	
-	// Start a new session. The next hit from this tracker will be the first in
-	// a new session.
-	[tracker set:kGAISessionControl
-		   value:@"start"];
-#endif
+    if ([UIApplication isDebug]) {
+        NSLog(@"No google analytics tracking");
+    }
+    
+    if (![UIApplication isDebug]) {
+        // Optional: automatically send uncaught exceptions to Google Analytics.
+        [GAI sharedInstance].trackUncaughtExceptions = YES;
+        
+        // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+        [GAI sharedInstance].dispatchInterval = kGoogleAnalyticsDispatchPeriodSec;
+        
+        // Optional: set Logger to VERBOSE for debug information.
+        [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelNone];
+        
+        // Initialize tracker. Replace with your tracking ID.
+        [[GAI sharedInstance] trackerWithTrackingId:kGoogleAnalyticsAccountId];
+        
+        // May return nil if a tracker has not yet been initialized.
+        id tracker = [[GAI sharedInstance] defaultTracker];
+        
+        // Start a new session. The next hit from this tracker will be the first in a new session.
+        [tracker set:kGAISessionControl value:@"start"];
+    }
 }
 
 - (void)analyticsStopTracking
 {
-#if !DEBUG
-	// May return nil if a tracker has not yet been initialized.
-	id tracker = [[GAI sharedInstance] defaultTracker];
-	
-	// End a session. The next hit from this tracker will be the last in the
-	// current session.
-	[tracker set:kGAISessionControl value:@"end"];
-#endif
+    if (![UIApplication isDebug]) {
+        // May return nil if a tracker has not yet been initialized.
+        id tracker = [[GAI sharedInstance] defaultTracker];
+        
+        // End a session. The next hit from this tracker will be the last in the
+        // current session.
+        [tracker set:kGAISessionControl value:@"end"];
+    }
 }
 
 - (void)analyticsTrackPageview:(NSString *)pageURL
 {
-#if !DEBUG
-	// May return nil if a tracker has not already been initialized with a
-	// property ID.
-	id tracker = [[GAI sharedInstance] defaultTracker];
-	
-	// This screen name value will remain set on the tracker and sent with
-	// hits until it is set to a new value or to nil.
-	[tracker set:kGAIScreenName value:pageURL];
-	
-	[tracker send:[[GAIDictionaryBuilder createAppView] build]];
-#endif
-#if DEBUG
-	NSLog(@"PageView Tacking: %@", pageURL);
-#endif
+    if (![UIApplication isDebug]) {
+        // May return nil if a tracker has not already been initialized with a
+        // property ID.
+        id tracker = [[GAI sharedInstance] defaultTracker];
+        
+        // This screen name value will remain set on the tracker and sent with
+        // hits until it is set to a new value or to nil.
+        [tracker set:kGAIScreenName value:pageURL];
+        
+        [tracker send:[[GAIDictionaryBuilder createAppView] build]];
+    } else {
+        NSLog(@"PageView Tacking: %@", pageURL);
+    }
 }
 
 - (void)analyticsTrackEvent:(NSString *)category action:(NSString *)action label:(NSString *)label value:(NSNumber *)value
 {
-#if !DEBUG
-	// May return nil if a tracker has not already been initialized with a property
-	// ID.
-	id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
-	
-	[tracker send:[[GAIDictionaryBuilder createEventWithCategory:category     // Event category (required)
-														  action:action  // Event action (required)
-														   label:label          // Event label
-														   value:value] build]];    // Event value
-#endif
-#if DEBUG
-	NSLog(@"Event Tacking: Category: %@    Action: %@    Label: %@    Value:%i", category, action, label, [value intValue]);
-#endif
+    if (![UIApplication isDebug]) {
+        // May return nil if a tracker has not already been initialized with a property ID.
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:category     // Event category (required)
+                                                              action:action  // Event action (required)
+                                                               label:label          // Event label
+                                                               value:value] build]];    // Event value
+    } else {
+        NSLog(@"Event Tacking: Category: %@    Action: %@    Label: %@    Value:%i", category, action, label, [value intValue]);
+    }
 }
 
 @end

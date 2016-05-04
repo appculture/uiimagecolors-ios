@@ -19,20 +19,14 @@
 @interface GlobusCardViewController ()
 
 @property (nonatomic, strong) EANCodeCell *eanCodeCell;
-//@property (nonatomic, strong) UIView *fakeNavBar;
 @property (nonatomic) BOOL isRetinaDisplay;
 @property (nonatomic, strong) SingleTextCell *profileTextCell;
 @property (nonatomic) BOOL isLoginWrong;
-@property (nonatomic, strong) UIImageView *splashImage;
 
 - (void)initObject;
-//- (void)orientationChanged;
 - (void)infoBtnTouched;
-- (void)setTabBarHidden:(BOOL)hidden withDuration:(float)theDuration;
 
 - (void)globusControllerStartLoginNotification:(NSNotification *)theNotification;
-- (void) moviePlayBackDidFinish:(NSNotification*)theNotification;
-- (void)movieStartPlaying:(NSNotification*)notification;
 
 @end
 
@@ -53,10 +47,7 @@
 @synthesize profileTextCell = _profileTextCell;
 @synthesize loginButton = _loginButton;
 @synthesize registerButton = _registerButton;
-@synthesize videoView = _videoView;
-@synthesize player = _player;
 @synthesize isLoginWrong = _isLoginWrong;
-@synthesize splashImage = _splashImage;
 
 #pragma mark - Housekeeping
 
@@ -120,68 +111,15 @@
 	self.tableView.backgroundColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableViewBackground"];
     self.view.backgroundColor = self.tableView.backgroundColor;
 	
-	NSString *url;
-	if ([[GlobusController sharedInstance] is_iPad])
-		url = [[NSBundle mainBundle] pathForResource:@"GlobusCard_Animation-ipad" ofType:@"mov"];
-	else
-	{
-		if (isPhone568)
-			url = [[NSBundle mainBundle] pathForResource:@"GlobusCard_Animation_5" ofType:@"mov"];
-		else
-			url = [[NSBundle mainBundle] pathForResource:@"GlobusCard_Animation" ofType:@"mov"];
-	}
-		
-	_player = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:url]];
-	
-//	if ([[GlobusController sharedInstance] is_iPad])
-//		_player.view.frame = CGRectMake(0.0, 0.0, 768.0, 1024.0);
-//	else
-//		_player.view.frame = CGRectMake(0.0, 0.0, 320.0, 480.0);
-	
-	_player.view.frame = self.tabBarController.view.frame;
-	_player.scalingMode = MPMovieScalingModeAspectFill;
-	_player.controlStyle = MPMovieControlStyleNone;
-	_player.view.backgroundColor = [UIColor clearColor];
-    _player.backgroundView.backgroundColor = [UIColor clearColor];
-	[_player prepareToPlay];
-	_player.shouldAutoplay = NO;
-	[_videoView addSubview:_player.view];
-    _videoView.backgroundColor = [UIColor clearColor];
-
-	UIImage *image;
-	if ([[GlobusController sharedInstance] is_iPad])
-		image = [UIImage imageNamed:@"LaunchImage-700-Portrait~ipad"];
-	else
-	{
-		if (isPhone568)
-			image = [UIImage imageNamed:@"LaunchImage-700-568h"];
-		else
-			image = [UIImage imageNamed:@"LaunchImage-700"];
-	}
-    self.splashImage = [[UIImageView alloc] initWithImage:image];
-    [_videoView addSubview:_splashImage];
-	
-	if ([[GlobusController sharedInstance] isNewStart] && [[ApnsController sharedInstance] pushState] == PushNotificationStateNone)
-	{
-		[self setTabBarHidden:YES withDuration:0.0];
-        [self.navigationController setNavigationBarHidden:YES animated:NO];
-		[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
-		
-		_videoView.hidden = NO;
-		_player.view.hidden = NO;
-		
-		[self.view addSubview:_videoView];
-	}
-	
 	_isLoginWrong = NO;
+    
+    [[GlobusController sharedInstance] setIsNewStart:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
 	
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlayBackDidFinish:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieStartPlaying:) name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(globusControllerStartLoginNotification:) name:GlobusControllerStartLoginNotification object:nil];
 	
 	[_loginRegistrationView setHidden:[[GlobusController sharedInstance] isLoggedIn]];
@@ -210,16 +148,6 @@
 	[[GlobusController sharedInstance] analyticsTrackPageview:[self.navigationController pagePath]];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-	[super viewDidAppear:animated];
-    
-    if(!_videoView.hidden) {
-        [_player play];
-    }
-	
-}
-
 - (void)viewWillDisappear:(BOOL)animated
 {
 	[super viewWillDisappear:animated];
@@ -227,9 +155,7 @@
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
     self.navigationItem.rightBarButtonItem.customView.alpha = 0.0;
 	
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:GlobusControllerStartLoginNotification object:nil]; 
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:GlobusControllerStartLoginNotification object:nil];
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
@@ -345,8 +271,9 @@
 				resolution = kGlobusCardBarcodeResolutionRetina;
 			else
 				resolution = kGlobusCardBarcodeResolution;
+            NSString *serverAddress = [UIApplication serverAddress];
             ((EANCodeCell *)cell).urlString = [NSString stringWithFormat:@"%@/gcard/barcode/card.png?cardNbr=%@&resolution=%d&barHighMM=%f",
-                                               kServerAddress,cardNumber,resolution,kGlobusCardBarHighMM]; 
+                                               serverAddress,cardNumber,resolution,kGlobusCardBarHighMM];
         }
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -401,7 +328,8 @@
     NSNumber *cardNumber = [[[GlobusController sharedInstance] loggedUser] globusCard];
     if(cardNumber){
         int resolution = _isRetinaDisplay ? kGlobusCardBarcodeResolutionRetina : kGlobusCardBarcodeResolution;
-        _eanCodeCell.urlString = [NSString stringWithFormat:@"%@/gcard/barcode/card.png?cardNbr=%@&resolution=%d&barHighMM=%f",kServerAddress,cardNumber,resolution,kGlobusCardBarHighMM];
+        NSString *serverAddress = [UIApplication serverAddress];
+        _eanCodeCell.urlString = [NSString stringWithFormat:@"%@/gcard/barcode/card.png?cardNbr=%@&resolution=%d&barHighMM=%f", serverAddress, cardNumber,resolution,kGlobusCardBarHighMM];
         _eanCodeCell.eanCodeView.remoteURL = [NSURL URLWithString:_eanCodeCell.urlString];
     }
     if([[[GlobusController sharedInstance] loggedUser] firstName] && 
@@ -437,85 +365,13 @@
     }
 }
 
-- (void)setTabBarHidden:(BOOL)hidden withDuration:(float)theDuration {
-    CGFloat yValue = 0.0;
-    if([[GlobusController sharedInstance] is_iPad]){
-        if(hidden) {
-            //yValue = 1024;
-			yValue = self.tabBarController.view.frame.size.height;
-        } else {
-            yValue = self.tabBarController.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
-        }
-    } else {
-        if(hidden) {
-            //yValue = 480;
-			yValue = self.tabBarController.view.frame.size.height;
-        } else {
-            //yValue = 431;
-			yValue = self.tabBarController.view.frame.size.height - self.tabBarController.tabBar.frame.size.height;
-        }
-    }
-    
-    
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:theDuration];
-    for(UIView *view in self.tabBarController.view.subviews)
-    {
-        CGRect _rect = view.frame;
-        if([view isKindOfClass:[UITabBar class]])
-        {
-            _rect.origin.y = yValue;
-            [view setFrame:_rect];
-        } else {
-            _rect.size.height = yValue;
-            [view setFrame:_rect];
-        }
-    }    
-    [UIView commitAnimations];
-}
-
-
 #pragma mark - Notifications
 
 - (void)globusControllerStartLoginNotification:(NSNotification *)theNotification
 {
-	if (_player.view.hidden) {
-		[(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setTrackingName:@"login"];
-		[(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setTrackingCategory:@"Login"];
-		[self.navigationController presentViewController:_loginNC animated:YES completion:nil];
-	} else
-		_isLoginWrong = YES;
+    [(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setTrackingName:@"login"];
+    [(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setTrackingCategory:@"Login"];
+    [self.navigationController presentViewController:_loginNC animated:YES completion:nil];
 }
-
-- (void)moviePlayBackDidFinish:(NSNotification*)theNotification
-{      
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
-	
-	[_videoView removeFromSuperview];
-	_videoView.hidden = YES;
-	[self setTabBarHidden:NO withDuration:0.0];
-	[[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:NO];
-	[self.navigationController setNavigationBarHidden:NO animated:NO];
-	
-	_player.view.hidden = YES;
-	
-	[[GlobusController sharedInstance] setIsNewStart:NO];
-	
-//	[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged) name:@"UIDeviceOrientationDidChangeNotification" object:nil];
-	
-	if (_isLoginWrong) {
-		[(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setTrackingName:@"login"];
-		[(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setTrackingCategory:@"Login"];
-		[self.navigationController presentViewController:_loginNC animated:YES completion:nil];
-	}
-}
-
-- (void)movieStartPlaying:(NSNotification *)notification {
-    if ( _player.loadState == (MPMovieLoadStatePlayable | MPMovieLoadStatePlaythroughOK) &&  _player.playbackState == MPMoviePlaybackStatePlaying ) {
-        _splashImage.alpha = 0.0;
-    }
-}
-
 
 @end

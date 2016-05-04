@@ -251,7 +251,7 @@
 		{
 			NSString *name = [rowDictionary valueForKey:@"Name"];
 			NSString *required = [rowDictionary valueForKey:@"Required"];
-            int length = 0;
+            NSUInteger length = 0;
             if([[valueDictionary valueForKey:name] respondsToSelector:@selector(length)]){
                 length = [[valueDictionary valueForKey:name] length];
             } else {

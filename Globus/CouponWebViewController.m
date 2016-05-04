@@ -296,23 +296,23 @@
 		NSInteger seconds = remainder % 60;
 		
 		if (hours > 9)
-			[timeString appendFormat:@"%i", hours];
+			[timeString appendFormat:@"%li", (long)hours];
 		else if (hours < 10)
-			[timeString appendFormat:@"0%d", hours];
+			[timeString appendFormat:@"0%ld", (long)hours];
 		
 		[timeString appendString:@":"];
 		
 		if (minutes > 9)
-			[timeString appendFormat:@"%i", minutes];
+			[timeString appendFormat:@"%li", (long)minutes];
 		else if (minutes < 10)
-			[timeString appendFormat:@"0%i", minutes];
+			[timeString appendFormat:@"0%li", (long)minutes];
 		
 		[timeString appendString:@":"];
 			
 		if (seconds > 9)
-			[timeString appendFormat:@"%i", seconds];
+			[timeString appendFormat:@"%li", (long)seconds];
 		else if (seconds < 10)
-			[timeString appendFormat:@"0%i", seconds];
+			[timeString appendFormat:@"0%li", (long)seconds];
 		
 		_timeLabel.text = timeString;
 		

@@ -172,7 +172,7 @@
 "Contact.MapButton" = "Adresse";
 "Contact.MapButton.Value" = "Industriestrasse 171\n8957 Spreitenbach";
 "Contact.ContactButton" = "AGB";
-"Contact.YoungcultureUrl" = "www.youngculture-mobile.com";
+"Contact.Appculture.Url" = "www.appculture.com";
 "Contact.WebsiteText" = "Weitere Informationen zu GlobusCard\nfinden Sie unter";
 "Contact.WebsiteUrl" = "https://www.globuscard.ch/web-d";
 
@@ -259,3 +259,7 @@
 "StoreDetails.ShopClosed" = "Diese Filiale ist wegen Umbau im Moment geschlossen. Weitere Informationen finden Sie unter „Sonderöffnungszeiten“.";
 "StoreDetails.Holidays.NoItems" = "Zur Zeit sind keine Sonderöffnungszeiten geplant.";
 "Contact.ManagerText" = "";
+
+// Version 1.4
+
+"Globus.Terms.URL" = "https://www.globuscard.ch/agb";

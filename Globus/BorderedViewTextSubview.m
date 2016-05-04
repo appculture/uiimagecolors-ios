@@ -64,7 +64,7 @@
 		CGSize textSize = [textData boundingRectWithSize:(CGSize){MAXFLOAT, MAXFLOAT} options:kNilOptions attributes:@{NSFontAttributeName:_contentFont} context:nil].size;
         CGRect frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, textSize.width, textSize.height);
         self.frame = frame;
-    } else if ([keyPath isEqualToString:@"contentData"]){
+    } else if ([keyPath isEqualToString:@"contentData"] && self.contentFont){
         NSString *textData = NSLocalizedString(_contentData, @"");
 		CGSize textSize = [textData boundingRectWithSize:(CGSize){MAXFLOAT, MAXFLOAT} options:kNilOptions attributes:@{NSFontAttributeName:_contentFont} context:nil].size;
         CGRect frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, textSize.width, textSize.height);

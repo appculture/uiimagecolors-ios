@@ -112,14 +112,6 @@
 	[self.tableView reloadData];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -130,37 +122,16 @@
 	
 	self.tableView.backgroundColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableViewBackground"];
     self.view.backgroundColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableViewBackground"];
+    
+    // dirty bug fix - GAMIA-26
+    headerView.alpha = 0.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
 	
-	NSDictionary *headerDict;
-	for (NSDictionary *dict in _store.images)
-	{
-		if ([[dict valueForKey:@"type"] isEqualToString:@"Detail"])
-			headerDict = dict;
-	}
-	
-	if (headerDict && [headerDict valueForKey:@"url"])
-	{
-		if ([headerDict valueForKey:@"url"] != [NSNull null])
-		{
-			imageView.remoteURL = [NSURL URLWithString:[headerDict valueForKey:@"url"]];
-			imageView.delegate = self;
-			imageView.loadingIndicatorStyle = UIRemoteImageViewLoadingIndicatorStyleGray;
-			self.tableView.tableHeaderView = headerView;
-		} else 
-		{
-			imageView.remoteURL = nil;
-			self.tableView.tableHeaderView = nil;
-		}
-	} else
-	{
-		imageView.remoteURL = nil;
-		self.tableView.tableHeaderView = nil;
-	}
+    [self configureTableViewHeader];
 	
 	self.navigationItem.leftBarButtonItem.customView.alpha = 1;
 	
@@ -170,11 +141,66 @@
 	[[GlobusController sharedInstance] analyticsTrackPageview:[self.navigationController pagePath]];
 }
 
+- (void)configureTableViewHeader {
+    NSDictionary *headerDict;
+    for (NSDictionary *dict in self.store.images)
+    {
+        if ([[dict valueForKey:@"type"] isEqualToString:@"Detail"])
+            headerDict = dict;
+    }
+    
+    if (headerDict && [headerDict valueForKey:@"url"])
+    {
+        if ([headerDict valueForKey:@"url"] != [NSNull null])
+        {
+            // dirty bug fix - GAMIA-26
+            CGFloat headerHeight = [self tableViewHeaderHeight];
+            CGRect headerFrame = CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, headerHeight);
+            headerView.frame = headerFrame;
+            
+            imageView.remoteURL = [NSURL URLWithString:[headerDict valueForKey:@"url"]];
+            imageView.delegate = self;
+            imageView.loadingIndicatorStyle = UIRemoteImageViewLoadingIndicatorStyleGray;
+            
+            self.tableView.tableHeaderView = headerView;
+        } else
+        {
+            imageView.remoteURL = nil;
+            self.tableView.tableHeaderView = nil;
+        }
+    } else
+    {
+        imageView.remoteURL = nil;
+        self.tableView.tableHeaderView = nil;
+    }
+}
+
+- (CGFloat)tableViewHeaderHeight {
+    CGFloat headerHeight = 220.0;
+    if([[GlobusController sharedInstance] is_iPad]){
+        headerHeight = 380.0;
+    }
+    return headerHeight;
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-	
+    
+    [self fixHeaderHeightIfNeeded];
+    
 	[imageView startLoading];
+}
+
+- (void)fixHeaderHeightIfNeeded {
+    // dirty bug fix - GAMIA-26
+    CGFloat headerHeight = [self tableViewHeaderHeight];
+    if (headerView.alpha != 1.0 || self.tableView.tableHeaderView.bounds.size.height != headerHeight) {
+        [self configureTableViewHeader];
+        [UIView transitionWithView:headerView duration:0.3 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            headerView.alpha = 1.0;
+        } completion:nil];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -415,7 +441,7 @@
     if(indexPath.section == 0 && indexPath.row == kAddressCellRow) {
         return [[GlobusController sharedInstance] is_iPad] ? 88 : 66;
     } else if(indexPath.section == 1 && indexPath.row == 0) {
-		int height = 0;
+		NSUInteger height = 0;
 		for (NSDictionary *stores in _store.openingTimes) {
             if (stores[@"title"]) {
                 int size = [[GlobusController sharedInstance] is_iPad] ? 33 : 26;
@@ -439,46 +465,6 @@
     }
     return [[GlobusController sharedInstance] is_iPad] ? 66 : 44;
 }
-
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }   
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }   
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 #pragma mark - Table view delegate
 

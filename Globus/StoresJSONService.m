@@ -41,7 +41,8 @@
 	NSString *storeArrayLang = [[NSUserDefaults standardUserDefaults] valueForKey:@"lastStoreUpdateLang"];
 	NSString *lang = [[GlobusController sharedInstance] userSelectedLang];
 		
-	NSString *requestURLString = [NSString stringWithFormat:@"%@/storesquery/?lang=%@",kServerAddress, lang];
+    NSString *serverAddress = [UIApplication serverAddress];
+	NSString *requestURLString = [NSString stringWithFormat:@"%@/storesquery/?lang=%@", serverAddress, lang];
     
 	if(_lastUpdate && [storeArrayLang isEqualToString:lang]) {
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];

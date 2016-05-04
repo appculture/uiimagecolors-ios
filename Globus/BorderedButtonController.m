@@ -89,14 +89,14 @@
 
 - (void)registerTarget:(id)target andAction:(SEL)action forBorderedView:(BorderedView *)borderedView {
     if(target && action && borderedView) {
-        [_targetsForButtons setObject:target forKey:[NSString stringWithFormat:@"%d",[borderedView hash]]];
-        [_actionsForButtons setValue:[NSValue valueWithPointer:action] forKey:[NSString stringWithFormat:@"%d",[borderedView hash]]];
+        [_targetsForButtons setObject:target forKey:[NSString stringWithFormat:@"%lu",(unsigned long)[borderedView hash]]];
+        [_actionsForButtons setValue:[NSValue valueWithPointer:action] forKey:[NSString stringWithFormat:@"%lu",(unsigned long)[borderedView hash]]];
     }
 }
 - (void)performActionOnTouchForBorderedView:(BorderedView *)borderedView {
     if(borderedView && borderedView.name) {
-        id target = [_targetsForButtons objectForKey:[NSString stringWithFormat:@"%d",[borderedView hash]]];
-        SEL action = [[_actionsForButtons objectForKey:[NSString stringWithFormat:@"%d",[borderedView hash]]] pointerValue];
+        id target = [_targetsForButtons objectForKey:[NSString stringWithFormat:@"%lu",(unsigned long)[borderedView hash]]];
+        SEL action = [[_actionsForButtons objectForKey:[NSString stringWithFormat:@"%lu",(unsigned long)[borderedView hash]]] pointerValue];
         if(target && action) {
             if([target respondsToSelector:action]) {
 #pragma clang diagnostic push

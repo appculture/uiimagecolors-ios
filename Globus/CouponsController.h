@@ -13,11 +13,11 @@
 #define kCouponStateValidKey @"VALID"
 #define kCouponStateInvalidKey @"IN_VALID"
 
-enum CouponListState {
+typedef NS_ENUM(NSUInteger, CouponListState) {
     CouponListStateActive = 0,
     CouponListStateUsed = 1,
     CouponListStateHidden = 2
-} CouponListState;
+};
 
 @class Coupon;
 

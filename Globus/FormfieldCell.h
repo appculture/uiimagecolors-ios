@@ -11,7 +11,7 @@
 
 #define kiPhoneFormfieldCellTextLabelWidth 115.0
 #define kiPadFormfieldCellTextLabelWidth 300.0
-#define kiPhoneFormfieldCellTextLabelWidthEmail 85.0
+#define kiPhoneFormfieldCellTextLabelWidthEmail 90.0
 #define kiPadFormfieldCellTextLabelWidthEmail 260.0
 #define kiPhoneFormfieldCellFontSize 16.0
 #define kiPadFormfieldCellFontSize 22.0

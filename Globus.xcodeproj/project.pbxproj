@@ -37,7 +37,6 @@
 		805FD92B14ED48ED00EC9377 /* RegistrationForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92A14ED48ED00EC9377 /* RegistrationForm.plist */; };
 		805FD93114ED541000EC9377 /* AddressBookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92D14ED541000EC9377 /* AddressBookButton.png */; };
 		805FD93214ED541000EC9377 /* AddressBookButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92E14ED541000EC9377 /* AddressBookButton@2x.png */; };
-		8061ABAC16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */; };
 		8088FE0F15623CC60021D978 /* agb.html in Resources */ = {isa = PBXBuildFile; fileRef = 8088FE1115623CC60021D978 /* agb.html */; };
 		808C128D153C352E00F04ECB /* StoreViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808C128C153C352D00F04ECB /* StoreViewController~ipad.xib */; };
 		808CFF6F1553C29E00940E13 /* globuslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF6B1553C29E00940E13 /* globuslogo.png */; };
@@ -82,10 +81,8 @@
 		8091A2C8152319FE007F3EC6 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C6152319FE007F3EC6 /* Phone.png */; };
 		8091A2C9152319FE007F3EC6 /* Phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C7152319FE007F3EC6 /* Phone@2x.png */; };
 		8091A2CF15235478007F3EC6 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */; };
-		80922FBE155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */; };
 		8093ABB9154561020057C5B7 /* coupon_inactive.html in Resources */ = {isa = PBXBuildFile; fileRef = 8093ABB8154561020057C5B7 /* coupon_inactive.html */; };
 		8093ABBC154579960057C5B7 /* coupon-inactive.css in Resources */ = {isa = PBXBuildFile; fileRef = 8093ABBB154579960057C5B7 /* coupon-inactive.css */; };
-		8093B4E61540007B00F7A20F /* GlobusCard_Animation.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */; };
 		8095AD9F14DA9FC700874AB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AD9E14DA9FC700874AB7 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8095ADA114DA9FC700874AB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095ADA014DA9FC700874AB7 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8095ADA314DA9FC700874AB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095ADA214DA9FC700874AB7 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -163,247 +160,18 @@
 		80AA37731551644E00C644DA /* Bonus-Gutschein.png in Resources */ = {isa = PBXBuildFile; fileRef = 80AA37721551644E00C644DA /* Bonus-Gutschein.png */; };
 		80AA545114FD0C3E00026C37 /* CheckLoginJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AA545014FD0C3E00026C37 /* CheckLoginJSONReader.m */; };
 		80AAD9B715591D670089CE41 /* ImagesForCouponsJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AAD9B615591D670089CE41 /* ImagesForCouponsJSONReader.m */; };
-		80B5BBDF192F8FE80099AF8C /* StoreOpenTimesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B5BBDE192F8FE80099AF8C /* StoreOpenTimesCell.m */; };
 		80B5BBE0192F8FE80099AF8C /* StoreOpenTimesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B5BBDE192F8FE80099AF8C /* StoreOpenTimesCell.m */; };
-		80B5BBE3192F9CF50099AF8C /* StoreInfoTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B5BBE2192F9CF50099AF8C /* StoreInfoTextCell.m */; };
 		80B5BBE4192F9CF50099AF8C /* StoreInfoTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B5BBE2192F9CF50099AF8C /* StoreInfoTextCell.m */; };
-		80C6BFA717CE265D00E605F2 /* ApnsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C6BFA617CE265C00E605F2 /* ApnsController.m */; };
 		80C6BFA817CE265D00E605F2 /* ApnsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C6BFA617CE265C00E605F2 /* ApnsController.m */; };
 		80D7BF4C17CB9E3F00113609 /* FloatingCloudConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80D7BF4817CB9E3F00113609 /* FloatingCloudConfig.plist */; };
-		80E2E03E19599F2E003D670A /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2E03D19599F2E003D670A /* libGoogleAnalyticsServices.a */; };
 		80E2E03F19599F2E003D670A /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2E03D19599F2E003D670A /* libGoogleAnalyticsServices.a */; };
-		80E2E0461959C366003D670A /* TrackingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E2E0451959C366003D670A /* TrackingTableViewController.m */; };
 		80E2E0471959C366003D670A /* TrackingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E2E0451959C366003D670A /* TrackingTableViewController.m */; };
-		80E771FA17CCCF1A00C2E7BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095ADAE14DA9FC700874AB7 /* AppDelegate.m */; };
-		80E771FB17CCCF1A00C2E7BC /* GlobusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095ADF614DABBC800874AB7 /* GlobusController.m */; };
-		80E771FC17CCCF1A00C2E7BC /* CoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095ADF914DABBD000874AB7 /* CoreDataController.m */; };
-		80E771FD17CCCF1A00C2E7BC /* StylesheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095ADFC14DABBE500874AB7 /* StylesheetController.m */; };
-		80E771FE17CCCF1A00C2E7BC /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095ADFF14DAE17900874AB7 /* LocationController.m */; };
-		80E771FF17CCCF1A00C2E7BC /* ABWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096FFE714DFCDB400BFBCA5 /* ABWebservice.m */; };
-		80E7720017CCCF1A00C2E7BC /* UserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A99E1A14E12070004A9D20 /* UserResult.m */; };
-		80E7720117CCCF1A00C2E7BC /* UserJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A99E1F14E1539A004A9D20 /* UserJSONReader.m */; };
-		80E7720B17CCCF1A00C2E7BC /* Globus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A99E6F14E1701A004A9D20 /* Globus.xcdatamodeld */; };
-		80E7720C17CCCF1A00C2E7BC /* ManagedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A99E7414E17143004A9D20 /* ManagedUser.m */; };
-		80E7720D17CCCF1A00C2E7BC /* GlobusCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E47714EA522A0081F2C8 /* GlobusCardViewController.m */; };
-		80E7720E17CCCF1A00C2E7BC /* ABTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E48214EA52C10081F2C8 /* ABTableView.m */; };
-		80E7720F17CCCF1A00C2E7BC /* CacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E49014EA60220081F2C8 /* CacheController.m */; };
-		80E7721117CCCF1A00C2E7BC /* UIRemoteImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E49414EA60220081F2C8 /* UIRemoteImageView.m */; };
-		80E7721217CCCF1A00C2E7BC /* EANCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E49F14EA6CB70081F2C8 /* EANCodeCell.m */; };
-		80E7721317CCCF1A00C2E7BC /* ABTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E4A714EA6FA90081F2C8 /* ABTableViewController.m */; };
-		80E7721417CCCF1A00C2E7BC /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E4AA14EA6FFA0081F2C8 /* ABViewController.m */; };
-		80E7721517CCCF1A00C2E7BC /* UINavigationController+PagePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E4AD14EA704E0081F2C8 /* UINavigationController+PagePath.m */; };
-		80E7721617CCCF1A00C2E7BC /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8096E4B014EA70950081F2C8 /* InfoView.m */; };
-		80E7721717CCCF1A00C2E7BC /* ButtonFormfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A3414EC058000D70054 /* ButtonFormfieldCell.m */; };
-		80E7721817CCCF1A00C2E7BC /* FormfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A3614EC058000D70054 /* FormfieldCell.m */; };
-		80E7721917CCCF1A00C2E7BC /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A3814EC058000D70054 /* FormViewController.m */; };
-		80E7721A17CCCF1A00C2E7BC /* InputFormfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A3A14EC058000D70054 /* InputFormfieldCell.m */; };
-		80E7721B17CCCF1A00C2E7BC /* PickerFormfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A3C14EC058000D70054 /* PickerFormfieldCell.m */; };
-		80E7721C17CCCF1A00C2E7BC /* SwitchFormfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A3E14EC058000D70054 /* SwitchFormfieldCell.m */; };
-		80E7721D17CCCF1A00C2E7BC /* TextFormfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A4014EC058000D70054 /* TextFormfieldCell.m */; };
-		80E7721E17CCCF1A00C2E7BC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A07A4914EC063C00D70054 /* WebViewController.m */; };
-		80E7721F17CCCF1A00C2E7BC /* LoginFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805FD8FA14ECF52500EC9377 /* LoginFormViewController.m */; };
-		80E7722017CCCF1A00C2E7BC /* ABButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 805FD8FF14ECF75800EC9377 /* ABButton.m */; };
-		80E7722317CCCF1A00C2E7BC /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805FD92114ED388500EC9377 /* BrowserViewController.m */; };
-		80E7722417CCCF1A00C2E7BC /* RegistrationFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805FD92614ED44BE00EC9377 /* RegistrationFormViewController.m */; };
-		80E7722517CCCF1A00C2E7BC /* UICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A99BE814F23E7A00D28D7C /* UICellBackgroundView.m */; };
-		80E7722617CCCF1A00C2E7BC /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 809887FB14F3A8480036BE16 /* User.m */; };
-		80E7722717CCCF1A00C2E7BC /* CreateUserJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80969AD214F53AAD00F057B6 /* CreateUserJSONReader.m */; };
-		80E7722817CCCF1A00C2E7BC /* ResultStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 80969AD614F54B8B00F057B6 /* ResultStatus.m */; };
-		80E7722917CCCF1A00C2E7BC /* ValidationError.m in Sources */ = {isa = PBXBuildFile; fileRef = 80969AD914F5560300F057B6 /* ValidationError.m */; };
-		80E7722A17CCCF1A00C2E7BC /* CheckLoginJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AA545014FD0C3E00026C37 /* CheckLoginJSONReader.m */; };
-		80E7722B17CCCF1A00C2E7BC /* WebserviceWithAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B686306D14FF728B0047FDED /* WebserviceWithAuth.m */; };
-		80E7722C17CCCF1A00C2E7BC /* LoggedUserAuthDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B686307714FF78260047FDED /* LoggedUserAuthDataSource.m */; };
-		80E7722D17CCCF1A00C2E7BC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68DDCEB1500D19200B72552 /* ProfileViewController.m */; };
-		80E7722E17CCCF1A00C2E7BC /* SingleTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B68DDCF21500D75E00B72552 /* SingleTextCell.m */; };
-		80E7722F17CCCF1A00C2E7BC /* CustomCellFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FDA6E8150605D2000C6814 /* CustomCellFormViewController.m */; };
-		80E7723017CCCF1A00C2E7BC /* ChangeEmailFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B661E87B1510C87600685B43 /* ChangeEmailFormViewController.m */; };
-		80E7723117CCCF1A00C2E7BC /* ChangeEmailJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 808F476915122869004F39FC /* ChangeEmailJSONReader.m */; };
-		80E7723217CCCF1A00C2E7BC /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B661E8831511D6EE00685B43 /* EditProfileViewController.m */; };
-		80E7723317CCCF1A00C2E7BC /* ProfileUpdateJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B661E88A15121CDC00685B43 /* ProfileUpdateJSONReader.m */; };
-		80E7723417CCCF1A00C2E7BC /* BorderedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B69CAB961518BE9800FFEB53 /* BorderedView.m */; };
-		80E7723517CCCF1A00C2E7BC /* BorderedButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C01C91519EA880006877E /* BorderedButtonController.m */; };
-		80E7723617CCCF1A00C2E7BC /* BorderedViewImageSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E646E9151A209700A13258 /* BorderedViewImageSubview.m */; };
-		80E7723717CCCF1A00C2E7BC /* BorderedViewTextSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E646ED151B2B0F00A13258 /* BorderedViewTextSubview.m */; };
-		80E7723817CCCF1A00C2E7BC /* BorderedViewTransparentSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = B6996051151B3E76009BD0BD /* BorderedViewTransparentSubview.m */; };
-		80E7723917CCCF1A00C2E7BC /* BorderedViewSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = B6996055151B40EA009BD0BD /* BorderedViewSubview.m */; };
-		80E7723A17CCCF1A00C2E7BC /* WebserviceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64654D8151CACBB004F619C /* WebserviceProxy.m */; };
-		80E7723B17CCCF1A00C2E7BC /* WebserviceWithProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6573891151CB33200EFAC93 /* WebserviceWithProxy.m */; };
-		80E7723C17CCCF1A00C2E7BC /* NetworkActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6573895151CBC5A00EFAC93 /* NetworkActivityController.m */; };
-		80E7723D17CCCF1A00C2E7BC /* ChangePasswordFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80970031152060EF002D51DF /* ChangePasswordFormViewController.m */; };
-		80E7723E17CCCF1A00C2E7BC /* ChangePasswordJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 809700341520614E002D51DF /* ChangePasswordJSONReader.m */; };
-		80E7723F17CCCF1A00C2E7BC /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8091A2A61522FB9A007F3EC6 /* ContactViewController.m */; };
-		80E7724017CCCF1A00C2E7BC /* SectionTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8091A2AC1522FC0A007F3EC6 /* SectionTableView.m */; };
-		80E7724117CCCF1A00C2E7BC /* GlobusSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8091A2AF15230009007F3EC6 /* GlobusSectionHeaderView.m */; };
-		80E7724217CCCF1A00C2E7BC /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8091A2B215230132007F3EC6 /* ButtonCell.m */; };
-		80E7724317CCCF1A00C2E7BC /* PropertyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8091A2B515230174007F3EC6 /* PropertyCell.m */; };
-		80E7724717CCCF1A00C2E7BC /* CheckGlobusCardJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8049436E152DA5490057C96B /* CheckGlobusCardJSONReader.m */; };
-		80E7724817CCCF1A00C2E7BC /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B618A135152DC9B7002EC38E /* StoreViewController.m */; };
-		80E7724917CCCF1A00C2E7BC /* StoreDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA8B6A152ECC2000A9DA49 /* StoreDetailCell.m */; };
-		80E7724B17CCCF1A00C2E7BC /* SystemUserSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DFD85F153589F4000FBBB7 /* SystemUserSingleton.m */; };
-		80E7724C17CCCF1A00C2E7BC /* StoreWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B676EDF81536FE6400BA2E24 /* StoreWebViewController.m */; };
-		80E7724D17CCCF1A00C2E7BC /* CouponCellWithDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6372D20153D5DD8005F1E75 /* CouponCellWithDate.m */; };
-		80E7724E17CCCF1A00C2E7BC /* CouponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6372D23153D777C005F1E75 /* CouponsViewController.m */; };
-		80E7724F17CCCF1A00C2E7BC /* Coupon.m in Sources */ = {isa = PBXBuildFile; fileRef = B6372D28153D91A0005F1E75 /* Coupon.m */; };
-		80E7725017CCCF1A00C2E7BC /* CouponsWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = B6372D2B153D98A6005F1E75 /* CouponsWebservice.m */; };
-		80E7725217CCCF1A00C2E7BC /* HTMLTemplateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 801DBEE415415F4C00C000E7 /* HTMLTemplateParser.m */; };
-		80E7725317CCCF1A00C2E7BC /* CouponWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 801DBF081541B8DE00C000E7 /* CouponWebViewController.m */; };
-		80E7725417CCCF1A00C2E7BC /* TermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AA37661551575D00C644DA /* TermsViewController.m */; };
-		80E7725517CCCF1A00C2E7BC /* ResendActivationMailWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CB2DFA1552719800E92B1F /* ResendActivationMailWebservice.m */; };
-		80E7725617CCCF1A00C2E7BC /* ImagesForCouponsJSONReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AAD9B615591D670089CE41 /* ImagesForCouponsJSONReader.m */; };
-		80E7725717CCCF1A00C2E7BC /* GlobusSectionHeaderInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A12A52155C0EDB005B9FED /* GlobusSectionHeaderInfoView.m */; };
-		80E7725817CCCF1A00C2E7BC /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 809C208B1566703C006EBCA8 /* Store.m */; };
-		80E7725917CCCF1A00C2E7BC /* StoreListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 809C208E156675A4006EBCA8 /* StoreListViewController.m */; };
-		80E7725A17CCCF1A00C2E7BC /* StoreTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 809C2091156675DE006EBCA8 /* StoreTableView.m */; };
-		80E7725C17CCCF1A00C2E7BC /* StoreResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 809C209D15667A94006EBCA8 /* StoreResult.m */; };
-		80E7725D17CCCF1A00C2E7BC /* StoresJSONService.m in Sources */ = {isa = PBXBuildFile; fileRef = 809C20A015667B8E006EBCA8 /* StoresJSONService.m */; };
-		80E7726317CCCF1A00C2E7BC /* CouponsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ACC2D71636BA1500A4DE09 /* CouponsController.m */; };
-		80E7726417CCCF1A00C2E7BC /* CouponState.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6E0C71643CF4D004C7DF9 /* CouponState.m */; };
-		80E7726517CCCF1A00C2E7BC /* ValidState.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6E0CA1643D0D9004C7DF9 /* ValidState.m */; };
-		80E7726617CCCF1A00C2E7BC /* InvalidState.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6E0CD1643D276004C7DF9 /* InvalidState.m */; };
-		80E7726717CCCF1A00C2E7BC /* UsedState.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6E0D01643D288004C7DF9 /* UsedState.m */; };
-		80E7726817CCCF1A00C2E7BC /* ActiveState.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6E0D31643D2AB004C7DF9 /* ActiveState.m */; };
-		80E7726917CCCF1A00C2E7BC /* ActivatedState.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C6E0D71643D2CC004C7DF9 /* ActivatedState.m */; };
-		80E7726D17CCCF1A00C2E7BC /* GlobusAlarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 800538A4167B6CF200217858 /* GlobusAlarm.m */; };
-		80E7726F17CCCF1A00C2E7BC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800538A8167B76B400217858 /* AudioToolbox.framework */; };
-		80E7727017CCCF1A00C2E7BC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ACC2F61636BB0200A4DE09 /* libsqlite3.dylib */; };
-		80E7727117CCCF1A00C2E7BC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095CEB6153F23610006721F /* MediaPlayer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727217CCCF1A00C2E7BC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E4C266152AF45E00F1C55D /* Security.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727317CCCF1A00C2E7BC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AE0314DAE1EC00874AB7 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727417CCCF1A00C2E7BC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8091A2B9152302DA007F3EC6 /* MessageUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727517CCCF1A00C2E7BC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805FD90714ECFB8700EC9377 /* AddressBook.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727617CCCF1A00C2E7BC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805FD90814ECFB8700EC9377 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727717CCCF1A00C2E7BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AE0714DAE1FE00874AB7 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727817CCCF1A00C2E7BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AE0514DAE1F600874AB7 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727917CCCF1A00C2E7BC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AE0114DAE1E400874AB7 /* CoreData.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727A17CCCF1A00C2E7BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095AD9E14DA9FC700874AB7 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727B17CCCF1A00C2E7BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095ADA014DA9FC700874AB7 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7727C17CCCF1A00C2E7BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095ADA214DA9FC700874AB7 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		80E7728017CCCF1A00C2E7BC /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8095ADF314DABA6600874AB7 /* MainWindow_iPhone.xib */; };
-		80E7728117CCCF1A00C2E7BC /* TabBarItem1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 809C619E14DC3BF600FD3AFC /* TabBarItem1@2x.png */; };
-		80E7728217CCCF1A00C2E7BC /* TabBarItem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 809C61A014DC3CB000FD3AFC /* TabBarItem1.png */; };
-		80E7728317CCCF1A00C2E7BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 809C61B014DC3F8600FD3AFC /* Localizable.strings */; };
-		80E7728417CCCF1A00C2E7BC /* TabBarItem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 809C61B614DC44A000FD3AFC /* TabBarItem2.png */; };
-		80E7728517CCCF1A00C2E7BC /* TabBarItem2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 809C61B714DC44A000FD3AFC /* TabBarItem2@2x.png */; };
-		80E7728617CCCF1A00C2E7BC /* TabBarItem3.png in Resources */ = {isa = PBXBuildFile; fileRef = 809C61BA14DC44A000FD3AFC /* TabBarItem3.png */; };
-		80E7728717CCCF1A00C2E7BC /* TabBarItem3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 809C61BB14DC44A000FD3AFC /* TabBarItem3@2x.png */; };
-		80E7728817CCCF1A00C2E7BC /* NavigationBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8096FFF114DFCEE500BFBCA5 /* NavigationBar.png */; };
-		80E7728917CCCF1A00C2E7BC /* NavigationBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8096FFF214DFCEE500BFBCA5 /* NavigationBar@2x.png */; };
-		80E7728A17CCCF1A00C2E7BC /* Stylesheet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8096FFF514DFCF8200BFBCA5 /* Stylesheet.plist */; };
-		80E7728B17CCCF1A00C2E7BC /* GlobusCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8096E47814EA522A0081F2C8 /* GlobusCardViewController.xib */; };
-		80E7728C17CCCF1A00C2E7BC /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A07A4C14EC090200D70054 /* FormViewController.xib */; };
-		80E7728D17CCCF1A00C2E7BC /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A07A4D14EC090200D70054 /* WebViewController.xib */; };
-		80E7728E17CCCF1A00C2E7BC /* LoginFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805FD8FB14ECF52500EC9377 /* LoginFormViewController.xib */; };
-		80E7728F17CCCF1A00C2E7BC /* LoginForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805FD91014ECFC5A00EC9377 /* LoginForm.plist */; };
-		80E7729017CCCF1A00C2E7BC /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92314ED391500EC9377 /* BrowserViewController.xib */; };
-		80E7729117CCCF1A00C2E7BC /* RegistrationFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92814ED44C400EC9377 /* RegistrationFormViewController.xib */; };
-		80E7729217CCCF1A00C2E7BC /* RegistrationForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92A14ED48ED00EC9377 /* RegistrationForm.plist */; };
-		80E7729317CCCF1A00C2E7BC /* AddressBookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92D14ED541000EC9377 /* AddressBookButton.png */; };
-		80E7729417CCCF1A00C2E7BC /* AddressBookButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 805FD92E14ED541000EC9377 /* AddressBookButton@2x.png */; };
-		80E7729517CCCF1A00C2E7BC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68DDCEC1500D19200B72552 /* ProfileViewController.xib */; };
-		80E7729617CCCF1A00C2E7BC /* ProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B68DDCF41504A84F00B72552 /* ProfileForm.plist */; };
-		80E7729717CCCF1A00C2E7BC /* ChangeEmailFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B661E87C1510C87600685B43 /* ChangeEmailFormViewController.xib */; };
-		80E7729817CCCF1A00C2E7BC /* ChangeEmailForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = B661E8801510D4A300685B43 /* ChangeEmailForm.plist */; };
-		80E7729917CCCF1A00C2E7BC /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B661E8841511D6EF00685B43 /* EditProfileViewController.xib */; };
-		80E7729D17CCCF1A00C2E7BC /* GlobusCard.png in Resources */ = {isa = PBXBuildFile; fileRef = B69CAB881518AE6900FFEB53 /* GlobusCard.png */; };
-		80E7729E17CCCF1A00C2E7BC /* GlobusCard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69CAB891518AE6B00FFEB53 /* GlobusCard@2x.png */; };
-		80E7729F17CCCF1A00C2E7BC /* infoBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B69CAB8C1518B26B00FFEB53 /* infoBtn.png */; };
-		80E772A017CCCF1A00C2E7BC /* infoBtnActive.png in Resources */ = {isa = PBXBuildFile; fileRef = B69CAB8E1518B26B00FFEB53 /* infoBtnActive.png */; };
-		80E772A117CCCF1A00C2E7BC /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B69CABA11518D84600FFEB53 /* backArrow.png */; };
-		80E772A217CCCF1A00C2E7BC /* backArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69CABA21518D84800FFEB53 /* backArrow@2x.png */; };
-		80E772A517CCCF1A00C2E7BC /* BtnBGWithoutBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8010702D1518E8F800618667 /* BtnBGWithoutBorder.png */; };
-		80E772A617CCCF1A00C2E7BC /* BtnBGWithoutBorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8010702E1518E8FA00618667 /* BtnBGWithoutBorder@2x.png */; };
-		80E772A717CCCF1A00C2E7BC /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
-		80E772A817CCCF1A00C2E7BC /* infoBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6513098151B74D4007C37C2 /* infoBtn@2x.png */; };
-		80E772A917CCCF1A00C2E7BC /* infoBtnActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6513099151B74D4007C37C2 /* infoBtnActive@2x.png */; };
-		80E772AA17CCCF1A00C2E7BC /* listBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654C6151C8CC5004F619C /* listBtn.png */; };
-		80E772AB17CCCF1A00C2E7BC /* listBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654C7151C8CC5004F619C /* listBtn@2x.png */; };
-		80E772AC17CCCF1A00C2E7BC /* listBtnActive.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654C8151C8CC5004F619C /* listBtnActive.png */; };
-		80E772AD17CCCF1A00C2E7BC /* listBtnActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654C9151C8CC5004F619C /* listBtnActive@2x.png */; };
-		80E772AE17CCCF1A00C2E7BC /* mapBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654CF151C90CB004F619C /* mapBtn.png */; };
-		80E772AF17CCCF1A00C2E7BC /* mapBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654D0151C90CB004F619C /* mapBtn@2x.png */; };
-		80E772B017CCCF1A00C2E7BC /* mapBtnActive.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654D1151C90CB004F619C /* mapBtnActive.png */; };
-		80E772B117CCCF1A00C2E7BC /* mapBtnActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B64654D2151C90CB004F619C /* mapBtnActive@2x.png */; };
-		80E772B217CCCF1A00C2E7BC /* BtnWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8097002C152051F3002D51DF /* BtnWhite.png */; };
-		80E772B317CCCF1A00C2E7BC /* BtnWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8097002D152051F3002D51DF /* BtnWhite@2x.png */; };
-		80E772B417CCCF1A00C2E7BC /* ChangePasswordFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809700361520638E002D51DF /* ChangePasswordFormViewController.xib */; };
-		80E772B517CCCF1A00C2E7BC /* ChangePasswordForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80970038152063E7002D51DF /* ChangePasswordForm.plist */; };
-		80E772B617CCCF1A00C2E7BC /* GillSansAltOneLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 809191F51521A1B100EB89F4 /* GillSansAltOneLight.otf */; };
-		80E772B717CCCF1A00C2E7BC /* GillSansAltOne.otf in Resources */ = {isa = PBXBuildFile; fileRef = 809191FC1521AB7300EB89F4 /* GillSansAltOne.otf */; };
-		80E772B817CCCF1A00C2E7BC /* GillSansAltOneBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 809191FE1521B15300EB89F4 /* GillSansAltOneBold.otf */; };
-		80E772B917CCCF1A00C2E7BC /* DisclosureIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 809192051521BDC900EB89F4 /* DisclosureIndicator.png */; };
-		80E772BA17CCCF1A00C2E7BC /* DisclosureIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 809192061521BDC900EB89F4 /* DisclosureIndicator@2x.png */; };
-		80E772BB17CCCF1A00C2E7BC /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2A71522FB9A007F3EC6 /* ContactViewController.xib */; };
-		80E772BC17CCCF1A00C2E7BC /* ContactTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2BB15230727007F3EC6 /* ContactTable.plist */; };
-		80E772BD17CCCF1A00C2E7BC /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C2152319F6007F3EC6 /* Location.png */; };
-		80E772BE17CCCF1A00C2E7BC /* Location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C3152319F6007F3EC6 /* Location@2x.png */; };
-		80E772BF17CCCF1A00C2E7BC /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C6152319FE007F3EC6 /* Phone.png */; };
-		80E772C017CCCF1A00C2E7BC /* Phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2C7152319FE007F3EC6 /* Phone@2x.png */; };
-		80E772C117CCCF1A00C2E7BC /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */; };
-		80E772C317CCCF1A00C2E7BC /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 808EEFF31524B449008A3233 /* Mail.png */; };
-		80E772C417CCCF1A00C2E7BC /* Mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808EEFF41524B449008A3233 /* Mail@2x.png */; };
-		80E772C617CCCF1A00C2E7BC /* cacert.pem in Resources */ = {isa = PBXBuildFile; fileRef = B6E4C269152AF52200F1C55D /* cacert.pem */; };
-		80E772C717CCCF1A00C2E7BC /* cacert.der in Resources */ = {isa = PBXBuildFile; fileRef = B6E4C26B152B02EC00F1C55D /* cacert.der */; };
-		80E772C817CCCF1A00C2E7BC /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B618A136152DC9B8002EC38E /* StoreViewController.xib */; };
-		80E772CB17CCCF1A00C2E7BC /* StoreWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B676EDF91536FE6400BA2E24 /* StoreWebViewController.xib */; };
-		80E772CD17CCCF1A00C2E7BC /* StoreViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808C128C153C352D00F04ECB /* StoreViewController~ipad.xib */; };
-		80E772CE17CCCF1A00C2E7BC /* CouponsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6372D24153D777D005F1E75 /* CouponsViewController.xib */; };
-		80E772CF17CCCF1A00C2E7BC /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C7EB35153FF9CE00CFFEED /* new.png */; };
-		80E772D017CCCF1A00C2E7BC /* new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C7EB3A153FFA6400CFFEED /* new@2x.png */; };
-		80E772D117CCCF1A00C2E7BC /* GlobusCard_Animation.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */; };
-		80E772D317CCCF1A00C2E7BC /* globus.html in Resources */ = {isa = PBXBuildFile; fileRef = 801DBEE81541608900C000E7 /* globus.html */; };
-		80E772D417CCCF1A00C2E7BC /* holidays.html in Resources */ = {isa = PBXBuildFile; fileRef = 801DBEEA1541660E00C000E7 /* holidays.html */; };
-		80E772D517CCCF1A00C2E7BC /* coupon.html in Resources */ = {isa = PBXBuildFile; fileRef = 801DBEFA1541B7FA00C000E7 /* coupon.html */; };
-		80E772D617CCCF1A00C2E7BC /* base.css in Resources */ = {isa = PBXBuildFile; fileRef = 801DBEFC1541B7FA00C000E7 /* base.css */; };
-		80E772D717CCCF1A00C2E7BC /* coupon.css in Resources */ = {isa = PBXBuildFile; fileRef = 801DBEFD1541B7FA00C000E7 /* coupon.css */; };
-		80E772D817CCCF1A00C2E7BC /* CouponWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 801DBF0A1541BA8B00C000E7 /* CouponWebViewController.xib */; };
-		80E772D917CCCF1A00C2E7BC /* coupon_inactive.html in Resources */ = {isa = PBXBuildFile; fileRef = 8093ABB8154561020057C5B7 /* coupon_inactive.html */; };
-		80E772DA17CCCF1A00C2E7BC /* coupon-inactive.css in Resources */ = {isa = PBXBuildFile; fileRef = 8093ABBB154579960057C5B7 /* coupon-inactive.css */; };
-		80E772DB17CCCF1A00C2E7BC /* CouponViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BB18A7154948B4007FF406 /* CouponViewController_iPad.xib */; };
-		80E772DC17CCCF1A00C2E7BC /* newBackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B642CE47154EB453008CEF9D /* newBackButton@2x.png */; };
-		80E772DD17CCCF1A00C2E7BC /* newBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B642CE48154EB453008CEF9D /* newBackButton.png */; };
-		80E772DE17CCCF1A00C2E7BC /* TermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AA37681551584D00C644DA /* TermsViewController.xib */; };
-		80E772DF17CCCF1A00C2E7BC /* agb.html in Resources */ = {isa = PBXBuildFile; fileRef = 8088FE1115623CC60021D978 /* agb.html */; };
-		80E772E017CCCF1A00C2E7BC /* Bonus-Gutschein.png in Resources */ = {isa = PBXBuildFile; fileRef = 80AA37721551644E00C644DA /* Bonus-Gutschein.png */; };
-		80E772E117CCCF1A00C2E7BC /* coupon-iPad.html in Resources */ = {isa = PBXBuildFile; fileRef = 80987F121552A25A00BC5779 /* coupon-iPad.html */; };
-		80E772E217CCCF1A00C2E7BC /* coupon-iPad.css in Resources */ = {isa = PBXBuildFile; fileRef = 80987F141552A26E00BC5779 /* coupon-iPad.css */; };
-		80E772E317CCCF1A00C2E7BC /* coupon_inactive-iPad.html in Resources */ = {isa = PBXBuildFile; fileRef = 80987F161552A7AD00BC5779 /* coupon_inactive-iPad.html */; };
-		80E772E417CCCF1A00C2E7BC /* coupon-inactive-iPad.css in Resources */ = {isa = PBXBuildFile; fileRef = 80987F181552A7B600BC5779 /* coupon-inactive-iPad.css */; };
-		80E772E517CCCF1A00C2E7BC /* CouponWebViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80987F1A1552AA4B00BC5779 /* CouponWebViewController~ipad.xib */; };
-		80E772E617CCCF1A00C2E7BC /* globuslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF6B1553C29E00940E13 /* globuslogo.png */; };
-		80E772E717CCCF1A00C2E7BC /* globuslogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF6C1553C29E00940E13 /* globuslogo@2x.png */; };
-		80E772E817CCCF1A00C2E7BC /* MobileFooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF6D1553C29E00940E13 /* MobileFooter.png */; };
-		80E772E917CCCF1A00C2E7BC /* MobileFooter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF6E1553C29E00940E13 /* MobileFooter@2x.png */; };
-		80E772EA17CCCF1A00C2E7BC /* herrenglobuslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF811553CD1200940E13 /* herrenglobuslogo.png */; };
-		80E772EB17CCCF1A00C2E7BC /* herrenglobuslogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF831553CE9700940E13 /* herrenglobuslogo@2x.png */; };
-		80E772EC17CCCF1A00C2E7BC /* images_de.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF851553D01600940E13 /* images_de.css */; };
-		80E772ED17CCCF1A00C2E7BC /* images_en.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF871553D09E00940E13 /* images_en.css */; };
-		80E772EE17CCCF1A00C2E7BC /* images_fr.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF881553D09E00940E13 /* images_fr.css */; };
-		80E772EF17CCCF1A00C2E7BC /* images_it.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF891553D09E00940E13 /* images_it.css */; };
-		80E772F017CCCF1A00C2E7BC /* herrenglobuslogo_fr.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF8D1553D15100940E13 /* herrenglobuslogo_fr.png */; };
-		80E772F117CCCF1A00C2E7BC /* herrenglobuslogo_fr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF8E1553D15100940E13 /* herrenglobuslogo_fr@2x.png */; };
-		80E772F217CCCF1A00C2E7BC /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF911553E38200940E13 /* BackButton.png */; };
-		80E772F317CCCF1A00C2E7BC /* BackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF921553E38200940E13 /* BackButton@2x.png */; };
-		80E772F417CCCF1A00C2E7BC /* ForwardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF931553E38200940E13 /* ForwardButton.png */; };
-		80E772F517CCCF1A00C2E7BC /* ForwardButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF941553E38200940E13 /* ForwardButton@2x.png */; };
-		80E772F617CCCF1A00C2E7BC /* images_de-iPad.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF991553FDAC00940E13 /* images_de-iPad.css */; };
-		80E772F717CCCF1A00C2E7BC /* MobileFooter_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF9B1553FDF100940E13 /* MobileFooter_iPad.png */; };
-		80E772F817CCCF1A00C2E7BC /* images_en-iPad.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF9D1553FF0F00940E13 /* images_en-iPad.css */; };
-		80E772F917CCCF1A00C2E7BC /* images_fr-iPad.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF9E1553FF0F00940E13 /* images_fr-iPad.css */; };
-		80E772FA17CCCF1A00C2E7BC /* images_it-iPad.css in Resources */ = {isa = PBXBuildFile; fileRef = 808CFF9F1553FF1000940E13 /* images_it-iPad.css */; };
-		80E772FD17CCCF1A00C2E7BC /* GlobusCard_Animation-ipad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */; };
-		80E772FF17CCCF1A00C2E7BC /* StoreListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809C20A215667EB2006EBCA8 /* StoreListViewController.xib */; };
-		80E7730017CCCF1A00C2E7BC /* Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80167849156D0BE00016CD4D /* Pin.png */; };
-		80E7730117CCCF1A00C2E7BC /* Pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8016784A156D0BE00016CD4D /* Pin@2x.png */; };
-		80E7730217CCCF1A00C2E7BC /* DefaultStoreQuery_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 80167859156D49950016CD4D /* DefaultStoreQuery_de.json */; };
-		80E7730317CCCF1A00C2E7BC /* DefaultStoreQuery_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 8016785A156D49950016CD4D /* DefaultStoreQuery_fr.json */; };
-		80E7730417CCCF1A00C2E7BC /* CouponsDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B6ACC2D41636B9D200A4DE09 /* CouponsDB.sqlite */; };
-		80E7730617CCCF1A00C2E7BC /* GlobusCard_Animation_5.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */; };
-		80FAAF3C195AFE3E00C3C18B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3B195AFE3E00C3C18B /* AdSupport.framework */; };
-		80FAAF3E195AFE4C00C3C18B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */; };
-		80FAAF40195AFE5B00C3C18B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3F195AFE5B00C3C18B /* libz.dylib */; };
 		80FAAF41195AFE8200C3C18B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3B195AFE3E00C3C18B /* AdSupport.framework */; };
 		80FAAF42195AFE8800C3C18B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */; };
 		80FAAF43195AFE9000C3C18B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3F195AFE5B00C3C18B /* libz.dylib */; };
+		8B1512511CC6347E0057F3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */; };
+		8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */; };
+		8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */; };
 		B60C01C71519E8880006877E /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
 		B60C01CA1519EA880006877E /* BorderedButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C01C91519EA880006877E /* BorderedButtonController.m */; };
 		B618A137152DC9B9002EC38E /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B618A135152DC9B7002EC38E /* StoreViewController.m */; };
@@ -472,23 +240,13 @@
 		B6E646EE151B2B0F00A13258 /* BorderedViewTextSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E646ED151B2B0F00A13258 /* BorderedViewTextSubview.m */; };
 		B6EA8B6B152ECC2000A9DA49 /* StoreDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EA8B6A152ECC2000A9DA49 /* StoreDetailCell.m */; };
 		B6FDA6E9150605D2000C6814 /* CustomCellFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FDA6E8150605D2000C6814 /* CustomCellFormViewController.m */; };
-		F80ACDBC18C75EED001B2111 /* EditProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F80ACDBB18C75EED001B2111 /* EditProfileForm.plist */; };
 		F80ACDBD18C75EED001B2111 /* EditProfileForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F80ACDBB18C75EED001B2111 /* EditProfileForm.plist */; };
-		F833353D18E9BE37006273C1 /* PushHelp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F833354018E9BE37006273C1 /* PushHelp@2x.png */; };
 		F833353E18E9BE37006273C1 /* PushHelp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F833354018E9BE37006273C1 /* PushHelp@2x.png */; };
-		F845D99D18C4BA4A007E483D /* GlobusCardViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845D99C18C4BA4A007E483D /* GlobusCardViewController-iPad.xib */; };
 		F845D99E18C4BA4A007E483D /* GlobusCardViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845D99C18C4BA4A007E483D /* GlobusCardViewController-iPad.xib */; };
-		F845D9A018C4BA52007E483D /* TermsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845D99F18C4BA52007E483D /* TermsViewController~ipad.xib */; };
 		F845D9A118C4BA52007E483D /* TermsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845D99F18C4BA52007E483D /* TermsViewController~ipad.xib */; };
-		F8630DCB18C9CDAB00FB1718 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8630DCA18C9CDAB00FB1718 /* main.m */; };
 		F8630DCC18C9CDAB00FB1718 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8630DCA18C9CDAB00FB1718 /* main.m */; };
-		F873B43318DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F873B43218DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a */; };
-		F873B43418DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F873B43218DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a */; };
-		F8808E1118C08CD500DA029F /* LocationDistanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8808E1018C08CD500DA029F /* LocationDistanceCell.m */; };
 		F8808E1218C08CD500DA029F /* LocationDistanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8808E1018C08CD500DA029F /* LocationDistanceCell.m */; };
-		F8955D6C18C76A1B0071A8FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955D6B18C76A1B0071A8FB /* Images.xcassets */; };
 		F8955D6D18C76A1B0071A8FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955D6B18C76A1B0071A8FB /* Images.xcassets */; };
-		F8F5434918D980F5007C11EF /* FloatingCloudConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8F5434818D980F5007C11EF /* FloatingCloudConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -530,7 +288,6 @@
 		805FD92A14ED48ED00EC9377 /* RegistrationForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RegistrationForm.plist; sourceTree = "<group>"; };
 		805FD92D14ED541000EC9377 /* AddressBookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddressBookButton.png; sourceTree = "<group>"; };
 		805FD92E14ED541000EC9377 /* AddressBookButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AddressBookButton@2x.png"; sourceTree = "<group>"; };
-		8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlobusCard_Animation_5.mov; sourceTree = "<group>"; };
 		8088FE1015623CC60021D978 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/agb.html; sourceTree = "<group>"; };
 		8088FE1315623CCB0021D978 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = de; path = de.lproj/agb.html; sourceTree = "<group>"; };
 		8088FE1415623CCD0021D978 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = fr; path = fr.lproj/agb.html; sourceTree = "<group>"; };
@@ -583,10 +340,8 @@
 		8091A2C6152319FE007F3EC6 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
 		8091A2C7152319FE007F3EC6 /* Phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone@2x.png"; sourceTree = "<group>"; };
 		8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow_iPad.xib; path = Globus/MainWindow_iPad.xib; sourceTree = SOURCE_ROOT; };
-		80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "GlobusCard_Animation-ipad.mov"; sourceTree = "<group>"; };
 		8093ABB8154561020057C5B7 /* coupon_inactive.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_inactive.html; sourceTree = "<group>"; };
 		8093ABBB154579960057C5B7 /* coupon-inactive.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "coupon-inactive.css"; sourceTree = "<group>"; };
-		8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = GlobusCard_Animation.mov; sourceTree = "<group>"; };
 		8095AD9A14DA9FC700874AB7 /* Globus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Globus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8095AD9E14DA9FC700874AB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8095ADA014DA9FC700874AB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -716,7 +471,6 @@
 		80C6BFA517CE265C00E605F2 /* ApnsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApnsController.h; sourceTree = "<group>"; };
 		80C6BFA617CE265C00E605F2 /* ApnsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApnsController.m; sourceTree = "<group>"; };
 		80D7BF4817CB9E3F00113609 /* FloatingCloudConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FloatingCloudConfig.plist; sourceTree = "<group>"; };
-		80D7BF4A17CB9E3F00113609 /* FloatingCloudLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FloatingCloudLib.h; path = headers/FloatingCloudLib.h; sourceTree = "<group>"; };
 		80E2E03719599F2E003D670A /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
 		80E2E03819599F2E003D670A /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
 		80E2E03919599F2E003D670A /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
@@ -726,11 +480,17 @@
 		80E2E03D19599F2E003D670A /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		80E2E0441959C366003D670A /* TrackingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingTableViewController.h; sourceTree = "<group>"; };
 		80E2E0451959C366003D670A /* TrackingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingTableViewController.m; sourceTree = "<group>"; };
-		80E7730C17CCCF1A00C2E7BC /* GlobusStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobusStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FAAF39195AFD5700C3C18B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		80FAAF3B195AFE3E00C3C18B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		80FAAF3F195AFE5B00C3C18B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = FloatingCloudKit.a; path = Globus/floatingcloud/FloatingCloudKit.a; sourceTree = "<group>"; };
+		8B6F0D991CBBF712002ED42B /* FloatingCloudKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FloatingCloudKit.h; path = headers/FloatingCloudKit.h; sourceTree = "<group>"; };
+		8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
+		8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		8BC3A5881CBFA4B9003E9DFD /* UIApplication+CustomSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CustomSettings.h"; sourceTree = "<group>"; };
+		8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CustomSettings.m"; sourceTree = "<group>"; };
 		B60C01C61519E8880006877E /* BorderedButtonsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BorderedButtonsData.plist; sourceTree = "<group>"; };
 		B60C01C81519EA880006877E /* BorderedButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorderedButtonController.h; sourceTree = "<group>"; };
 		B60C01C91519EA880006877E /* BorderedButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderedButtonController.m; sourceTree = "<group>"; };
@@ -841,13 +601,11 @@
 		F833353F18E9BE37006273C1 /* de */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = de; path = "de.lproj/PushHelp@2x.png"; sourceTree = "<group>"; };
 		F833354118E9BE41006273C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/PushHelp@2x.png"; sourceTree = "<group>"; };
 		F833354218E9BF19006273C1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fr; path = "fr.lproj/PushHelp@2x.png"; sourceTree = "<group>"; };
-		F845D98E18C4B93F007E483D /* Globus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Globus-Info.plist"; sourceTree = SOURCE_ROOT; };
-		F845D98F18C4B93F007E483D /* GlobusStaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlobusStaging-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F845D98E18C4B93F007E483D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		F845D99C18C4BA4A007E483D /* GlobusCardViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "GlobusCardViewController-iPad.xib"; path = "Globus/GlobusCardViewController-iPad.xib"; sourceTree = SOURCE_ROOT; };
 		F845D99F18C4BA52007E483D /* TermsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "TermsViewController~ipad.xib"; path = "Globus/TermsViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
 		F8630DCA18C9CDAB00FB1718 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Globus/main.m; sourceTree = SOURCE_ROOT; };
 		F8630DCD18C9CDC100FB1718 /* Globus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Globus-Prefix.pch"; path = "Globus/Globus-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		F873B43218DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFloatingCloudLib-ios-5.0.a"; path = "Globus/floatingcloud/libFloatingCloudLib-ios-5.0.a"; sourceTree = "<group>"; };
 		F8808E0F18C08CD500DA029F /* LocationDistanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDistanceCell.h; sourceTree = "<group>"; };
 		F8808E1018C08CD500DA029F /* LocationDistanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDistanceCell.m; sourceTree = "<group>"; };
 		F8955D6B18C76A1B0071A8FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Ressources/Images.xcassets; sourceTree = SOURCE_ROOT; };
@@ -863,6 +621,7 @@
 				80FAAF42195AFE8800C3C18B /* SystemConfiguration.framework in Frameworks */,
 				80FAAF41195AFE8200C3C18B /* AdSupport.framework in Frameworks */,
 				800538A9167B76B400217858 /* AudioToolbox.framework in Frameworks */,
+				8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */,
 				8095CEB7153F23610006721F /* MediaPlayer.framework in Frameworks */,
 				B6E4C267152AF45F00F1C55D /* Security.framework in Frameworks */,
 				8095AE0414DAE1EC00874AB7 /* MapKit.framework in Frameworks */,
@@ -877,33 +636,6 @@
 				8095ADA114DA9FC700874AB7 /* Foundation.framework in Frameworks */,
 				8095ADA314DA9FC700874AB7 /* CoreGraphics.framework in Frameworks */,
 				B6ACC2F71636BB0300A4DE09 /* libsqlite3.dylib in Frameworks */,
-				F873B43418DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80E7726E17CCCF1A00C2E7BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80FAAF40195AFE5B00C3C18B /* libz.dylib in Frameworks */,
-				80FAAF3E195AFE4C00C3C18B /* SystemConfiguration.framework in Frameworks */,
-				80FAAF3C195AFE3E00C3C18B /* AdSupport.framework in Frameworks */,
-				80E7726F17CCCF1A00C2E7BC /* AudioToolbox.framework in Frameworks */,
-				80E7727117CCCF1A00C2E7BC /* MediaPlayer.framework in Frameworks */,
-				80E7727217CCCF1A00C2E7BC /* Security.framework in Frameworks */,
-				80E7727317CCCF1A00C2E7BC /* MapKit.framework in Frameworks */,
-				80E7727417CCCF1A00C2E7BC /* MessageUI.framework in Frameworks */,
-				80E7727517CCCF1A00C2E7BC /* AddressBook.framework in Frameworks */,
-				80E7727617CCCF1A00C2E7BC /* AddressBookUI.framework in Frameworks */,
-				80E7727717CCCF1A00C2E7BC /* QuartzCore.framework in Frameworks */,
-				80E7727817CCCF1A00C2E7BC /* CoreLocation.framework in Frameworks */,
-				80E7727917CCCF1A00C2E7BC /* CoreData.framework in Frameworks */,
-				80E7727A17CCCF1A00C2E7BC /* UIKit.framework in Frameworks */,
-				80E2E03E19599F2E003D670A /* libGoogleAnalyticsServices.a in Frameworks */,
-				80E7727B17CCCF1A00C2E7BC /* Foundation.framework in Frameworks */,
-				80E7727C17CCCF1A00C2E7BC /* CoreGraphics.framework in Frameworks */,
-				80E7727017CCCF1A00C2E7BC /* libsqlite3.dylib in Frameworks */,
-				F873B43318DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,17 +739,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		8093B4E31540007B00F7A20F /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				8093B4E41540007B00F7A20F /* GlobusCard_Animation.mov */,
-				8061ABAB16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov */,
-				80922FBD155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov */,
-			);
-			name = Videos;
-			path = Video;
-			sourceTree = "<group>";
-		};
 		8095AD8F14DA9FC700874AB7 = {
 			isa = PBXGroup;
 			children = (
@@ -1031,7 +752,6 @@
 			isa = PBXGroup;
 			children = (
 				8095AD9A14DA9FC700874AB7 /* Globus.app */,
-				80E7730C17CCCF1A00C2E7BC /* GlobusStaging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1057,7 +777,7 @@
 				8095ADA014DA9FC700874AB7 /* Foundation.framework */,
 				8095ADA214DA9FC700874AB7 /* CoreGraphics.framework */,
 				B687EB9316479F09000853A1 /* SenTestingKit.framework */,
-				F873B43218DB2401001FA717 /* libFloatingCloudLib-ios-5.0.a */,
+				8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */,
 				B6ACC2F61636BB0200A4DE09 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
@@ -1076,10 +796,11 @@
 		8095ADA514DA9FC700874AB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F8630DCD18C9CDC100FB1718 /* Globus-Prefix.pch */,
 				F8630DCA18C9CDAB00FB1718 /* main.m */,
-				F845D98E18C4B93F007E483D /* Globus-Info.plist */,
-				F845D98F18C4B93F007E483D /* GlobusStaging-Info.plist */,
+				F8630DCD18C9CDC100FB1718 /* Globus-Prefix.pch */,
+				8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */,
+				8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */,
+				F845D98E18C4B93F007E483D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1134,7 +855,6 @@
 				8095ADDC14DAB93400874AB7 /* Forms */,
 				8095ADEF14DABA2900874AB7 /* XIB */,
 				8095ADDE14DAB93400874AB7 /* Images */,
-				8093B4E31540007B00F7A20F /* Videos */,
 				808FB6EE151B309B00FE4FED /* Fonts */,
 				801DBEE71541608900C000E7 /* HTML */,
 				B6E4C268152AF4E500F1C55D /* Certificates */,
@@ -1172,6 +892,7 @@
 		8095ADEF14DABA2900874AB7 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */,
 				8095ADF314DABA6600874AB7 /* MainWindow_iPhone.xib */,
 				8091A2CE15235478007F3EC6 /* MainWindow_iPad.xib */,
 				8095ADF014DABA3600874AB7 /* ViewControllers */,
@@ -1427,7 +1148,7 @@
 		80D7BF4617CB9E3E00113609 /* FloatingCloud */ = {
 			isa = PBXGroup;
 			children = (
-				80D7BF4A17CB9E3F00113609 /* FloatingCloudLib.h */,
+				8B6F0D991CBBF712002ED42B /* FloatingCloudKit.h */,
 			);
 			name = FloatingCloud;
 			path = floatingcloud;
@@ -1544,6 +1265,8 @@
 			children = (
 				8095ADAD14DA9FC700874AB7 /* AppDelegate.h */,
 				8095ADAE14DA9FC700874AB7 /* AppDelegate.m */,
+				8BC3A5881CBFA4B9003E9DFD /* UIApplication+CustomSettings.h */,
+				8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */,
 				F8955D6E18C76E470071A8FB /* Controllers */,
 				8095AE1814DAEE9E00874AB7 /* ViewControllers */,
 				B69CAB941518BE7700FFEB53 /* Views */,
@@ -1596,33 +1319,16 @@
 			productReference = 8095AD9A14DA9FC700874AB7 /* Globus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		80E771F717CCCF1A00C2E7BC /* GlobusStaging */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80E7730817CCCF1A00C2E7BC /* Build configuration list for PBXNativeTarget "GlobusStaging" */;
-			buildPhases = (
-				80E771F817CCCF1A00C2E7BC /* Sources */,
-				80E7726E17CCCF1A00C2E7BC /* Frameworks */,
-				80E7727E17CCCF1A00C2E7BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GlobusStaging;
-			productName = Globus;
-			productReference = 80E7730C17CCCF1A00C2E7BC /* GlobusStaging.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8095AD9114DA9FC700874AB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
-					80E771F717CCCF1A00C2E7BC = {
-						DevelopmentTeam = XKJD2EDZFP;
+					8095AD9914DA9FC700874AB7 = {
+						DevelopmentTeam = 6R55RBD8VC;
 					};
 				};
 			};
@@ -1640,7 +1346,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80E771F717CCCF1A00C2E7BC /* GlobusStaging */,
 				8095AD9914DA9FC700874AB7 /* Globus */,
 			);
 		};
@@ -1652,6 +1357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8095ADF414DABA6600874AB7 /* MainWindow_iPhone.xib in Resources */,
+				8B1512511CC6347E0057F3AF /* LaunchScreen.storyboard in Resources */,
 				809C619F14DC3BF600FD3AFC /* TabBarItem1@2x.png in Resources */,
 				809C61A114DC3CB000FD3AFC /* TabBarItem1.png in Resources */,
 				809C61AE14DC3F8600FD3AFC /* Localizable.strings in Resources */,
@@ -1724,7 +1430,6 @@
 				B6372D26153D777F005F1E75 /* CouponsViewController.xib in Resources */,
 				B6C7EB33153FF9CE00CFFEED /* new.png in Resources */,
 				B6C7EB38153FFA6400CFFEED /* new@2x.png in Resources */,
-				8093B4E61540007B00F7A20F /* GlobusCard_Animation.mov in Resources */,
 				F845D99E18C4BA4A007E483D /* GlobusCardViewController-iPad.xib in Resources */,
 				801DBEE91541608900C000E7 /* globus.html in Resources */,
 				801DBEEB1541660E00C000E7 /* holidays.html in Resources */,
@@ -1768,148 +1473,13 @@
 				808CFFA01553FF1000940E13 /* images_en-iPad.css in Resources */,
 				808CFFA11553FF1000940E13 /* images_fr-iPad.css in Resources */,
 				808CFFA21553FF1000940E13 /* images_it-iPad.css in Resources */,
-				80922FBE155D643900B0B9F6 /* GlobusCard_Animation-ipad.mov in Resources */,
 				809C20A315667EB2006EBCA8 /* StoreListViewController.xib in Resources */,
 				8016784B156D0BE00016CD4D /* Pin.png in Resources */,
 				8016784C156D0BE00016CD4D /* Pin@2x.png in Resources */,
 				8016785B156D49950016CD4D /* DefaultStoreQuery_de.json in Resources */,
 				8016785C156D49950016CD4D /* DefaultStoreQuery_fr.json in Resources */,
 				B6ACC2D51636B9D200A4DE09 /* CouponsDB.sqlite in Resources */,
-				8061ABAC16AE8BD100D38BA7 /* GlobusCard_Animation_5.mov in Resources */,
 				80D7BF4C17CB9E3F00113609 /* FloatingCloudConfig.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80E7727E17CCCF1A00C2E7BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80E7728017CCCF1A00C2E7BC /* MainWindow_iPhone.xib in Resources */,
-				80E7728117CCCF1A00C2E7BC /* TabBarItem1@2x.png in Resources */,
-				80E7728217CCCF1A00C2E7BC /* TabBarItem1.png in Resources */,
-				80E7728317CCCF1A00C2E7BC /* Localizable.strings in Resources */,
-				80E7728417CCCF1A00C2E7BC /* TabBarItem2.png in Resources */,
-				80E7728517CCCF1A00C2E7BC /* TabBarItem2@2x.png in Resources */,
-				80E7728617CCCF1A00C2E7BC /* TabBarItem3.png in Resources */,
-				80E7728717CCCF1A00C2E7BC /* TabBarItem3@2x.png in Resources */,
-				80E7728817CCCF1A00C2E7BC /* NavigationBar.png in Resources */,
-				80E7728917CCCF1A00C2E7BC /* NavigationBar@2x.png in Resources */,
-				80E7728A17CCCF1A00C2E7BC /* Stylesheet.plist in Resources */,
-				80E7728B17CCCF1A00C2E7BC /* GlobusCardViewController.xib in Resources */,
-				80E7728C17CCCF1A00C2E7BC /* FormViewController.xib in Resources */,
-				80E7728D17CCCF1A00C2E7BC /* WebViewController.xib in Resources */,
-				80E7728E17CCCF1A00C2E7BC /* LoginFormViewController.xib in Resources */,
-				80E7728F17CCCF1A00C2E7BC /* LoginForm.plist in Resources */,
-				80E7729017CCCF1A00C2E7BC /* BrowserViewController.xib in Resources */,
-				80E7729117CCCF1A00C2E7BC /* RegistrationFormViewController.xib in Resources */,
-				80E7729217CCCF1A00C2E7BC /* RegistrationForm.plist in Resources */,
-				80E7729317CCCF1A00C2E7BC /* AddressBookButton.png in Resources */,
-				80E7729417CCCF1A00C2E7BC /* AddressBookButton@2x.png in Resources */,
-				80E7729517CCCF1A00C2E7BC /* ProfileViewController.xib in Resources */,
-				80E7729617CCCF1A00C2E7BC /* ProfileForm.plist in Resources */,
-				F8955D6C18C76A1B0071A8FB /* Images.xcassets in Resources */,
-				80E7729717CCCF1A00C2E7BC /* ChangeEmailFormViewController.xib in Resources */,
-				80E7729817CCCF1A00C2E7BC /* ChangeEmailForm.plist in Resources */,
-				80E7729917CCCF1A00C2E7BC /* EditProfileViewController.xib in Resources */,
-				80E7729D17CCCF1A00C2E7BC /* GlobusCard.png in Resources */,
-				80E7729E17CCCF1A00C2E7BC /* GlobusCard@2x.png in Resources */,
-				80E7729F17CCCF1A00C2E7BC /* infoBtn.png in Resources */,
-				80E772A017CCCF1A00C2E7BC /* infoBtnActive.png in Resources */,
-				80E772A117CCCF1A00C2E7BC /* backArrow.png in Resources */,
-				80E772A217CCCF1A00C2E7BC /* backArrow@2x.png in Resources */,
-				F833353D18E9BE37006273C1 /* PushHelp@2x.png in Resources */,
-				80E772A517CCCF1A00C2E7BC /* BtnBGWithoutBorder.png in Resources */,
-				80E772A617CCCF1A00C2E7BC /* BtnBGWithoutBorder@2x.png in Resources */,
-				80E772A717CCCF1A00C2E7BC /* BorderedButtonsData.plist in Resources */,
-				80E772A817CCCF1A00C2E7BC /* infoBtn@2x.png in Resources */,
-				F80ACDBC18C75EED001B2111 /* EditProfileForm.plist in Resources */,
-				80E772A917CCCF1A00C2E7BC /* infoBtnActive@2x.png in Resources */,
-				80E772AA17CCCF1A00C2E7BC /* listBtn.png in Resources */,
-				80E772AB17CCCF1A00C2E7BC /* listBtn@2x.png in Resources */,
-				80E772AC17CCCF1A00C2E7BC /* listBtnActive.png in Resources */,
-				80E772AD17CCCF1A00C2E7BC /* listBtnActive@2x.png in Resources */,
-				80E772AE17CCCF1A00C2E7BC /* mapBtn.png in Resources */,
-				80E772AF17CCCF1A00C2E7BC /* mapBtn@2x.png in Resources */,
-				80E772B017CCCF1A00C2E7BC /* mapBtnActive.png in Resources */,
-				80E772B117CCCF1A00C2E7BC /* mapBtnActive@2x.png in Resources */,
-				80E772B217CCCF1A00C2E7BC /* BtnWhite.png in Resources */,
-				80E772B317CCCF1A00C2E7BC /* BtnWhite@2x.png in Resources */,
-				80E772B417CCCF1A00C2E7BC /* ChangePasswordFormViewController.xib in Resources */,
-				80E772B517CCCF1A00C2E7BC /* ChangePasswordForm.plist in Resources */,
-				80E772B617CCCF1A00C2E7BC /* GillSansAltOneLight.otf in Resources */,
-				80E772B717CCCF1A00C2E7BC /* GillSansAltOne.otf in Resources */,
-				80E772B817CCCF1A00C2E7BC /* GillSansAltOneBold.otf in Resources */,
-				80E772B917CCCF1A00C2E7BC /* DisclosureIndicator.png in Resources */,
-				80E772BA17CCCF1A00C2E7BC /* DisclosureIndicator@2x.png in Resources */,
-				80E772BB17CCCF1A00C2E7BC /* ContactViewController.xib in Resources */,
-				80E772BC17CCCF1A00C2E7BC /* ContactTable.plist in Resources */,
-				80E772BD17CCCF1A00C2E7BC /* Location.png in Resources */,
-				80E772BE17CCCF1A00C2E7BC /* Location@2x.png in Resources */,
-				80E772BF17CCCF1A00C2E7BC /* Phone.png in Resources */,
-				80E772C017CCCF1A00C2E7BC /* Phone@2x.png in Resources */,
-				80E772C117CCCF1A00C2E7BC /* MainWindow_iPad.xib in Resources */,
-				80E772C317CCCF1A00C2E7BC /* Mail.png in Resources */,
-				80E772C417CCCF1A00C2E7BC /* Mail@2x.png in Resources */,
-				80E772C617CCCF1A00C2E7BC /* cacert.pem in Resources */,
-				80E772C717CCCF1A00C2E7BC /* cacert.der in Resources */,
-				80E772C817CCCF1A00C2E7BC /* StoreViewController.xib in Resources */,
-				80E772CB17CCCF1A00C2E7BC /* StoreWebViewController.xib in Resources */,
-				80E772CD17CCCF1A00C2E7BC /* StoreViewController~ipad.xib in Resources */,
-				80E772CE17CCCF1A00C2E7BC /* CouponsViewController.xib in Resources */,
-				80E772CF17CCCF1A00C2E7BC /* new.png in Resources */,
-				80E772D017CCCF1A00C2E7BC /* new@2x.png in Resources */,
-				80E772D117CCCF1A00C2E7BC /* GlobusCard_Animation.mov in Resources */,
-				F845D99D18C4BA4A007E483D /* GlobusCardViewController-iPad.xib in Resources */,
-				80E772D317CCCF1A00C2E7BC /* globus.html in Resources */,
-				80E772D417CCCF1A00C2E7BC /* holidays.html in Resources */,
-				80E772D517CCCF1A00C2E7BC /* coupon.html in Resources */,
-				80E772D617CCCF1A00C2E7BC /* base.css in Resources */,
-				F8F5434918D980F5007C11EF /* FloatingCloudConfig.plist in Resources */,
-				80E772D717CCCF1A00C2E7BC /* coupon.css in Resources */,
-				80E772D817CCCF1A00C2E7BC /* CouponWebViewController.xib in Resources */,
-				80E772D917CCCF1A00C2E7BC /* coupon_inactive.html in Resources */,
-				80E772DA17CCCF1A00C2E7BC /* coupon-inactive.css in Resources */,
-				80E772DB17CCCF1A00C2E7BC /* CouponViewController_iPad.xib in Resources */,
-				80E772DC17CCCF1A00C2E7BC /* newBackButton@2x.png in Resources */,
-				F845D9A018C4BA52007E483D /* TermsViewController~ipad.xib in Resources */,
-				80E772DD17CCCF1A00C2E7BC /* newBackButton.png in Resources */,
-				80E772DE17CCCF1A00C2E7BC /* TermsViewController.xib in Resources */,
-				80E772DF17CCCF1A00C2E7BC /* agb.html in Resources */,
-				80E772E017CCCF1A00C2E7BC /* Bonus-Gutschein.png in Resources */,
-				80E772E117CCCF1A00C2E7BC /* coupon-iPad.html in Resources */,
-				80E772E217CCCF1A00C2E7BC /* coupon-iPad.css in Resources */,
-				80E772E317CCCF1A00C2E7BC /* coupon_inactive-iPad.html in Resources */,
-				80E772E417CCCF1A00C2E7BC /* coupon-inactive-iPad.css in Resources */,
-				80E772E517CCCF1A00C2E7BC /* CouponWebViewController~ipad.xib in Resources */,
-				80E772E617CCCF1A00C2E7BC /* globuslogo.png in Resources */,
-				80E772E717CCCF1A00C2E7BC /* globuslogo@2x.png in Resources */,
-				80E772E817CCCF1A00C2E7BC /* MobileFooter.png in Resources */,
-				80E772E917CCCF1A00C2E7BC /* MobileFooter@2x.png in Resources */,
-				80E772EA17CCCF1A00C2E7BC /* herrenglobuslogo.png in Resources */,
-				80E772EB17CCCF1A00C2E7BC /* herrenglobuslogo@2x.png in Resources */,
-				80E772EC17CCCF1A00C2E7BC /* images_de.css in Resources */,
-				80E772ED17CCCF1A00C2E7BC /* images_en.css in Resources */,
-				80E772EE17CCCF1A00C2E7BC /* images_fr.css in Resources */,
-				80E772EF17CCCF1A00C2E7BC /* images_it.css in Resources */,
-				80E772F017CCCF1A00C2E7BC /* herrenglobuslogo_fr.png in Resources */,
-				80E772F117CCCF1A00C2E7BC /* herrenglobuslogo_fr@2x.png in Resources */,
-				80E772F217CCCF1A00C2E7BC /* BackButton.png in Resources */,
-				80E772F317CCCF1A00C2E7BC /* BackButton@2x.png in Resources */,
-				80E772F417CCCF1A00C2E7BC /* ForwardButton.png in Resources */,
-				80E772F517CCCF1A00C2E7BC /* ForwardButton@2x.png in Resources */,
-				80E772F617CCCF1A00C2E7BC /* images_de-iPad.css in Resources */,
-				80E772F717CCCF1A00C2E7BC /* MobileFooter_iPad.png in Resources */,
-				80E772F817CCCF1A00C2E7BC /* images_en-iPad.css in Resources */,
-				80E772F917CCCF1A00C2E7BC /* images_fr-iPad.css in Resources */,
-				80E772FA17CCCF1A00C2E7BC /* images_it-iPad.css in Resources */,
-				80E772FD17CCCF1A00C2E7BC /* GlobusCard_Animation-ipad.mov in Resources */,
-				80E772FF17CCCF1A00C2E7BC /* StoreListViewController.xib in Resources */,
-				80E7730017CCCF1A00C2E7BC /* Pin.png in Resources */,
-				80E7730117CCCF1A00C2E7BC /* Pin@2x.png in Resources */,
-				80E7730217CCCF1A00C2E7BC /* DefaultStoreQuery_de.json in Resources */,
-				80E7730317CCCF1A00C2E7BC /* DefaultStoreQuery_fr.json in Resources */,
-				80E7730417CCCF1A00C2E7BC /* CouponsDB.sqlite in Resources */,
-				80E7730617CCCF1A00C2E7BC /* GlobusCard_Animation_5.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1995,6 +1565,7 @@
 				B6372D29153D91A1005F1E75 /* Coupon.m in Sources */,
 				B6372D2C153D98A7005F1E75 /* CouponsWebservice.m in Sources */,
 				801DBEE515415F4C00C000E7 /* HTMLTemplateParser.m in Sources */,
+				8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */,
 				801DBF091541B8DF00C000E7 /* CouponWebViewController.m in Sources */,
 				80B5BBE4192F9CF50099AF8C /* StoreInfoTextCell.m in Sources */,
 				80AA37671551575E00C644DA /* TermsViewController.m in Sources */,
@@ -2016,109 +1587,6 @@
 				F8808E1218C08CD500DA029F /* LocationDistanceCell.m in Sources */,
 				800538A5167B6CF200217858 /* GlobusAlarm.m in Sources */,
 				80C6BFA817CE265D00E605F2 /* ApnsController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		80E771F817CCCF1A00C2E7BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80E771FA17CCCF1A00C2E7BC /* AppDelegate.m in Sources */,
-				80E2E0461959C366003D670A /* TrackingTableViewController.m in Sources */,
-				80E771FB17CCCF1A00C2E7BC /* GlobusController.m in Sources */,
-				80E771FC17CCCF1A00C2E7BC /* CoreDataController.m in Sources */,
-				80E771FD17CCCF1A00C2E7BC /* StylesheetController.m in Sources */,
-				80E771FE17CCCF1A00C2E7BC /* LocationController.m in Sources */,
-				80E771FF17CCCF1A00C2E7BC /* ABWebservice.m in Sources */,
-				80E7720017CCCF1A00C2E7BC /* UserResult.m in Sources */,
-				80E7720117CCCF1A00C2E7BC /* UserJSONReader.m in Sources */,
-				80E7720B17CCCF1A00C2E7BC /* Globus.xcdatamodeld in Sources */,
-				80E7720C17CCCF1A00C2E7BC /* ManagedUser.m in Sources */,
-				80E7720D17CCCF1A00C2E7BC /* GlobusCardViewController.m in Sources */,
-				80E7720E17CCCF1A00C2E7BC /* ABTableView.m in Sources */,
-				80E7720F17CCCF1A00C2E7BC /* CacheController.m in Sources */,
-				80E7721117CCCF1A00C2E7BC /* UIRemoteImageView.m in Sources */,
-				80E7721217CCCF1A00C2E7BC /* EANCodeCell.m in Sources */,
-				80E7721317CCCF1A00C2E7BC /* ABTableViewController.m in Sources */,
-				80E7721417CCCF1A00C2E7BC /* ABViewController.m in Sources */,
-				80E7721517CCCF1A00C2E7BC /* UINavigationController+PagePath.m in Sources */,
-				80E7721617CCCF1A00C2E7BC /* InfoView.m in Sources */,
-				80E7721717CCCF1A00C2E7BC /* ButtonFormfieldCell.m in Sources */,
-				80B5BBDF192F8FE80099AF8C /* StoreOpenTimesCell.m in Sources */,
-				80E7721817CCCF1A00C2E7BC /* FormfieldCell.m in Sources */,
-				80E7721917CCCF1A00C2E7BC /* FormViewController.m in Sources */,
-				80E7721A17CCCF1A00C2E7BC /* InputFormfieldCell.m in Sources */,
-				80E7721B17CCCF1A00C2E7BC /* PickerFormfieldCell.m in Sources */,
-				80E7721C17CCCF1A00C2E7BC /* SwitchFormfieldCell.m in Sources */,
-				80E7721D17CCCF1A00C2E7BC /* TextFormfieldCell.m in Sources */,
-				80E7721E17CCCF1A00C2E7BC /* WebViewController.m in Sources */,
-				80E7721F17CCCF1A00C2E7BC /* LoginFormViewController.m in Sources */,
-				80E7722017CCCF1A00C2E7BC /* ABButton.m in Sources */,
-				80E7722317CCCF1A00C2E7BC /* BrowserViewController.m in Sources */,
-				80E7722417CCCF1A00C2E7BC /* RegistrationFormViewController.m in Sources */,
-				80E7722517CCCF1A00C2E7BC /* UICellBackgroundView.m in Sources */,
-				80E7722617CCCF1A00C2E7BC /* User.m in Sources */,
-				80E7722717CCCF1A00C2E7BC /* CreateUserJSONReader.m in Sources */,
-				80E7722817CCCF1A00C2E7BC /* ResultStatus.m in Sources */,
-				80E7722917CCCF1A00C2E7BC /* ValidationError.m in Sources */,
-				80E7722A17CCCF1A00C2E7BC /* CheckLoginJSONReader.m in Sources */,
-				80E7722B17CCCF1A00C2E7BC /* WebserviceWithAuth.m in Sources */,
-				80E7722C17CCCF1A00C2E7BC /* LoggedUserAuthDataSource.m in Sources */,
-				80E7722D17CCCF1A00C2E7BC /* ProfileViewController.m in Sources */,
-				80E7722E17CCCF1A00C2E7BC /* SingleTextCell.m in Sources */,
-				80E7722F17CCCF1A00C2E7BC /* CustomCellFormViewController.m in Sources */,
-				80E7723017CCCF1A00C2E7BC /* ChangeEmailFormViewController.m in Sources */,
-				80E7723117CCCF1A00C2E7BC /* ChangeEmailJSONReader.m in Sources */,
-				80E7723217CCCF1A00C2E7BC /* EditProfileViewController.m in Sources */,
-				80E7723317CCCF1A00C2E7BC /* ProfileUpdateJSONReader.m in Sources */,
-				80E7723417CCCF1A00C2E7BC /* BorderedView.m in Sources */,
-				80E7723517CCCF1A00C2E7BC /* BorderedButtonController.m in Sources */,
-				80E7723617CCCF1A00C2E7BC /* BorderedViewImageSubview.m in Sources */,
-				80E7723717CCCF1A00C2E7BC /* BorderedViewTextSubview.m in Sources */,
-				80E7723817CCCF1A00C2E7BC /* BorderedViewTransparentSubview.m in Sources */,
-				80E7723917CCCF1A00C2E7BC /* BorderedViewSubview.m in Sources */,
-				F8630DCB18C9CDAB00FB1718 /* main.m in Sources */,
-				80E7723A17CCCF1A00C2E7BC /* WebserviceProxy.m in Sources */,
-				80E7723B17CCCF1A00C2E7BC /* WebserviceWithProxy.m in Sources */,
-				80E7723C17CCCF1A00C2E7BC /* NetworkActivityController.m in Sources */,
-				80E7723D17CCCF1A00C2E7BC /* ChangePasswordFormViewController.m in Sources */,
-				80E7723E17CCCF1A00C2E7BC /* ChangePasswordJSONReader.m in Sources */,
-				80E7723F17CCCF1A00C2E7BC /* ContactViewController.m in Sources */,
-				80E7724017CCCF1A00C2E7BC /* SectionTableView.m in Sources */,
-				80E7724117CCCF1A00C2E7BC /* GlobusSectionHeaderView.m in Sources */,
-				80E7724217CCCF1A00C2E7BC /* ButtonCell.m in Sources */,
-				80E7724317CCCF1A00C2E7BC /* PropertyCell.m in Sources */,
-				80E7724717CCCF1A00C2E7BC /* CheckGlobusCardJSONReader.m in Sources */,
-				80E7724817CCCF1A00C2E7BC /* StoreViewController.m in Sources */,
-				80E7724917CCCF1A00C2E7BC /* StoreDetailCell.m in Sources */,
-				80E7724B17CCCF1A00C2E7BC /* SystemUserSingleton.m in Sources */,
-				80E7724C17CCCF1A00C2E7BC /* StoreWebViewController.m in Sources */,
-				80E7724D17CCCF1A00C2E7BC /* CouponCellWithDate.m in Sources */,
-				80E7724E17CCCF1A00C2E7BC /* CouponsViewController.m in Sources */,
-				80E7724F17CCCF1A00C2E7BC /* Coupon.m in Sources */,
-				80E7725017CCCF1A00C2E7BC /* CouponsWebservice.m in Sources */,
-				80E7725217CCCF1A00C2E7BC /* HTMLTemplateParser.m in Sources */,
-				80E7725317CCCF1A00C2E7BC /* CouponWebViewController.m in Sources */,
-				80B5BBE3192F9CF50099AF8C /* StoreInfoTextCell.m in Sources */,
-				80E7725417CCCF1A00C2E7BC /* TermsViewController.m in Sources */,
-				80E7725517CCCF1A00C2E7BC /* ResendActivationMailWebservice.m in Sources */,
-				80E7725617CCCF1A00C2E7BC /* ImagesForCouponsJSONReader.m in Sources */,
-				80E7725717CCCF1A00C2E7BC /* GlobusSectionHeaderInfoView.m in Sources */,
-				80E7725817CCCF1A00C2E7BC /* Store.m in Sources */,
-				80E7725917CCCF1A00C2E7BC /* StoreListViewController.m in Sources */,
-				80E7725A17CCCF1A00C2E7BC /* StoreTableView.m in Sources */,
-				80E7725C17CCCF1A00C2E7BC /* StoreResult.m in Sources */,
-				80E7725D17CCCF1A00C2E7BC /* StoresJSONService.m in Sources */,
-				80E7726317CCCF1A00C2E7BC /* CouponsController.m in Sources */,
-				80E7726417CCCF1A00C2E7BC /* CouponState.m in Sources */,
-				80E7726517CCCF1A00C2E7BC /* ValidState.m in Sources */,
-				80E7726617CCCF1A00C2E7BC /* InvalidState.m in Sources */,
-				80E7726717CCCF1A00C2E7BC /* UsedState.m in Sources */,
-				80E7726817CCCF1A00C2E7BC /* ActiveState.m in Sources */,
-				80E7726917CCCF1A00C2E7BC /* ActivatedState.m in Sources */,
-				F8808E1118C08CD500DA029F /* LocationDistanceCell.m in Sources */,
-				80E7726D17CCCF1A00C2E7BC /* GlobusAlarm.m in Sources */,
-				80C6BFA717CE265D00E605F2 /* ApnsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2178,25 +1646,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8095ADCA14DA9FC700874AB7 /* Debug */ = {
+		8095ADCA14DA9FC700874AB7 /* Debug-Stage */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2213,31 +1683,33 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Globus/floatingcloud\"";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Debug;
+			name = "Debug-Stage";
 		};
-		8095ADCB14DA9FC700874AB7 /* Release */ = {
+		8095ADCB14DA9FC700874AB7 /* Release-Stage */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_THUMB_SUPPORT = NO;
@@ -2249,157 +1721,78 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Globus/floatingcloud\"";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Release;
+			name = "Release-Stage";
 		};
-		8095ADCD14DA9FC700874AB7 /* Debug */ = {
+		8095ADCD14DA9FC700874AB7 /* Debug-Stage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "Globus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Debug;
+			name = "Debug-Stage";
 		};
-		8095ADCE14DA9FC700874AB7 /* Release */ = {
+		8095ADCE14DA9FC700874AB7 /* Release-Stage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "Globus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "939050BF-AF1D-4BA7-A37C-7F9DCD59EC32";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Release;
+			name = "Release-Stage";
 		};
-		80E7730917CCCF1A00C2E7BC /* Debug */ = {
+		80FF92AE1576542300DD2AF9 /* Distribution-AppStore */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					STAGING,
-				);
-				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "GlobusStaging-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Globus/floatingcloud",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
-				);
-				PRODUCT_NAME = GlobusStaging;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		80E7730A17CCCF1A00C2E7BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: youngculture AG";
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
-				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "GlobusStaging-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Globus/floatingcloud",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
-				);
-				PRODUCT_NAME = GlobusStaging;
-				PROVISIONING_PROFILE = "1564C1AB-1B15-4548-8C7B-377728708B8E";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		80E7730B17CCCF1A00C2E7BC /* Distribution */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = STAGING;
-				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "GlobusStaging-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Globus/floatingcloud",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
-				);
-				PRODUCT_NAME = GlobusStaging;
-				WRAPPER_EXTENSION = app;
-			};
-			name = Distribution;
-		};
-		80FF92AE1576542300DD2AF9 /* Distribution */ = {
-			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv7,
-					armv7s,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -2410,36 +1803,166 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Globus/floatingcloud\"";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
-			name = Distribution;
+			name = "Distribution-AppStore";
 		};
-		80FF92AF1576542300DD2AF9 /* Distribution */ = {
+		80FF92AF1576542300DD2AF9 /* Distribution-AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Magazine zum Globus AG (FFWRZXPC94)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "Globus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Globus/floatingcloud",
 					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "4A72A6D9-ABC0-4E13-BFC8-A76A69DBE54C";
+				PROVISIONING_PROFILE = "b7ccb680-095b-4259-ac19-e68163ddcbea";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Distribution;
+			name = "Distribution-AppStore";
+		};
+		8BC3A5841CBF9CDE003E9DFD /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Globus/floatingcloud\"";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-Production";
+		};
+		8BC3A5851CBF9CDE003E9DFD /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Globus/floatingcloud",
+					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
+				PRODUCT_NAME = Globus;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug-Production";
+		};
+		8BC3A5861CBF9CE9003E9DFD /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Globus/Globus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Globus/floatingcloud\"";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-Production";
+		};
+		8BC3A5871CBF9CE9003E9DFD /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Globus/floatingcloud",
+					"$(PROJECT_DIR)/Globus/Tools/GoogleAnalytics",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
+				PRODUCT_NAME = Globus;
+				PROVISIONING_PROFILE = "bb12ef05-de67-46fa-8132-95964f5a5bf8";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Release-Production";
 		};
 /* End XCBuildConfiguration section */
 
@@ -2447,32 +1970,26 @@
 		8095AD9414DA9FC700874AB7 /* Build configuration list for PBXProject "Globus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8095ADCA14DA9FC700874AB7 /* Debug */,
-				8095ADCB14DA9FC700874AB7 /* Release */,
-				80FF92AE1576542300DD2AF9 /* Distribution */,
+				8095ADCA14DA9FC700874AB7 /* Debug-Stage */,
+				8BC3A5841CBF9CDE003E9DFD /* Debug-Production */,
+				8095ADCB14DA9FC700874AB7 /* Release-Stage */,
+				8BC3A5861CBF9CE9003E9DFD /* Release-Production */,
+				80FF92AE1576542300DD2AF9 /* Distribution-AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Stage";
 		};
 		8095ADCC14DA9FC700874AB7 /* Build configuration list for PBXNativeTarget "Globus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8095ADCD14DA9FC700874AB7 /* Debug */,
-				8095ADCE14DA9FC700874AB7 /* Release */,
-				80FF92AF1576542300DD2AF9 /* Distribution */,
+				8095ADCD14DA9FC700874AB7 /* Debug-Stage */,
+				8BC3A5851CBF9CDE003E9DFD /* Debug-Production */,
+				8095ADCE14DA9FC700874AB7 /* Release-Stage */,
+				8BC3A5871CBF9CE9003E9DFD /* Release-Production */,
+				80FF92AF1576542300DD2AF9 /* Distribution-AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80E7730817CCCF1A00C2E7BC /* Build configuration list for PBXNativeTarget "GlobusStaging" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				80E7730917CCCF1A00C2E7BC /* Debug */,
-				80E7730A17CCCF1A00C2E7BC /* Release */,
-				80E7730B17CCCF1A00C2E7BC /* Distribution */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Stage";
 		};
 /* End XCConfigurationList section */
 

@@ -28,7 +28,7 @@
 
 - (void)initObject;
 
-- (void)drawCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath rows:(int)rows;
+- (void)drawCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath rows:(NSUInteger)rows;
 
 @end
 
@@ -231,7 +231,7 @@
 	return nil;
 }
 
-- (void)drawCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath rows:(int)rows
+- (void)drawCell:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath rows:(NSUInteger)rows
 {
 	UICellBackgroundView *bg = [[UICellBackgroundView alloc] init];
 	UICellBackgroundView *selBg = [[UICellBackgroundView alloc] init];

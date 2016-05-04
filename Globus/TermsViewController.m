@@ -71,7 +71,7 @@ NSString *const UserDidAcceptTermsNotification = @"UserDidAcceptTermsNotificatio
 	acceptTermsButton.titleLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? 23.0 : 15.0];
 	acceptTermsButton.titleLabel.minimumScaleFactor = 0.8;
     
-    [self loadWebViewContent];
+    [self loadRemoteTermsIntoWebView];
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
@@ -85,7 +85,7 @@ NSString *const UserDidAcceptTermsNotification = @"UserDidAcceptTermsNotificatio
 
 #pragma mark - API methods
 
-- (void)loadWebViewContent
+- (void)loadLocalTermsIntoWebView
 {
     NSError *error;
     
@@ -99,6 +99,13 @@ NSString *const UserDidAcceptTermsNotification = @"UserDidAcceptTermsNotificatio
     [webView setBackgroundColor:[UIColor clearColor]];    
 }
 
+- (void)loadRemoteTermsIntoWebView {
+    webView.scalesPageToFit = YES; // GAMIA-28
+    NSString *urlString = NSLocalizedString(@"Globus.Terms.URL", @"");
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+}
 
 #pragma mark - GUI Actions
 

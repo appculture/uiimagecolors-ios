@@ -11,7 +11,7 @@
 #import "GlobusController.h"
 #import "BorderedView.h"
 #import "BorderedButtonController.h"
-#import "FloatingCloudLib.h"
+#import "FloatingCloudKit.h"
 
 
 @interface ContactViewController ()
@@ -73,7 +73,7 @@
 	[[BorderedButtonController sharedInstance] registerTarget:self andAction:@selector(doneBtnTouched) forBorderedView:doneButton];
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:doneButton];
 	
-	[self.view addSubview:youngcultureButton];
+	[self.view addSubview:appcultureButton];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -81,7 +81,7 @@
     [super viewWillAppear:animated];
     self.navigationItem.rightBarButtonItem.customView.alpha = 1.0;
 	tableView.scrollEnabled = NO;
-	youngcultureButton.frame = CGRectMake(0.0, tableView.frame.size.height - 40.0, tableView.frame.size.width, 40.0);
+	appcultureButton.frame = CGRectMake(0.0, tableView.frame.size.height - 40.0, tableView.frame.size.width, 40.0);
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -122,15 +122,19 @@
 		
 	} else
 		url = [NSURL URLWithString:NSLocalizedString(@"Contact.WebsiteUrl", @"")];
-		
+
+    [self presentBrowserWithTitle:@"GlobusCard" andURL:url];
+}
+
+- (void)presentBrowserWithTitle:(NSString *)title andURL:(NSURL *)url {
     [[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:url];
-	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"GlobusCard"];
+    [[browserNC.viewControllers objectAtIndex:0] setTitle:title];
     if ([[GlobusController sharedInstance] is_iPad])
     {
         browserNC.modalPresentationStyle = UIModalPresentationPageSheet;
         browserNC.modalInPopover = YES;
     }
-	[self presentViewController:browserNC animated:YES completion:nil];
+    [self presentViewController:browserNC animated:YES completion:nil];
 }
 
 - (void)openWebView
@@ -155,10 +159,10 @@
 	[self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)youngcultureBtnTouched:(id)sender {
+- (IBAction)appcultureBtnTouched:(id)sender {
 	
-	[[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:[[GlobusController sharedInstance] getWebsiteURLForString:NSLocalizedString(@"Contact.YoungcultureUrl", @"")]];
-	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"youngculture mobile"];
+	[[browserNC.viewControllers objectAtIndex:0] setBrowserOptions:YES url:[[GlobusController sharedInstance] getWebsiteURLForString:NSLocalizedString(@"Contact.Appculture.Url", @"")]];
+	[[browserNC.viewControllers objectAtIndex:0] setTitle:@"appculture"];
     if ([[GlobusController sharedInstance] is_iPad])
     {
         browserNC.modalPresentationStyle = UIModalPresentationPageSheet;
@@ -237,7 +241,7 @@
     {
 		NSString *subject = @"";
 		if([[GlobusController sharedInstance] isLoggedIn])
-			subject = [[FloatingCloudLib sharedInstance] deviceToken];
+			subject = [[FloatingCloudKit sharedInstance] deviceTokenString];
 		
 		[[GlobusController sharedInstance] analyticsTrackEvent:@"Info" action:@"Click" label:@"Mail" value:@0];
 		[self composeMailTo:NSLocalizedString(@"Contact.EmailButton.Value", @"") withSubject:subject body:@""];
@@ -250,7 +254,10 @@
 	else if ([action isEqualToString:@"OpenWebView"])
 	{
 		[[GlobusController sharedInstance] analyticsTrackEvent:@"Info" action:@"Click" label:@"GTC" value:@0];
-		[self openWebView];
+        NSString *termsTitle = NSLocalizedString(@"Contact.ContactButton", @"");
+        NSString *urlString = NSLocalizedString(@"Globus.Terms.URL", @"");
+        NSURL *url = [NSURL URLWithString:urlString];
+        [self presentBrowserWithTitle:termsTitle andURL:url];
 	}
 	
 	[theTableView deselectRowAtIndexPath:theTableView.indexPathForSelectedRow animated:YES];

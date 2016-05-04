@@ -7,50 +7,38 @@
 
 #import "SystemUserSingleton.h"
 
-
-#if STAGING
-
-#define kUsername @"app"
-#define kPassword @"secret"
-
-#else
-
-#define kUsername @"app"
-#define kPassword @"PbICkxAKFRAH95qksmsS"
-
-#endif
-
+@interface SystemUserSingleton()
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *password;
+@end
 
 @implementation SystemUserSingleton
 
-#pragma mark - Singleton Methods
+#pragma mark - Singleton
 
-+ (SystemUserSingleton*)sharedInstance {
-
-	static SystemUserSingleton *_sharedInstance;
-	if(!_sharedInstance) {
-		static dispatch_once_t oncePredicate;
-		dispatch_once(&oncePredicate, ^{
-			_sharedInstance = [[super allocWithZone:nil] init];
-			});
-		}
-
-		return _sharedInstance;
++ (instancetype)sharedInstance {
+    static id sharedInstance;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
 }
 
-+ (id)allocWithZone:(NSZone *)zone {	
+#pragma mark - API
 
-	return [self sharedInstance];
+- (NSString *)username {
+    if (!_username) {
+        _username = [UIApplication serverUsername];
+    }
+    return _username;
 }
 
-
-#pragma mark - WebserviceAuthDataSource methods
-
-- (NSString*)username {
-    return kUsername;
-}
-- (NSString*)password {
-    return kPassword;
+- (NSString *)password {
+    if (!_password) {
+        _password = [UIApplication serverPassword];
+    }
+    return _password;
 }
 
 @end

@@ -40,18 +40,19 @@
     NSString *userEmail = [self.dataSource username];
     if(userEmail) 
 	{
-		NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@/changeLogin.json",kServerAddress, userEmail];
+        NSString *serverAddress = [UIApplication serverAddress];
+		NSString *requestURLString = [NSString stringWithFormat:@"%@/gcard/kunde/%@/changeLogin.json", serverAddress, userEmail];
 		
 		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
 		[request setURL:[NSURL URLWithString:requestURLString]];
 		[request setHTTPMethod:@"POST"];
 		[request setValue: @"application/json" forHTTPHeaderField: @"Content-Type"];	
 		[request setHTTPBody: [body dataUsingEncoding: NSUTF8StringEncoding]];
-		
-#if STAGING
-		NSLog(@"Change Email: %@", requestURLString);
-		NSLog(@"Body: %@", body);
-#endif
+        
+        if ([UIApplication isStage]) {
+            NSLog(@"Change Email: %@", requestURLString);
+            NSLog(@"Body: %@", body);
+        }
 		
 		[super startWithRequest:request];
 	}

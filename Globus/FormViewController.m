@@ -261,7 +261,7 @@
 	{
 		NSUInteger sectionNr = [oldFormFieldArray indexOfObject:section];
 		//[oldSectionIndexSet addIndex:sectionNr];
-		[oldSectionPathDictionary setObject:[NSString stringWithFormat:@"%i", sectionNr] forKey:[NSString stringWithFormat:@"%i", sectionNr]];
+		[oldSectionPathDictionary setObject:[NSString stringWithFormat:@"%lu", (unsigned long)sectionNr] forKey:[NSString stringWithFormat:@"%lu", (unsigned long)sectionNr]];
 		NSArray *rowArray = [section objectForKey:@"Rows"];
 		
 		for(NSDictionary *row in rowArray)
@@ -283,7 +283,7 @@
 	{
 		NSUInteger sectionNr = [newFormFieldArray indexOfObject:section];
 		//[newSectionIndexSet addIndex:sectionNr];
-		[newSectionPathDictionary setObject:[NSString stringWithFormat:@"%i", sectionNr] forKey:[NSString stringWithFormat:@"%i", sectionNr]];
+		[newSectionPathDictionary setObject:[NSString stringWithFormat:@"%lu", (unsigned long)sectionNr] forKey:[NSString stringWithFormat:@"%lu", (unsigned long)sectionNr]];
 		NSArray *rowArray = [section objectForKey:@"Rows"];
 		
 		for(NSDictionary *row in rowArray)
