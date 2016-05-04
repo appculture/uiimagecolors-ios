@@ -22,16 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchGradient" translatesAutoresizingMaskIntoConstraints="NO" id="9EA-Le-1Pp">
-                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="225" width="600" height="375"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBall" translatesAutoresizingMaskIntoConstraints="NO" id="sVb-oB-19q">
-                                <rect key="frame" x="20" y="228" width="150" height="294"/>
+                                <rect key="frame" x="20" y="153" width="150" height="294"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sVb-oB-19q" secondAttribute="height" multiplier="51:100" id="sfu-Ep-n0G"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GlobuscardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="uWI-ta-6XO">
-                                <rect key="frame" x="190" y="179" width="286" height="97"/>
+                                <rect key="frame" x="190" y="104" width="286" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uWI-ta-6XO" secondAttribute="height" multiplier="180:61" id="Pvn-lJ-Mys"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                         <constraints>
                             <constraint firstItem="9EA-Le-1Pp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="1Tn-2z-WvZ"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9EA-Le-1Pp" secondAttribute="bottom" id="8s2-6f-Xqa"/>
-                            <constraint firstItem="9EA-Le-1Pp" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:2" id="L7y-vZ-nna"/>
+                            <constraint firstItem="9EA-Le-1Pp" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="1:1.6" id="L7y-vZ-nna"/>
                             <constraint firstItem="uWI-ta-6XO" firstAttribute="leading" secondItem="sVb-oB-19q" secondAttribute="trailing" constant="20" id="PAJ-vS-J2m"/>
                             <constraint firstItem="sVb-oB-19q" firstAttribute="width" secondItem="9EA-Le-1Pp" secondAttribute="width" multiplier="1:4" id="W0X-Hr-a32"/>
                             <constraint firstItem="9EA-Le-1Pp" firstAttribute="top" secondItem="uWI-ta-6XO" secondAttribute="bottom" constant="24" id="W7P-UT-hNL"/>
