@@ -287,11 +287,7 @@
 		{
 			if ([[formfieldDictionary valueForKey:@"Name"] isEqualToString:@"ChooseContact"])
 			{
-				ABPeoplePickerNavigationController *abPickerNavigationController = [[ABPeoplePickerNavigationController alloc] init];
-				abPickerNavigationController.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonAddressProperty]];
-				abPickerNavigationController.peoplePickerDelegate = self;
-				
-				[self.navigationController presentViewController:abPickerNavigationController animated:YES completion:nil];
+                [self addressbookBarButtonAction:nil];
 			}
 			if ([[formfieldDictionary valueForKey:@"Name"] isEqualToString:@"RegistrationButton"])
 			{
@@ -469,35 +465,27 @@
 
 #pragma mark - Address book
 
-- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person
-{
-	return YES;
-}
-
-- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
-{
-	UserResult *user = [[UserResult alloc] initWithABPerson:person property:property identifier:identifier];
-	if (user.isValidCountry)
-	{
-		[user populateFormValueDictionary:valueDictionary];
-		[self reloadForm];
-		
-		[self.navigationController dismissViewControllerAnimated:YES completion:nil];
-
-		if ([self formfieldValueForName:@"Email"].length > 0)
-		{
-			[checkLoginJSONReader stop];
-			FormfieldCell *emailCell = [self formfieldCellForName:@"Email"];
-			[checkLoginJSONReader checkUsername:[self valueForFormfieldCell:emailCell]];
-			[self reloadInputViews];
-		}
-		
-		return NO;
-	} else 
-	{
-		[[GlobusController sharedInstance] alertWithType:@"Registration" messageKey:@"UnsupportedCountry"];
-		return NO;
-	}
+- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier {
+    
+    UserResult *user = [[UserResult alloc] initWithABPerson:person property:property identifier:identifier];
+    if (user.isValidCountry)
+    {
+        [user populateFormValueDictionary:valueDictionary];
+        [self reloadForm];
+        
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        
+        if ([self formfieldValueForName:@"Email"].length > 0)
+        {
+            [checkLoginJSONReader stop];
+            FormfieldCell *emailCell = [self formfieldCellForName:@"Email"];
+            [checkLoginJSONReader checkUsername:[self valueForFormfieldCell:emailCell]];
+            [self reloadInputViews];
+        }
+    } else
+    {
+        [[GlobusController sharedInstance] alertWithType:@"Registration" messageKey:@"UnsupportedCountry"];
+    }
 }
 
 - (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
