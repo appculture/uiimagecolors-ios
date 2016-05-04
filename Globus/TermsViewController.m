@@ -100,6 +100,7 @@ NSString *const UserDidAcceptTermsNotification = @"UserDidAcceptTermsNotificatio
 }
 
 - (void)loadRemoteTermsIntoWebView {
+    webView.scalesPageToFit = YES; // GAMIA-28
     NSString *urlString = NSLocalizedString(@"Globus.Terms.URL", @"");
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
