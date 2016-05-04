@@ -520,12 +520,11 @@ static NSInteger distanceSort(id store1, id store2, void *context)
 	
 	if ([annotation isKindOfClass:[Store class]])
 	{
-		MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:storeStockPinID];
+		MKAnnotationView *pinView = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:storeStockPinID];
 		
 		if (!pinView)
 		{
-			pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:storeStockPinID];
-			pinView.animatesDrop = NO;
+			pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:storeStockPinID];
 			pinView.canShowCallout = YES;
 			pinView.image = [UIImage imageNamed:@"Pin.png"];
 			pinView.centerOffset = CGPointMake(-7.0, -1.0);
