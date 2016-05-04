@@ -1736,6 +1736,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1747,6 +1748,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Debug-Stage";
@@ -1756,6 +1758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Stage";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1815,6 +1818,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1826,7 +1830,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "4A72A6D9-ABC0-4E13-BFC8-A76A69DBE54C";
+				PROVISIONING_PROFILE = "b7ccb680-095b-4259-ac19-e68163ddcbea";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Distribution-AppStore";
@@ -1882,6 +1886,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1893,6 +1898,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Debug-Production";
@@ -1941,6 +1947,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -1952,7 +1959,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "939050BF-AF1D-4BA7-A37C-7F9DCD59EC32";
+				PROVISIONING_PROFILE = "bb12ef05-de67-46fa-8132-95964f5a5bf8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Release-Production";
