@@ -1328,7 +1328,7 @@
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					8095AD9914DA9FC700874AB7 = {
-						DevelopmentTeam = FFWRZXPC94;
+						DevelopmentTeam = 6R55RBD8VC;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
