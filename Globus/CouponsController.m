@@ -91,6 +91,7 @@ static NSString *const couponWrapperFileName = @"couponsWrapper.dat";
 						
 			if ([validTo compare:[NSDate date]] == NSOrderedDescending)
 			{
+                _globusAlarm = nil;
 				_globusAlarm = [[GlobusAlarm alloc] initWithObject:coupon];
 				[_globusAlarm schedule];
 			}

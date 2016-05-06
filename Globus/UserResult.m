@@ -234,8 +234,13 @@
 
 - (BOOL)isValidCountry
 {
-	if ([country isEqualToString:@"CH"] || [country isEqualToString:@"DE"] || [country isEqualToString:@"FR"] || [country isEqualToString:@"AT"] || [country isEqualToString:@"IT"] || [country isEqualToString:@"LI"])
-		return YES;
+    if (!country || [country isEqualToString:@""]) {
+        return YES;
+    }
+    if ([country isEqualToString:@"CH"] || [country isEqualToString:@"DE"] || [country isEqualToString:@"FR"] ||
+        [country isEqualToString:@"AT"] || [country isEqualToString:@"IT"] || [country isEqualToString:@"LI"]) {
+        return YES;
+    }
 	
 	return NO;
 }
