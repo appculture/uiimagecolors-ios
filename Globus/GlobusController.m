@@ -119,6 +119,8 @@ NSString *const GlobusControllerReceivedLocalNotification = @"GlobusControllerRe
 			_isLoggedIn = YES;
 		} else {
 			_isLoggedIn = NO;
+            // cancel local notifications if user is not logged in [GAMIA-34]
+            [[UIApplication sharedApplication] cancelAllLocalNotifications];
 		}
         self.userJsonReader = [[UserJSONReader alloc] init];
 		_userJsonReader.delegate = self;
