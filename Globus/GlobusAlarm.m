@@ -93,6 +93,7 @@ static SystemSoundID gAlarmSoundFileObject;
         [notification setUserInfo:userInfo];
 		
         [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+//        NSLog(@"local notifications: %@", [[UIApplication sharedApplication] scheduledLocalNotifications]);
 	}
 }
 

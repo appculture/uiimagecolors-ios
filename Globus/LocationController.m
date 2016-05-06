@@ -77,7 +77,15 @@ static LocationController *sharedLocationController = nil;
 
 - (BOOL)locationServicesEnabled
 {
-	return [CLLocationManager locationServicesEnabled];
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    switch (status) {
+        case kCLAuthorizationStatusDenied:
+        case kCLAuthorizationStatusRestricted:
+            return false;
+            
+        default:
+            return true;
+    }
 }
 
 
