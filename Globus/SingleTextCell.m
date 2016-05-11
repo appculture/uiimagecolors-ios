@@ -17,16 +17,24 @@
 
 NSString *const kSingleTextCellId = @"SingleTextCellId";
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
 	if (self) 
     {
-        
 		self.backgroundColor = [UIColor clearColor];
         self.userInteractionEnabled = YES;
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
         
 		UICellBackgroundView *bg = [[UICellBackgroundView alloc] init];
 		
@@ -46,6 +54,8 @@ NSString *const kSingleTextCellId = @"SingleTextCellId";
         self.selectedBackgroundView = selBg;
 		
 		self.contentView.backgroundColor = [UIColor clearColor];
+        
+        [self configureLabels];
 	}
 	
 	

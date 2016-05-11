@@ -35,25 +35,35 @@ NSString *const kPropertyCellID = @"kPropertyCellID";
 
 #pragma mark - Housekeeping
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"PropertyTypeText"];
+    self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
+    self.textLabel.numberOfLines = 0;
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.textLabel.backgroundColor = [UIColor clearColor];
+    
+    self.detailTextLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"PropertyValueText"];
+    self.detailTextLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
+    self.detailTextLabel.numberOfLines = 0;
+    self.detailTextLabel.font = [UIFont fontWithName:@"GillSansAltOneLight" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.detailTextLabel.backgroundColor = [UIColor clearColor];
+}
+
 - (id)init
 {
 	if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:kPropertyCellID])
 	{
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
-		
-		self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"PropertyTypeText"];
-		self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
-		self.textLabel.numberOfLines = 0;
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-		self.textLabel.backgroundColor = [UIColor clearColor];
-		        
-		self.detailTextLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"PropertyValueText"];
-		self.detailTextLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
-		self.detailTextLabel.numberOfLines = 0;
-        self.detailTextLabel.font = [UIFont fontWithName:@"GillSansAltOneLight" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-		self.detailTextLabel.backgroundColor = [UIColor clearColor];
 				
 		disclosureIndicatorView = [[UIImageView alloc] initWithImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicator"] highlightedImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicatorHighlighted"]];
+        
+        [self configureLabels];
 	}
 	
 	return self;

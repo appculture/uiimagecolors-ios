@@ -31,6 +31,21 @@ NSString *const kButtonCellID = @"ButtonCellID";
 
 #pragma mark - Housekeeping
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.textLabel.backgroundColor = [UIColor clearColor];
+    self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
+    self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
+    self.detailTextLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"SmallDescriptionText"];
+    self.textAlignment = NSTextAlignmentLeft;
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style
 {
 	if ((self = [super initWithStyle:style reuseIdentifier:kButtonCellID]))
@@ -38,14 +53,9 @@ NSString *const kButtonCellID = @"ButtonCellID";
 		tableViewCellStyle = style;
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        self.textLabel.backgroundColor = [UIColor clearColor];
-		self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
-		self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
-		self.detailTextLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"SmallDescriptionText"];		
-        self.textAlignment = NSTextAlignmentLeft;
-        
 		disclosureIndicatorView = [[UIImageView alloc] initWithImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicator"] highlightedImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicatorHighlighted"]];
+        
+        [self configureLabels];
 	}
 	
 	return self;

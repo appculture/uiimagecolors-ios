@@ -15,6 +15,4 @@ extern NSString *const kStoreDetailCellId;
 
 @property (nonatomic) UICellBackgroundViewPosition bgPosition;
 
-- (void)setupSubviews;
-
 @end
