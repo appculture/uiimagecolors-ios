@@ -32,19 +32,32 @@ NSString *const kStoreInfoTextCellId = @"StoreInfoTextCellId";
 @synthesize bgPosition = _bgPosition;
 @synthesize formfieldCellWidth = _formfieldCellWidth;
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
+    self.textLabel.backgroundColor = [UIColor clearColor];
+    self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
+    self.textLabel.numberOfLines = 0;
+    
+    self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
+    self.detailTextLabel.minimumScaleFactor = 0.8;
+    self.detailTextLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
 	if (self) 
     {
-        
 		self.backgroundColor = [UIColor clearColor];
         self.userInteractionEnabled = YES;
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
-        self.textLabel.backgroundColor = [UIColor clearColor];
-        self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
         
 		UICellBackgroundView *bg = [[UICellBackgroundView alloc] init];
 		
@@ -65,9 +78,8 @@ NSString *const kStoreInfoTextCellId = @"StoreInfoTextCellId";
         self.selectedBackgroundView = selBg;
 		
 		self.contentView.backgroundColor = [UIColor clearColor];
-        self.textLabel.numberOfLines = 0;
         
-        [self setupSubviews];
+        [self configureLabels];
 	}
 	
 	return self;
@@ -96,13 +108,6 @@ NSString *const kStoreInfoTextCellId = @"StoreInfoTextCellId";
     [super setSelected:selected animated:animated];
 	
     // Configure the view for the selected state
-}
-
-- (void)setupSubviews {
-//    self.formfieldCellWidth = [[GlobusController sharedInstance] is_iPad] ? kiPadDetailTextLabelOriginX : kiPhoneDetailTextLabelOriginX;
-    self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
-	self.detailTextLabel.minimumScaleFactor = 0.8;
-	self.detailTextLabel.lineBreakMode = NSLineBreakByTruncatingTail;
 }
 
 @end

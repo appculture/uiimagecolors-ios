@@ -37,24 +37,39 @@ NSString *const kStoreDetailCellId = @"StoreDetailCellId";
 @synthesize formfieldCellWidth = _formfieldCellWidth;
 @synthesize textLableOriginX = _textLableOriginX;
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
+    self.textLabel.backgroundColor = [UIColor clearColor];
+    self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
+    self.detailTextLabel.font = [UIFont fontWithName:@"GillSansAltOneLight" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.detailTextLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"PropertyValueText"];
+    self.detailTextLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
+    self.detailTextLabel.backgroundColor = [UIColor clearColor];
+    
+    self.detailTextLabel.numberOfLines = 0;
+    self.detailTextLabel.textAlignment = NSTextAlignmentLeft;
+    self.textLabel.numberOfLines = 0;
+    
+    self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
+    self.detailTextLabel.minimumScaleFactor = 0.8;
+    self.detailTextLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
 	if (self) 
     {
-        
 		self.backgroundColor = [UIColor clearColor];
         self.userInteractionEnabled = YES;
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
-        self.textLabel.backgroundColor = [UIColor clearColor];
-        self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
-        self.detailTextLabel.font = [UIFont fontWithName:@"GillSansAltOneLight" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        self.detailTextLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"PropertyValueText"];
-        self.detailTextLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellTextHighlighted"];
-        self.detailTextLabel.backgroundColor = [UIColor clearColor];
-		
         
 		UICellBackgroundView *bg = [[UICellBackgroundView alloc] init];
 		
@@ -75,13 +90,11 @@ NSString *const kStoreDetailCellId = @"StoreDetailCellId";
         self.selectedBackgroundView = selBg;
 		
 		self.contentView.backgroundColor = [UIColor clearColor];
-        self.detailTextLabel.numberOfLines = 0;
-        self.detailTextLabel.textAlignment = NSTextAlignmentLeft;
-        self.textLabel.numberOfLines = 0;
         
         self.textLableOriginX = [[GlobusController sharedInstance] is_iPad] ? kiPadDetailTextLabelOriginX : kiPhoneDetailTextLabelOriginX;
+        self.formfieldCellWidth = [[GlobusController sharedInstance] is_iPad] ? kiPadDetailTextLabelOriginX : kiPhoneDetailTextLabelOriginX;
         
-        [self setupSubviews];
+        [self configureLabels];
 	}
 	
 	return self;
@@ -122,13 +135,6 @@ NSString *const kStoreDetailCellId = @"StoreDetailCellId";
     [super setSelected:selected animated:animated];
 	
     // Configure the view for the selected state
-}
-
-- (void)setupSubviews {
-    self.formfieldCellWidth = [[GlobusController sharedInstance] is_iPad] ? kiPadDetailTextLabelOriginX : kiPhoneDetailTextLabelOriginX;
-    self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
-	self.detailTextLabel.minimumScaleFactor = 0.8;
-	self.detailTextLabel.lineBreakMode = NSLineBreakByTruncatingTail;
 }
 
 @end

@@ -21,13 +21,23 @@ NSString *const kButtonFormfieldCellID = @"ButtonFormfieldCellID";
 
 #pragma mark - Housekeeping
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellText"];
+    self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellText"];
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFormfieldCellFontSize : kiPhoneFormfieldCellFontSize];
+}
+
 - (id)init
 {
 	if ((self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kButtonFormfieldCellID]))
 	{
-		self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellText"];
-		self.textLabel.highlightedTextColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellText"];
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFormfieldCellFontSize : kiPhoneFormfieldCellFontSize];
+        [self configureLabels];
 	}
 	
 	return self;
