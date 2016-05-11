@@ -53,6 +53,9 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
     self.detailTextLabel.highlightedTextColor = [UIColor blackColor];
     self.detailTextLabel.backgroundColor = [UIColor clearColor];
     self.detailTextLabel.numberOfLines = 1;
+    self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
+    self.detailTextLabel.minimumScaleFactor = 0.8;
+    self.detailTextLabel.lineBreakMode = NSLineBreakByTruncatingTail;
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -115,11 +118,6 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
     self.textLabel.center = CGPointMake(self.textLabel.center.x, CGRectGetMidY(contentRect));
 	
 	self.detailTextLabel.frame = CGRectMake(contentRect.origin.x + 10.0 + formfieldCellWidth + 10.0, contentRect.origin.y, contentRect.size.width - 10.0 - formfieldCellWidth - 10.0 - 15.0, contentRect.size.height);
-	
-	self.detailTextLabel.adjustsFontSizeToFitWidth = YES;
-	self.detailTextLabel.minimumScaleFactor = 0.8;
-	self.detailTextLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-
     
     if([[GlobusController sharedInstance] is_iPad]) {
         _neuImage.frame = CGRectMake(500,(contentRect.size.height-_neuImage.frame.size.height)/2, _neuImage.frame.size.width, _neuImage.frame.size.height);
