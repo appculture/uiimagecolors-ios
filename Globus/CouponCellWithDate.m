@@ -34,6 +34,27 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
 @synthesize isActive = _isActive;
 @synthesize neuImage = _neuImage;
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.textLabel.textColor = [UIColor blackColor];
+    self.textLabel.backgroundColor = [UIColor clearColor];
+    self.textLabel.highlightedTextColor = [UIColor blackColor];
+    self.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+    self.textLabel.numberOfLines = 8;
+    
+    self.detailTextLabel.font = [UIFont fontWithName:@"GillSansAltOneLight" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.detailTextLabel.textColor = [UIColor blackColor];
+    self.detailTextLabel.highlightedTextColor = [UIColor blackColor];
+    self.detailTextLabel.backgroundColor = [UIColor clearColor];
+    self.detailTextLabel.numberOfLines = 1;
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
@@ -41,20 +62,8 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
     {
 		self.backgroundColor = [UIColor clearColor];
         self.userInteractionEnabled = YES;
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        self.textLabel.textColor = [UIColor blackColor];
-        self.textLabel.backgroundColor = [UIColor clearColor];
-        self.textLabel.highlightedTextColor = [UIColor blackColor];
         
-        self.textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        self.textLabel.numberOfLines = 8;
-        
-        
-        self.detailTextLabel.font = [UIFont fontWithName:@"GillSansAltOneLight" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        self.detailTextLabel.textColor = [UIColor blackColor];
-        self.detailTextLabel.highlightedTextColor = [UIColor blackColor];
-        self.detailTextLabel.backgroundColor = [UIColor clearColor];
-		
+        [self configureLabels];
         
 		UICellBackgroundView *bg = [[UICellBackgroundView alloc] init];
 		
@@ -73,7 +82,6 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
         self.selectedBackgroundView = selBg;
 		
 		self.contentView.backgroundColor = [UIColor clearColor];
-        self.detailTextLabel.numberOfLines = 1;
         
         _isActive = false;
         
