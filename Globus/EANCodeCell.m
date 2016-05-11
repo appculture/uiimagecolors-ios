@@ -33,7 +33,17 @@ NSString *const kEANCodeCellId = @"EANCodeCellId";
 @synthesize barCodeLabel = _barCodeLabel;
 @synthesize isRetinaDisplay = _isRetinaDisplay;
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
 
+- (void)configureLabels {
+    self.barCodeLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
+    self.barCodeLabel.backgroundColor = [UIColor clearColor];
+    self.barCodeLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
+}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -75,9 +85,6 @@ NSString *const kEANCodeCellId = @"EANCodeCellId";
 		[self.contentView addSubview:_eanCodeView];
 		
 		_barCodeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-		_barCodeLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFontSize : kiPhoneFontSize];
-        _barCodeLabel.backgroundColor = [UIColor clearColor];
-		_barCodeLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"GroupedTableCellText"];
 		[self.contentView addSubview:_barCodeLabel];
 				
 		self.contentView.backgroundColor = [UIColor clearColor];
@@ -88,6 +95,8 @@ NSString *const kEANCodeCellId = @"EANCodeCellId";
 				self.isRetinaDisplay = YES;
 			}
 		}
+        
+        [self configureLabels];
 	}
 	
 	

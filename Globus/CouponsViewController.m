@@ -335,21 +335,24 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", coupon.value, coupon.teaser];
     cell.detailTextLabel.text = coupon.validTo;  
     [cell layoutSubviews];
-	if (self.listState == CouponListStateUsed) {
+	
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.listState == CouponListStateUsed) {
         cell.textLabel.textColor = [UIColor colorWithRed:100.0/255.0 green:100.0/255.0 blue:100.0/255.0 alpha:1.0];
         cell.detailTextLabel.textColor = cell.textLabel.textColor;
         cell.accessoryView = nil;
         [cell setUserInteractionEnabled:NO];
     }
-	else {
+    else {
         cell.textLabel.textColor = [UIColor blackColor];
         cell.detailTextLabel.textColor = [UIColor blackColor];
         [cell setUserInteractionEnabled:YES];
-		UIImageView *disclosureIndicatorView = [[UIImageView alloc] initWithImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicator"] highlightedImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicatorHighlighted"]];
+        UIImageView *disclosureIndicatorView = [[UIImageView alloc] initWithImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicator"] highlightedImage:[[StylesheetController sharedInstance] imageWithKey:@"DisclosureIndicatorHighlighted"]];
         cell.accessoryView = disclosureIndicatorView;
-	}
-	
-    return cell;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -365,7 +368,7 @@
 
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
-    if(couponCount == 0) {
+    if(couponCount == 0 || self.listState == CouponListStateUsed) {
         return @"";
     }
     NSString *headerTextKey = [NSString stringWithFormat:@"Coupons.%@.TitleText",[[CouponsController sharedInstance] titleForHeaderInSection:section forState:_listState]];
@@ -383,7 +386,7 @@
         labelY = 10;
     }
     NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
-    if(couponCount == 0) {
+    if(couponCount == 0 || self.listState == CouponListStateUsed) {
         return nil;
     }
     GlobusSectionHeaderView *headerSectionView = [[GlobusSectionHeaderView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, headerHeight)];
@@ -397,7 +400,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
-    if(couponCount == 0) {
+    if(couponCount == 0 || self.listState == CouponListStateUsed) {
         return 0;
     }
     return [[GlobusController sharedInstance] is_iPad] ? 50.0 : 25.0;
