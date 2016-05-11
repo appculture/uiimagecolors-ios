@@ -368,7 +368,7 @@
 
 - (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
-    if(couponCount == 0) {
+    if(couponCount == 0 || self.listState == CouponListStateUsed) {
         return @"";
     }
     NSString *headerTextKey = [NSString stringWithFormat:@"Coupons.%@.TitleText",[[CouponsController sharedInstance] titleForHeaderInSection:section forState:_listState]];
@@ -386,7 +386,7 @@
         labelY = 10;
     }
     NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
-    if(couponCount == 0) {
+    if(couponCount == 0 || self.listState == CouponListStateUsed) {
         return nil;
     }
     GlobusSectionHeaderView *headerSectionView = [[GlobusSectionHeaderView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, headerHeight)];
@@ -400,7 +400,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     NSUInteger couponCount = [[CouponsController sharedInstance] numberOfRowsInSection:section forState:_listState];
-    if(couponCount == 0) {
+    if(couponCount == 0 || self.listState == CouponListStateUsed) {
         return 0;
     }
     return [[GlobusController sharedInstance] is_iPad] ? 50.0 : 25.0;
