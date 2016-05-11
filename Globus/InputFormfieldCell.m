@@ -24,13 +24,22 @@ NSString *const kInputFormfieldCellID = @"InputFormfieldCellID";
 
 #pragma mark - Housekeeping
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.numberOfLines = 2;
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFormfieldCellFontSize : kiPhoneFormfieldCellFontSize];
+}
+
 - (id)init
 {
 	if ((self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kInputFormfieldCellID]))
 	{
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
-		self.textLabel.numberOfLines = 2;
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFormfieldCellFontSize : kiPhoneFormfieldCellFontSize];
 		
 		textField = [[UITextField alloc] initWithFrame:CGRectZero];
 		[self.contentView addSubview:textField];
@@ -41,6 +50,8 @@ NSString *const kInputFormfieldCellID = @"InputFormfieldCellID";
 		textField.borderStyle = UITextBorderStyleNone;
 		textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 		textField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
+        [self configureLabels];
 	}
 	
 	return self;

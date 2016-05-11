@@ -23,19 +23,29 @@ NSString *const kSwitchFormfieldCellID = @"SwitchFormfieldCellID";
 
 #pragma mark - Housekeeping
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+    [self configureLabels];
+}
+
+- (void)configureLabels {
+    self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellText"];
+    self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFormfieldCellFontSize : kiPhoneFormfieldCellFontSize];
+}
+
 - (id)init
 {
 	if ((self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSwitchFormfieldCellID]))
 	{
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
 		
-		self.textLabel.textColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellText"];
-		self.textLabel.font = [UIFont fontWithName:@"GillSansAltOne" size:[[GlobusController sharedInstance] is_iPad] ? kiPadFormfieldCellFontSize : kiPhoneFormfieldCellFontSize];
-		
 		switchControl = [[UISwitch alloc] init];
 		switchControl.onTintColor = [[StylesheetController sharedInstance] colorWithKey:@"FormTableCellSwitch"];
 		[switchControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
 		self.accessoryView = switchControl;
+        
+        [self configureLabels];
 	}
 	
 	return self;
