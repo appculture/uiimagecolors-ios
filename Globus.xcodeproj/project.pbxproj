@@ -170,6 +170,7 @@
 		80FAAF42195AFE8800C3C18B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */; };
 		80FAAF43195AFE9000C3C18B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FAAF3F195AFE5B00C3C18B /* libz.dylib */; };
 		8B1512511CC6347E0057F3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */; };
+		8B3557561CFD787200C4D27E /* MobileFooter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3557551CFD787200C4D27E /* MobileFooter@3x.png */; };
 		8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */; };
 		8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */; };
 		B60C01C71519E8880006877E /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
@@ -485,6 +486,7 @@
 		80FAAF3D195AFE4C00C3C18B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		80FAAF3F195AFE5B00C3C18B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B3557551CFD787200C4D27E /* MobileFooter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MobileFooter@3x.png"; sourceTree = "<group>"; };
 		8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = FloatingCloudKit.a; path = Globus/floatingcloud/FloatingCloudKit.a; sourceTree = "<group>"; };
 		8B6F0D991CBBF712002ED42B /* FloatingCloudKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FloatingCloudKit.h; path = headers/FloatingCloudKit.h; sourceTree = "<group>"; };
 		8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
@@ -710,6 +712,7 @@
 				808CFF6C1553C29E00940E13 /* globuslogo@2x.png */,
 				808CFF6D1553C29E00940E13 /* MobileFooter.png */,
 				808CFF6E1553C29E00940E13 /* MobileFooter@2x.png */,
+				8B3557551CFD787200C4D27E /* MobileFooter@3x.png */,
 				808CFF9B1553FDF100940E13 /* MobileFooter_iPad.png */,
 				F833354018E9BE37006273C1 /* PushHelp@2x.png */,
 			);
@@ -1403,6 +1406,7 @@
 				B64654CA151C8CC5004F619C /* listBtn.png in Resources */,
 				B64654CB151C8CC5004F619C /* listBtn@2x.png in Resources */,
 				B64654CC151C8CC5004F619C /* listBtnActive.png in Resources */,
+				8B3557561CFD787200C4D27E /* MobileFooter@3x.png in Resources */,
 				B64654CD151C8CC5004F619C /* listBtnActive@2x.png in Resources */,
 				B64654D3151C90CB004F619C /* mapBtn.png in Resources */,
 				B64654D4151C90CB004F619C /* mapBtn@2x.png in Resources */,
@@ -1665,7 +1669,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1710,7 +1714,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1793,7 +1797,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1854,7 +1858,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1921,7 +1925,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1963,7 +1967,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "fdc2fba2-fd5b-499c-9c2d-f6c19818f6ef";
+				PROVISIONING_PROFILE = "bdab264c-c966-461d-a70c-e8096ce87df9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Release-Production";

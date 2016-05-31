@@ -66,7 +66,7 @@ clear: both;
 .footer{
   margin:100px 0 0 0;
   height:234px;
-  width:768px;
+  width:100%;
   background:url(MobileFooter_iPad.png) no-repeat center center;
 }
 
