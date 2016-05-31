@@ -66,8 +66,8 @@ clear: both;
 }
 .footer{
   margin:50px 0 0 0;
-  height:110px;
-  width:320px;
+  height:117px;
+  width:100%;
   background:url(MobileFooter.png) no-repeat center center;
   opacity:0.5;
 }
@@ -88,6 +88,16 @@ body.reduced .topimg{
         -webkit-background-size: auto auto;
         margin: 25px auto;
         background: transparent url('MobileFooter@2x.png') no-repeat center center;
-		background-size: 100%;
+		background-size: 100% auto;
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 3)
+{
+    .footer {
+        -webkit-background-size: auto auto;
+        margin: 25px auto;
+        background: transparent url('MobileFooter@3x.png') no-repeat center center;
+        background-size: 100% auto;
     }
 }
