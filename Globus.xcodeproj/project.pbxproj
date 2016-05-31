@@ -1967,7 +1967,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "fdc2fba2-fd5b-499c-9c2d-f6c19818f6ef";
+				PROVISIONING_PROFILE = "bdab264c-c966-461d-a70c-e8096ce87df9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Release-Production";
