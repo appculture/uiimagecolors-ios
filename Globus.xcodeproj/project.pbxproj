@@ -1906,7 +1906,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(AppBundleID)";
 				PRODUCT_NAME = Globus;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d402472c-6c9d-4c66-b12e-bb42a68bc739";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Debug-Production";
