@@ -101,3 +101,33 @@ body.reduced .topimg{
         background-size: 100% auto;
     }
 }
+
+/* iPhone 6 Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+    .main{
+        width:275px;
+    }
+    .infotxt{
+        font-size:24px;
+        line-height:26px;
+    }
+    .smalltxtarea{
+        font-size:15px;
+        line-height:17px;
+    }
+}
+
+/* iPhone 6+ Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+    .main{
+        width:305px;
+    }
+    .infotxt{
+        font-size:28px;
+        line-height:30px;
+    }
+    .smalltxtarea{
+        font-size:19px;
+        line-height:21px;
+    }
+}
