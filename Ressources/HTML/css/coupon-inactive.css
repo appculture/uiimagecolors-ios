@@ -15,8 +15,7 @@ a img{
 }
 .topimg{
   height:125px;
-  width:245px;
-  margin:0 0 5px;
+  width:100%;
 }
 h1{
    font-size:25px;
@@ -60,8 +59,8 @@ clear: both;
 }
 .smalltxtarea{
   margin-top:12px;
-  font-size:11px;
-  line-height:13px;
+  font-size:12px;
+  line-height:14px;
   text-align:center;
 }
 .footer{
@@ -99,5 +98,35 @@ body.reduced .topimg{
         margin: 25px auto;
         background: transparent url('MobileFooter@3x.png') no-repeat center center;
         background-size: 100% auto;
+    }
+}
+
+/* iPhone 6 Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+    .main{
+        width:275px;
+    }
+    .infotxt{
+        font-size:24px;
+        line-height:26px;
+    }
+    .smalltxtarea{
+        font-size:15px;
+        line-height:17px;
+    }
+}
+
+/* iPhone 6+ Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+    .main{
+        width:305px;
+    }
+    .infotxt{
+        font-size:28px;
+        line-height:30px;
+    }
+    .smalltxtarea{
+        font-size:19px;
+        line-height:21px;
     }
 }

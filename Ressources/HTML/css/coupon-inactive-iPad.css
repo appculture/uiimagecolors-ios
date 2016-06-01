@@ -10,13 +10,12 @@ a img{
 
 .main{
   margin:0 auto;
-  width:490px;
+  width:560px;
   opacity:0.5;
 }
 .topimg{
   height:250px;
-  width:490px;
-  margin:0 0 10px;
+  width:100%;
 }
 h1{
    font-size:50px;
@@ -60,8 +59,8 @@ clear: both;
 }
 .smalltxtarea{
   margin-top:24px;
-  font-size:22px;
-  line-height:26px;
+  font-size:26px;
+  line-height:30px;
   text-align:center;
 }
 .footer{
