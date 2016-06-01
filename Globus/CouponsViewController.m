@@ -46,7 +46,6 @@
 @property (nonatomic, strong) IBOutlet UIView *segmentButtonsView;
 @property (nonatomic, strong) NSMutableArray *timerArray;
 @property (nonatomic, strong) InfoView *loadingInfoView;
-@property (nonatomic) BOOL isLoadingImages;
 @property (nonatomic, strong) UIView *titleView;
 
 - (void)initObject;
@@ -89,7 +88,6 @@
 @synthesize welcomeTextLabel = _welcomeTextLabel;
 @synthesize timerArray = _timerArray;
 @synthesize loadingInfoView = _loadingInfoView;
-@synthesize isLoadingImages = _isLoadingImages;
 @synthesize titleView = _titleView;
 @synthesize noCouponInfoView = _noCouponInfoView;
 @synthesize noCouponLabel = _noCouponLabel;
@@ -198,8 +196,6 @@
 	
 	self.loadingInfoView = [[InfoView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.view addSubview:_loadingInfoView];
-	
-	_isLoadingImages = NO;
 	
 	if (_listState == CouponListStateActive)
 	{
@@ -466,6 +462,8 @@
 }
 
 - (void) webservice:(ABWebservice *)theWebservice didFinishWithObject:(id)theObject {
+    [_loadingInfoView showLoadingWithText:NSLocalizedString(@"LoadingText", @"") animated:NO];
+    
 	if (theWebservice == _webservice)
 	{
 		if(theObject) {
@@ -479,7 +477,6 @@
 				if (_listState == CouponListStateActive) {
 					_noCouponInfoView.hidden = YES;
                 }
-				_isLoadingImages = YES;
                 if(array && array.count > 0) {
                     [imagesJSONReader startLoadingImages:array];
                 } else {
@@ -504,9 +501,8 @@
                 Coupon *oldCoupon = [[CouponsController sharedInstance] currentCouponForCouponId:coupon.couponId];
 				oldCoupon.objectDict = coupon.objectDict;
 			}
-			_isLoadingImages = NO;
-			[_loadingInfoView hideAnimated:NO];
             [self updateCouponsGroups];
+            [_loadingInfoView hideAnimated:NO];
 		}
 	}
 }
@@ -521,10 +517,10 @@
 		else
 			_noCouponInfoView.hidden = YES;
 	}
-	
-	if (!_isLoadingImages || theWebservice == imagesJSONReader)
-		[_loadingInfoView hideAnimated:NO];
-	
+    
+    if (![theWebservice isEqual:imagesJSONReader]) {
+        [_loadingInfoView hideAnimated:NO];
+    }
 }
 
 
