@@ -14,8 +14,7 @@ a img{
 }
 .topimg{
   height:125px;
-  width:245px;
-  margin:0 0 5px;
+  width:100%;
 }
 h1{
    font-size:25px;
