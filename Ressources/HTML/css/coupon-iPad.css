@@ -10,11 +10,11 @@ a img{
 
 .main{
   margin:0 auto;
-  width:490px;
+  width:560px;
 }
 .topimg{
   height:250px;
-  width:490px;
+  width:500px;
   margin:0 0 10px;
 }
 h1{
@@ -59,8 +59,8 @@ clear: both;
 }
 .smalltxtarea{
   margin-top:24px;
-  font-size:22px;
-  line-height:26px;
+  font-size:26px;
+  line-height:30px;
   text-align:center;
 }
 .footer{
