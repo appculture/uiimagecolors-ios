@@ -39,23 +39,36 @@ class GlobusUITests: XCTestCase {
         snapshot("0-CustomerCard", waitForLoadingIndicator: false)
         
         /// account
-        tablesQuery.staticTexts["My account"].tap()
+        let key1 = localizedString("Profile.TitleText")
+        tablesQuery.staticTexts[key1].tap()
         sleep(1)
         snapshot("1-AccountSettings", waitForLoadingIndicator: false)
         
         /// vouchers
-        tabBarsQuery.buttons["Vouchers"].tap()
+        let key2 = localizedString("TabBarItem1")
+        tabBarsQuery.buttons[key2].tap()
         sleep(2)
-        tablesQuery.cells.containingType(.StaticText, identifier:"20% Rabatt auf alle JOHN FRIEDA Produkte").staticTexts["13.06.2016"].tap()
+        tablesQuery.cells.elementBoundByIndex(0).tap()
         sleep(1)
         snapshot("2-Voucher", waitForLoadingIndicator: false)
         
         /// branches
-        tabBarsQuery.buttons["Branches"].tap()
+        let key3 = localizedString("TabBarItem2")
+        tabBarsQuery.buttons[key3].tap()
         sleep(1)
         tablesQuery.cells.staticTexts["GLOBUS Westside"].tap()
         sleep(1)
         snapshot("3-Branch", waitForLoadingIndicator: false)
+    }
+    
+    /// SEE: https://github.com/fastlane-old/snapshot/issues/321#issuecomment-159660882
+    func localizedString(key:String) -> String {
+        let localizationBundle = NSBundle(forClass: GlobusUITests.self)
+        let language = deviceLanguage.componentsSeparatedByString("-").first!
+        let languagePath = localizationBundle.pathForResource(language, ofType: "lproj")!
+        let bundle = NSBundle(path: languagePath)!
+        let result = NSLocalizedString(key, bundle: bundle, comment: "")
+        return result
     }
     
 }
