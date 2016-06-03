@@ -172,7 +172,10 @@
 		8B1512511CC6347E0057F3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1512501CC6347E0057F3AF /* LaunchScreen.storyboard */; };
 		8B3557561CFD787200C4D27E /* MobileFooter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3557551CFD787200C4D27E /* MobileFooter@3x.png */; };
 		8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */; };
+		8B9001631D01C1EF00D43B0D /* GlobusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9001621D01C1EF00D43B0D /* GlobusUITests.swift */; };
+		8B9001701D01C4CD00D43B0D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90016F1D01C4CD00D43B0D /* SnapshotHelper.swift */; };
 		8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */; };
+		8BCD22641D01DAF300216838 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 809C61B014DC3F8600FD3AFC /* Localizable.strings */; };
 		B60C01C71519E8880006877E /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
 		B60C01CA1519EA880006877E /* BorderedButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C01C91519EA880006877E /* BorderedButtonController.m */; };
 		B618A137152DC9B9002EC38E /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B618A135152DC9B7002EC38E /* StoreViewController.m */; };
@@ -249,6 +252,16 @@
 		F8808E1218C08CD500DA029F /* LocationDistanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8808E1018C08CD500DA029F /* LocationDistanceCell.m */; };
 		F8955D6D18C76A1B0071A8FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8955D6B18C76A1B0071A8FB /* Images.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B9001651D01C1EF00D43B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8095AD9114DA9FC700874AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8095AD9914DA9FC700874AB7;
+			remoteInfo = Globus;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		800538A3167B6CF200217858 /* GlobusAlarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobusAlarm.h; sourceTree = "<group>"; };
@@ -489,6 +502,10 @@
 		8B3557551CFD787200C4D27E /* MobileFooter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MobileFooter@3x.png"; sourceTree = "<group>"; };
 		8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = FloatingCloudKit.a; path = Globus/floatingcloud/FloatingCloudKit.a; sourceTree = "<group>"; };
 		8B6F0D991CBBF712002ED42B /* FloatingCloudKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FloatingCloudKit.h; path = headers/FloatingCloudKit.h; sourceTree = "<group>"; };
+		8B9001601D01C1EF00D43B0D /* GlobusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9001621D01C1EF00D43B0D /* GlobusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobusUITests.swift; sourceTree = "<group>"; };
+		8B9001641D01C1EF00D43B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B90016F1D01C4CD00D43B0D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
 		8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		8BC3A5881CBFA4B9003E9DFD /* UIApplication+CustomSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CustomSettings.h"; sourceTree = "<group>"; };
@@ -641,6 +658,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B90015D1D01C1EF00D43B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -746,6 +770,7 @@
 			isa = PBXGroup;
 			children = (
 				8095ADA414DA9FC700874AB7 /* Globus */,
+				8B9001611D01C1EF00D43B0D /* GlobusUITests */,
 				8095AD9D14DA9FC700874AB7 /* Frameworks */,
 				8095AD9B14DA9FC700874AB7 /* Products */,
 			);
@@ -755,6 +780,7 @@
 			isa = PBXGroup;
 			children = (
 				8095AD9A14DA9FC700874AB7 /* Globus.app */,
+				8B9001601D01C1EF00D43B0D /* GlobusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1172,6 +1198,16 @@
 			path = Tools/GoogleAnalytics;
 			sourceTree = "<group>";
 		};
+		8B9001611D01C1EF00D43B0D /* GlobusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B9001621D01C1EF00D43B0D /* GlobusUITests.swift */,
+				8B90016F1D01C4CD00D43B0D /* SnapshotHelper.swift */,
+				8B9001641D01C1EF00D43B0D /* Info.plist */,
+			);
+			path = GlobusUITests;
+			sourceTree = "<group>";
+		};
 		B61BC5221643CC4500017155 /* Coupons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1322,12 +1358,31 @@
 			productReference = 8095AD9A14DA9FC700874AB7 /* Globus.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8B90015F1D01C1EF00D43B0D /* GlobusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B90016C1D01C1EF00D43B0D /* Build configuration list for PBXNativeTarget "GlobusUITests" */;
+			buildPhases = (
+				8B90015C1D01C1EF00D43B0D /* Sources */,
+				8B90015D1D01C1EF00D43B0D /* Frameworks */,
+				8B90015E1D01C1EF00D43B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B9001661D01C1EF00D43B0D /* PBXTargetDependency */,
+			);
+			name = GlobusUITests;
+			productName = GlobusUITests;
+			productReference = 8B9001601D01C1EF00D43B0D /* GlobusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8095AD9114DA9FC700874AB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					8095AD9914DA9FC700874AB7 = {
@@ -1336,6 +1391,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					8B90015F1D01C1EF00D43B0D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8095AD9914DA9FC700874AB7;
 					};
 				};
 			};
@@ -1354,6 +1413,7 @@
 			projectRoot = "";
 			targets = (
 				8095AD9914DA9FC700874AB7 /* Globus */,
+				8B90015F1D01C1EF00D43B0D /* GlobusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1491,6 +1551,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B90015E1D01C1EF00D43B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BCD22641D01DAF300216838 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1598,7 +1666,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B90015C1D01C1EF00D43B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9001631D01C1EF00D43B0D /* GlobusUITests.swift in Sources */,
+				8B9001701D01C4CD00D43B0D /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B9001661D01C1EF00D43B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8095AD9914DA9FC700874AB7 /* Globus */;
+			targetProxy = 8B9001651D01C1EF00D43B0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8088FE1115623CC60021D978 /* agb.html */ = {
@@ -1843,6 +1928,240 @@
 			};
 			name = "Distribution-AppStore";
 		};
+		8B9001671D01C1EF00D43B0D /* Debug-Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GlobusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appculture.GlobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = Globus;
+			};
+			name = "Debug-Stage";
+		};
+		8B9001681D01C1EF00D43B0D /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GlobusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appculture.GlobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = Globus;
+			};
+			name = "Debug-Production";
+		};
+		8B9001691D01C1EF00D43B0D /* Release-Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GlobusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appculture.GlobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Globus;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Stage";
+		};
+		8B90016A1D01C1EF00D43B0D /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GlobusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appculture.GlobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Globus;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Production";
+		};
+		8B90016B1D01C1EF00D43B0D /* Distribution-AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GlobusUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appculture.GlobusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = Globus;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Distribution-AppStore";
+		};
 		8BC3A5841CBF9CDE003E9DFD /* Debug-Production */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */;
@@ -1995,6 +2314,18 @@
 				8095ADCE14DA9FC700874AB7 /* Release-Stage */,
 				8BC3A5871CBF9CE9003E9DFD /* Release-Production */,
 				80FF92AF1576542300DD2AF9 /* Distribution-AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-Stage";
+		};
+		8B90016C1D01C1EF00D43B0D /* Build configuration list for PBXNativeTarget "GlobusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9001671D01C1EF00D43B0D /* Debug-Stage */,
+				8B9001681D01C1EF00D43B0D /* Debug-Production */,
+				8B9001691D01C1EF00D43B0D /* Release-Stage */,
+				8B90016A1D01C1EF00D43B0D /* Release-Production */,
+				8B90016B1D01C1EF00D43B0D /* Distribution-AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release-Stage";
