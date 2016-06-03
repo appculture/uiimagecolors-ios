@@ -173,6 +173,7 @@
 		8B3557561CFD787200C4D27E /* MobileFooter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3557551CFD787200C4D27E /* MobileFooter@3x.png */; };
 		8B6F0D981CBBF705002ED42B /* FloatingCloudKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6F0D961CBBF705002ED42B /* FloatingCloudKit.a */; };
 		8B9001631D01C1EF00D43B0D /* GlobusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9001621D01C1EF00D43B0D /* GlobusUITests.swift */; };
+		8B9001701D01C4CD00D43B0D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90016F1D01C4CD00D43B0D /* SnapshotHelper.swift */; };
 		8BC3A58A1CBFA4B9003E9DFD /* UIApplication+CustomSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC3A5891CBFA4B9003E9DFD /* UIApplication+CustomSettings.m */; };
 		B60C01C71519E8880006877E /* BorderedButtonsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B60C01C61519E8880006877E /* BorderedButtonsData.plist */; };
 		B60C01CA1519EA880006877E /* BorderedButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60C01C91519EA880006877E /* BorderedButtonController.m */; };
@@ -503,6 +504,7 @@
 		8B9001601D01C1EF00D43B0D /* GlobusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9001621D01C1EF00D43B0D /* GlobusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobusUITests.swift; sourceTree = "<group>"; };
 		8B9001641D01C1EF00D43B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B90016F1D01C4CD00D43B0D /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		8BC3A5821CBF9BF2003E9DFD /* Stage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Stage.xcconfig; sourceTree = "<group>"; };
 		8BC3A5831CBF9BF9003E9DFD /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		8BC3A5881CBFA4B9003E9DFD /* UIApplication+CustomSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CustomSettings.h"; sourceTree = "<group>"; };
@@ -1199,6 +1201,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9001621D01C1EF00D43B0D /* GlobusUITests.swift */,
+				8B90016F1D01C4CD00D43B0D /* SnapshotHelper.swift */,
 				8B9001641D01C1EF00D43B0D /* Info.plist */,
 			);
 			path = GlobusUITests;
@@ -1666,6 +1669,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9001631D01C1EF00D43B0D /* GlobusUITests.swift in Sources */,
+				8B9001701D01C4CD00D43B0D /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2322,6 +2326,7 @@
 				8B90016B1D01C1EF00D43B0D /* Distribution-AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-Stage";
 		};
 /* End XCConfigurationList section */
 
