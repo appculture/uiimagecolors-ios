@@ -89,7 +89,7 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
         _isActive = false;
         
         UIImageView *newImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"new"]];
-        newImage.frame = CGRectMake(150,(self.frame.size.height-newImage.frame.size.height)/2, newImage.frame.size.width, newImage.frame.size.height);
+        newImage.frame = CGRectMake(164,(self.frame.size.height-newImage.frame.size.height)/2, newImage.frame.size.width, newImage.frame.size.height);
         self.neuImage = newImage;
         _neuImage.alpha = 0.0;
         [self.contentView addSubview:newImage];
@@ -122,7 +122,7 @@ NSString *const kCouponCellId = @"StoreDetailCellId";
     if([[GlobusController sharedInstance] is_iPad]) {
         _neuImage.frame = CGRectMake(500,(contentRect.size.height-_neuImage.frame.size.height)/2, _neuImage.frame.size.width, _neuImage.frame.size.height);
     } else {
-        _neuImage.frame = CGRectMake(150,(contentRect.size.height-_neuImage.frame.size.height)/2, _neuImage.frame.size.width, _neuImage.frame.size.height);
+        _neuImage.frame = CGRectMake(164,(contentRect.size.height-_neuImage.frame.size.height)/2, _neuImage.frame.size.width, _neuImage.frame.size.height);
     }
     
 }
