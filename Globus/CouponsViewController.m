@@ -120,7 +120,7 @@
 
 - (void)initObject {
     [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"TabBarItem1", @"") image:[UIImage imageNamed:@"TabBarItem2"] tag:1]];
-    self.title = NSLocalizedString(@"TabBarItem1", @"");
+//    self.title = NSLocalizedString(@"TabBarItem1", @"");
     self.webservice = [[CouponsWebservice alloc] init];
     _webservice.dataSource = self;
     _webservice.statusCodesDataSource = self;

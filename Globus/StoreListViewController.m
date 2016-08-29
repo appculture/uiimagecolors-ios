@@ -77,7 +77,7 @@
 - (void)initObject
 {
     [self setTabBarItem:[[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"TabBarItem2", @"") image:[UIImage imageNamed:@"TabBarItem3"] tag:2]];
-    self.title = NSLocalizedString(@"TabBarItem2", @"");
+//    self.title = NSLocalizedString(@"TabBarItem2", @"");
 }
 
 - (void)viewDidLoad
