@@ -88,7 +88,7 @@
 {
 	[super viewDidLoad];
 	
-	self.title = NSLocalizedString(@"TabBarItem0", @"");
+//	self.title = NSLocalizedString(@"TabBarItem0", @"");
     [(LoginFormViewController*)[_loginNC.viewControllers objectAtIndex:0] setFormDelegate:self];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"GlobusCard"]];
 	

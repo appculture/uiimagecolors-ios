@@ -21,7 +21,7 @@ static SystemSoundID gAlarmSoundFileObject;
 + (void)initialize
 {
     NSURL *alarmSound = [[NSBundle mainBundle] URLForResource: @"Alarm" withExtension: @"wav"];
-	AudioServicesCreateSystemSoundID((CFURLRef)objc_unretainedPointer(alarmSound), &gAlarmSoundFileObject);
+	AudioServicesCreateSystemSoundID((CFURLRef)(__bridge void *)(alarmSound), &gAlarmSoundFileObject);
 }
 
 - (id)initWithObject:(Coupon *)theObject
