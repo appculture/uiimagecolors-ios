@@ -285,10 +285,6 @@
 	{
 		if ([[formfieldDictionary valueForKey:@"Type"] isEqualToString:@"Button"])
 		{
-			if ([[formfieldDictionary valueForKey:@"Name"] isEqualToString:@"ChooseContact"])
-			{
-                [self addressbookBarButtonAction:nil];
-			}
 			if ([[formfieldDictionary valueForKey:@"Name"] isEqualToString:@"RegistrationButton"])
 			{
 				[self saveAction];
@@ -345,15 +341,6 @@
 - (void)errorHandlerShowWithError:(NSError *)theError
 {
 	[self formFirstFieldFocus];
-}
-
-- (IBAction)addressbookBarButtonAction:(id)sender
-{
-	ABPeoplePickerNavigationController *abPickerNavigationController = [[ABPeoplePickerNavigationController alloc] init];
-	abPickerNavigationController.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonAddressProperty]];
-	abPickerNavigationController.peoplePickerDelegate = self;
-	
-	[self.navigationController presentViewController:abPickerNavigationController animated:YES completion:nil];
 }
 
 - (NSString *)buildJSONStringForRegistrationWithDictionary:(NSDictionary *)theDictionary
@@ -461,38 +448,6 @@
 		[self reloadFormAnimated];
 	}
 }
-
-
-#pragma mark - Address book
-
-- (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier {
-    
-    UserResult *user = [[UserResult alloc] initWithABPerson:person property:property identifier:identifier];
-    if (user.isValidCountry)
-    {
-        [user populateFormValueDictionary:valueDictionary];
-        [self reloadForm];
-        
-        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-        
-        if ([self formfieldValueForName:@"Email"].length > 0)
-        {
-            [checkLoginJSONReader stop];
-            FormfieldCell *emailCell = [self formfieldCellForName:@"Email"];
-            [checkLoginJSONReader checkUsername:[self valueForFormfieldCell:emailCell]];
-            [self reloadInputViews];
-        }
-    } else
-    {
-        [[GlobusController sharedInstance] alertWithType:@"Registration" messageKey:@"UnsupportedCountry"];
-    }
-}
-
-- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker
-{
-	[self.navigationController dismissViewControllerAnimated:YES completion:nil];
-}
-
 
 #pragma mark - ABWebservice delegates
 

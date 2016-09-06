@@ -16,7 +16,7 @@
 #import "TermsViewController.h"
 
 
-@interface RegistrationFormViewController : CustomCellFormViewController <UIAlertViewDelegate, ABPeoplePickerNavigationControllerDelegate, ABWebserviceDelegate>
+@interface RegistrationFormViewController : CustomCellFormViewController <UIAlertViewDelegate, ABWebserviceDelegate>
 {
 	
 @private
@@ -26,8 +26,6 @@
 }
 
 @property (nonatomic, strong) IBOutlet TermsViewController *termsViewController;
-
-- (IBAction)addressbookBarButtonAction:(id)sender;
 
 @end
 

@@ -107,27 +107,6 @@
 		</dict>
 		<dict>
 			<key>FooterLabelKey</key>
-			<string>Registration.AutoFillInformationText</string>
-			<key>Rows</key>
-			<array>
-				<dict>
-					<key>Action</key>
-					<string>ChooseContact</string>
-					<key>LabelKey</key>
-					<string>Registration.ChooseContactText</string>
-					<key>Name</key>
-					<string>ChooseContact</string>
-					<key>Type</key>
-					<string>Button</string>
-					<key>ImageName</key>
-					<string>AddressBookButton.png</string>
-					<key>WhiteButton</key>
-					<true/>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>FooterLabelKey</key>
 			<string>Registration.EmailAddressInformationText</string>
 			<key>Rows</key>
 			<array>
