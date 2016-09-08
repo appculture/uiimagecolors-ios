@@ -1,0 +1,18 @@
+//
+//  Develop.xcconfig
+//  Globus
+//
+//  Created by Marko Tadic on 8/1/16.
+//  Copyright © 2016 appculture. All rights reserved.
+//
+
+// App
+BundleIdentifier = com.appculture.globus-develop
+DisplayName = Globus DEV
+AppIcon = AppIcon-Develop
+
+// Backend
+ServerAddress = develop.appculture.com
+
+// Services
+MixpanelToken = xxx
