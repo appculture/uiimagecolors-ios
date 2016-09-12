@@ -23,6 +23,8 @@
 		8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC86F1D50F1A900DD4812 /* AEApplicationConfig.swift */; };
 		8BEDC8851D50F38300DD4812 /* Globus_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC8841D50F38300DD4812 /* Globus_Tests.swift */; };
 		8BEDC8981D50F38E00DD4812 /* Globus_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC8971D50F38E00DD4812 /* Globus_UITests.swift */; };
+		E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */; };
+		E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0544D351D86964500A5ADA3 /* UnderlineTextButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		8BEDC8951D50F38E00DD4812 /* Globus UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Globus UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEDC8971D50F38E00DD4812 /* Globus_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globus_UITests.swift; sourceTree = "<group>"; };
 		8BEDC8991D50F38E00DD4812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		E0544D351D86964500A5ADA3 /* UnderlineTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 		8BEDC8631D50F11C00DD4812 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDC8681D50F17D00DD4812 /* AEApplicationNetwork.swift */,
+				E0544D351D86964500A5ADA3 /* UnderlineTextButton.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -404,6 +410,8 @@
 			files = (
 				8BEDC86B1D50F19600DD4812 /* AEApplicationInfo.swift in Sources */,
 				8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */,
+				E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */,
+				E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
 				8BEDC8691D50F17D00DD4812 /* AEApplicationNetwork.swift in Sources */,
 				8BEDC86E1D50F1A500DD4812 /* AEApplicationEnvironments.swift in Sources */,
@@ -571,6 +579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug-Develop";
 		};
@@ -588,6 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release-Develop";
 		};
@@ -658,6 +668,7 @@
 				PROVISIONING_PROFILE = "9566ec48-10e6-43cd-bed1-098b5c33266d";
 				PROVISIONING_PROFILE_SPECIFIER = "Globus iOS Stage - Development";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug-Stage";
 		};
@@ -722,6 +733,7 @@
 				PROVISIONING_PROFILE = "926f20e7-e459-47a8-9f36-ed25de2e3024";
 				PROVISIONING_PROFILE_SPECIFIER = "Globus iOS Stage - In House";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release-Stage";
 		};
@@ -790,6 +802,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug-Production";
 		};
@@ -851,6 +864,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release-Production";
 		};
@@ -912,6 +926,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(BundleIdentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = AppStore;
 		};

@@ -19,6 +19,12 @@ class MainViewController: UIViewController {
         configureData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        showInto()
+    }
+    
     func configureUI() {
         configureBackgroundColor()
         configureTextView()
@@ -53,6 +59,9 @@ class MainViewController: UIViewController {
         textView.text = UIApplication.appInfo
     }
     
+    func showInto() {
+        performSegue(withIdentifier: "showIntro", sender: nil)
+    }
 }
 
 extension UIApplication {
