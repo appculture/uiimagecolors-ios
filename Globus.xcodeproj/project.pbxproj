@@ -12,6 +12,9 @@
 		8B75D94E1D8295D0007FFC5E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D94B1D8295D0007FFC5E /* libz.tbd */; };
 		8B75D9501D8295DF007FFC5E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D94F1D8295DF007FFC5E /* SystemConfiguration.framework */; };
 		8B75D9541D8296D6007FFC5E /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D9531D8296D6007FFC5E /* libGoogleAnalyticsServices.a */; };
+		8B8350821D869A600052B671 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8350811D869A600052B671 /* Login.storyboard */; };
+		8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8350831D86A64C0052B671 /* CardScanViewController.swift */; };
+		8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8350851D86CABE0052B671 /* RegistrationViewController.swift */; };
 		8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC84F1D50F01C00DD4812 /* AppDelegate.swift */; };
 		8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC8511D50F01C00DD4812 /* MainViewController.swift */; };
 		8BEDC8551D50F01C00DD4812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEDC8531D50F01C00DD4812 /* Main.storyboard */; };
@@ -61,6 +64,9 @@
 		8B75D94F1D8295DF007FFC5E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B75D9511D829600007FFC5E /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../../../Desktop/GoogleAnalyticsServicesiOS_3.16/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		8B75D9531D8296D6007FFC5E /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		8B8350811D869A600052B671 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		8B8350831D86A64C0052B671 /* CardScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScanViewController.swift; sourceTree = "<group>"; };
+		8B8350851D86CABE0052B671 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		8BEDC84C1D50F01C00DD4812 /* Globus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Globus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEDC84F1D50F01C00DD4812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEDC8511D50F01C00DD4812 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +151,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B8350801D8699690052B671 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8B8350811D869A600052B671 /* Login.storyboard */,
+				8B8350831D86A64C0052B671 /* CardScanViewController.swift */,
+				8B8350851D86CABE0052B671 /* RegistrationViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		8BEDC8431D50F01C00DD4812 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDC8581D50F01C00DD4812 /* LaunchScreen.storyboard */,
+				8B8350801D8699690052B671 /* Login */,
 				8BEDC8671D50F15500DD4812 /* Main */,
 			);
 			name = View;
@@ -381,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8350821D869A600052B671 /* Login.storyboard in Resources */,
 				8BEDC85A1D50F01C00DD4812 /* LaunchScreen.storyboard in Resources */,
 				8BEDC8571D50F01C00DD4812 /* Assets.xcassets in Resources */,
 				8BEDC8551D50F01C00DD4812 /* Main.storyboard in Resources */,
@@ -412,9 +430,11 @@
 				8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */,
 				E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */,
 				E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */,
+				8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
 				8BEDC8691D50F17D00DD4812 /* AEApplicationNetwork.swift in Sources */,
 				8BEDC86E1D50F1A500DD4812 /* AEApplicationEnvironments.swift in Sources */,
+				8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */,
 				8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

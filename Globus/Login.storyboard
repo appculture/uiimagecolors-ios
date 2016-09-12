@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kxI-Rd-oo6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anmelden-->
+        <scene sceneID="zGj-AC-dEI">
+            <objects>
+                <viewController title="Anmelden" id="kxI-Rd-oo6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XY1-Fm-aL2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q6N-Ev-1tG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="24h-HH-O3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lax-Nh-grc">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ich habe eine Pluscard aber kein Konto">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="tAZ-c4-4mV" kind="show" id="chV-YB-RrP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Rn-fd-fnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231.19999999999999" y="139.880059970015"/>
+        </scene>
+        <!--Scannen-->
+        <scene sceneID="chH-I4-7TH">
+            <objects>
+                <viewController title="Scannen" id="tAZ-c4-4mV" customClass="CardScanViewController" customModule="Globus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jjl-Bg-n0H"/>
+                        <viewControllerLayoutGuide type="bottom" id="tk0-nz-pKl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ykb-6h-cbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SS-Ka-FlS">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Globus Pluscard hinzufügen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCG-OC-rpe">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Richten Sie die Karte im Rahmen aus." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od3-KT-99n">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kb-I0-xDl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kAf-mR-5Kj"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Karteninfos manuell  hinzufügen">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="manualEnterTapped:" destination="tAZ-c4-4mV" eventType="touchUpInside" id="56O-3q-UuR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Kb-I0-xDl" firstAttribute="leading" secondItem="Ykb-6h-cbd" secondAttribute="leading" constant="16" id="DXi-VY-kX9"/>
+                            <constraint firstItem="7SS-Ka-FlS" firstAttribute="top" secondItem="Jjl-Bg-n0H" secondAttribute="bottom" id="UqV-bo-SNK"/>
+                            <constraint firstAttribute="trailing" secondItem="QCG-OC-rpe" secondAttribute="trailing" constant="16" id="Xep-mk-sGm"/>
+                            <constraint firstItem="od3-KT-99n" firstAttribute="top" secondItem="QCG-OC-rpe" secondAttribute="bottom" constant="8" id="ZhS-rh-ae0"/>
+                            <constraint firstItem="QCG-OC-rpe" firstAttribute="top" secondItem="7SS-Ka-FlS" secondAttribute="bottom" constant="20" id="e5i-rK-WAz"/>
+                            <constraint firstItem="QCG-OC-rpe" firstAttribute="leading" secondItem="Ykb-6h-cbd" secondAttribute="leading" constant="16" id="fgh-XI-vr1"/>
+                            <constraint firstItem="7SS-Ka-FlS" firstAttribute="height" secondItem="Ykb-6h-cbd" secondAttribute="height" multiplier="3/5" id="ixb-dV-3hw"/>
+                            <constraint firstItem="tk0-nz-pKl" firstAttribute="top" secondItem="2Kb-I0-xDl" secondAttribute="bottom" constant="8" id="pXi-Ce-gtu"/>
+                            <constraint firstAttribute="trailing" secondItem="od3-KT-99n" secondAttribute="trailing" constant="25" id="rNg-bf-JHk"/>
+                            <constraint firstAttribute="trailing" secondItem="7SS-Ka-FlS" secondAttribute="trailing" id="shs-kb-d2f"/>
+                            <constraint firstItem="od3-KT-99n" firstAttribute="leading" secondItem="Ykb-6h-cbd" secondAttribute="leading" constant="25" id="u6T-Ov-mom"/>
+                            <constraint firstItem="7SS-Ka-FlS" firstAttribute="leading" secondItem="Ykb-6h-cbd" secondAttribute="leading" id="vJz-3R-m2y"/>
+                            <constraint firstAttribute="trailing" secondItem="2Kb-I0-xDl" secondAttribute="trailing" constant="16" id="yYj-Ye-BoS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="7SS-Ka-FlS" id="DQb-nA-rGC"/>
+                        <segue destination="zmj-6X-cie" kind="show" identifier="RegistrationSegue" id="qIN-Az-MgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrW-bN-13i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="139.880059970015"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="hbg-bd-deh">
+            <objects>
+                <viewController title="Registration" id="zmj-6X-cie" customClass="RegistrationViewController" customModule="Globus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="57w-8Q-tRe"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAp-tg-pzY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="twM-EL-V9u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNQ-hn-6E8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="140"/>
+        </scene>
+    </scenes>
+</document>

@@ -22,5 +22,10 @@ class IntroViewController: UIViewController {
         introList.text = "- Test1\n- Test2\n- Test3\n- Test4\n- Test5\n- Test6\n- Test7\n- Test8\n- Test9\n- Test10\n- Test11"
         loginButton.setTitle("Ich besitze bereits ein Konto oder eine Pluscard", for: .normal)
     }
+    // Mark: - Actions
+
+    @IBAction func loginButtonTaped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "LoginSegue", sender: self)
+    }
     
 }

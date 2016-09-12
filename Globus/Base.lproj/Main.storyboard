@@ -10,10 +10,14 @@
         <scene sceneID="xux-RP-KMv">
             <objects>
                 <navigationController id="vWU-UA-2sd" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jJz-uc-eMA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="jJz-uc-eMA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="L7j-wd-BWT" kind="relationship" relationship="rootViewController" id="Wx3-Ae-EuW"/>
@@ -32,7 +36,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JjR-Tj-u4k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V8k-14-Hta">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="2rT-m2-vpc">
@@ -67,6 +71,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <state key="normal" title="Ich besitze bereits ein Konto oder eine Pluscard"/>
+                                <connections>
+                                    <action selector="loginButtonTaped:" destination="L7j-wd-BWT" eventType="touchUpInside" id="5eh-bW-h8f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,7 +100,7 @@
                     <navigationItem key="navigationItem" id="Uvd-hs-FRD">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="Onx-gH-iw3">
-                            <rect key="frame" x="132" y="6" width="150" height="33"/>
+                            <rect key="frame" x="113" y="6" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Globus" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-ga-cyf"/>
@@ -112,11 +119,20 @@
                         <outlet property="introList" destination="Abw-xr-hai" id="Qr1-QS-gef"/>
                         <outlet property="letsGoButton" destination="4F2-F9-GRa" id="77O-96-q3p"/>
                         <outlet property="loginButton" destination="fj3-hF-7E8" id="T2L-OO-Kj5"/>
+                        <segue destination="ECR-fQ-dOi" kind="show" identifier="LoginSegue" id="ode-ul-zkG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3q-uc-mAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719.20000000000005" y="-656.22188905547227"/>
+            <point key="canvasLocation" x="833" y="-655"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="0Tg-J6-aVN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="ECR-fQ-dOi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhZ-4z-yKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="-943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lRd-QP-ui5">
@@ -144,7 +160,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -155,6 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33" y="115"/>
         </scene>
     </scenes>
     <resources>
