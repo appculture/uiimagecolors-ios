@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */; };
+		8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC11D882426002E76E5 /* ImageModel.swift */; };
+		8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC31D882F92002E76E5 /* Store.swift */; };
+		8B2AEDC61D883270002E76E5 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC51D883270002E76E5 /* DayModel.swift */; };
+		8B2AEDC81D884160002E76E5 /* StoresList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC71D884160002E76E5 /* StoresList.plist */; };
 		8B75D94C1D8295D0007FFC5E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D9491D8295D0007FFC5E /* CoreData.framework */; };
 		8B75D94D1D8295D0007FFC5E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D94A1D8295D0007FFC5E /* libsqlite3.tbd */; };
 		8B75D94E1D8295D0007FFC5E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D94B1D8295D0007FFC5E /* libz.tbd */; };
@@ -52,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewController.swift; sourceTree = "<group>"; };
+		8B2AEDC11D882426002E76E5 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		8B2AEDC31D882F92002E76E5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8B2AEDC51D883270002E76E5 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		8B2AEDC71D884160002E76E5 /* StoresList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StoresList.plist; sourceTree = "<group>"; };
 		8B75D93E1D829288007FFC5E /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
 		8B75D93F1D829288007FFC5E /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
 		8B75D9401D829288007FFC5E /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
@@ -183,6 +193,7 @@
 				8BA5E52A1D86EE60005F6498 /* Table Cells */,
 				8B83508B1D86D8B90052B671 /* Stores.storyboard */,
 				8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */,
+				8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -233,6 +244,10 @@
 		8BEDC8611D50F11000DD4812 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B2AEDC11D882426002E76E5 /* ImageModel.swift */,
+				8B2AEDC31D882F92002E76E5 /* Store.swift */,
+				8B2AEDC51D883270002E76E5 /* DayModel.swift */,
+				8B2AEDC71D884160002E76E5 /* StoresList.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -434,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2AEDC81D884160002E76E5 /* StoresList.plist in Resources */,
 				8B8350891D86D4D70052B671 /* TabsController.storyboard in Resources */,
 				8B8350821D869A600052B671 /* Login.storyboard in Resources */,
 				8B83508C1D86D8B90052B671 /* Stores.storyboard in Resources */,
@@ -464,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */,
 				8BEDC86B1D50F19600DD4812 /* AEApplicationInfo.swift in Sources */,
 				8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */,
 				E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */,
@@ -471,11 +488,14 @@
 				E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */,
 				8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
+				8B2AEDC61D883270002E76E5 /* DayModel.swift in Sources */,
 				8BEDC8691D50F17D00DD4812 /* AEApplicationNetwork.swift in Sources */,
 				8BEDC86E1D50F1A500DD4812 /* AEApplicationEnvironments.swift in Sources */,
 				8BA5E5291D86E675005F6498 /* StoresListTableViewController.swift in Sources */,
+				8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */,
 				8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */,
 				8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */,
+				8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

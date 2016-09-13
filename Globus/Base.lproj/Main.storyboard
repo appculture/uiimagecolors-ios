@@ -75,7 +75,7 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <state key="normal" title="Ich besitze bereits ein Konto oder eine Pluscard"/>
                                 <connections>
-                                    <action selector="loginButtonTaped:" destination="L7j-wd-BWT" eventType="touchUpInside" id="5eh-bW-h8f"/>
+                                    <action selector="loginButtonTapped:" destination="L7j-wd-BWT" eventType="touchUpInside" id="sJW-iy-OCs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,7 +135,7 @@
                 <viewControllerPlaceholder storyboardName="TabsController" id="9w7-PY-DR4" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTa-jw-Hba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="-459"/>
+            <point key="canvasLocation" x="1549" y="-634"/>
         </scene>
         <!--Login-->
         <scene sceneID="0Tg-J6-aVN">
@@ -143,7 +143,7 @@
                 <viewControllerPlaceholder storyboardName="Login" id="ECR-fQ-dOi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhZ-4z-yKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375" y="-943"/>
+            <point key="canvasLocation" x="1503" y="-680"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lRd-QP-ui5">
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="115"/>
+            <point key="canvasLocation" x="14" y="36"/>
         </scene>
     </scenes>
     <resources>

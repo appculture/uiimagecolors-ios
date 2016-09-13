@@ -9,7 +9,7 @@
 import UIKit
 
 class StoresListTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,7 +17,6 @@ class StoresListTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 5
     }
 
@@ -26,6 +25,22 @@ class StoresListTableViewController: UITableViewController {
         cell.configureCell()
         return cell
     }
+    
+    // Mark: - Table view delegate
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "StoreDetailsSegue", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // Mark: - Actions
+    
+    @IBAction func globusOnlineTapped(_ sender: UIButton) {
+        let globusURL = URL(string: "https://www.globus.ch/")
+        UIApplication.shared.openURL(globusURL!)
+    }
+    
+
 
     /*
     // MARK: - Navigation
