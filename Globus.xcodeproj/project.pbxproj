@@ -28,6 +28,9 @@
 		8BEDC8981D50F38E00DD4812 /* Globus_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC8971D50F38E00DD4812 /* Globus_UITests.swift */; };
 		E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */; };
 		E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0544D351D86964500A5ADA3 /* UnderlineTextButton.swift */; };
+		E0AC3EB31D88211D00DCC06E /* PushPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3EB21D88211D00DCC06E /* PushPermissionViewController.swift */; };
+		E0AC3EB51D88213900DCC06E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3EB41D88213900DCC06E /* Localizable.strings */; };
+		E0AC3EB71D88214A00DCC06E /* PushPermission.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3EB61D88214A00DCC06E /* PushPermission.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,9 @@
 		8BEDC8991D50F38E00DD4812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		E0544D351D86964500A5ADA3 /* UnderlineTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextButton.swift; sourceTree = "<group>"; };
+		E0AC3EB21D88211D00DCC06E /* PushPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushPermissionViewController.swift; sourceTree = "<group>"; };
+		E0AC3EB41D88213900DCC06E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E0AC3EB61D88214A00DCC06E /* PushPermission.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushPermission.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +215,7 @@
 				8BEDC8581D50F01C00DD4812 /* LaunchScreen.storyboard */,
 				8B8350801D8699690052B671 /* Login */,
 				8BEDC8671D50F15500DD4812 /* Main */,
+				E0AC3EB11D88210100DCC06E /* PushPermission */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -216,7 +223,6 @@
 		8BEDC8631D50F11C00DD4812 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDC8561D50F01C00DD4812 /* Assets.xcassets */,
+				E0AC3EB41D88213900DCC06E /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 			children = (
 				8BEDC8531D50F01C00DD4812 /* Main.storyboard */,
 				8BEDC8511D50F01C00DD4812 /* MainViewController.swift */,
+				E0544D331D82B5E800A5ADA3 /* IntroViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -286,6 +294,15 @@
 				8BEDC8991D50F38E00DD4812 /* Info.plist */,
 			);
 			path = "Globus UITests";
+			sourceTree = "<group>";
+		};
+		E0AC3EB11D88210100DCC06E /* PushPermission */ = {
+			isa = PBXGroup;
+			children = (
+				E0AC3EB61D88214A00DCC06E /* PushPermission.storyboard */,
+				E0AC3EB21D88211D00DCC06E /* PushPermissionViewController.swift */,
+			);
+			name = PushPermission;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +415,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AC3EB51D88213900DCC06E /* Localizable.strings in Resources */,
+				E0AC3EB71D88214A00DCC06E /* PushPermission.storyboard in Resources */,
 				8B8350821D869A600052B671 /* Login.storyboard in Resources */,
 				8BEDC85A1D50F01C00DD4812 /* LaunchScreen.storyboard in Resources */,
 				8BEDC8571D50F01C00DD4812 /* Assets.xcassets in Resources */,
@@ -433,6 +452,7 @@
 				8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
 				8BEDC8691D50F17D00DD4812 /* AEApplicationNetwork.swift in Sources */,
+				E0AC3EB31D88211D00DCC06E /* PushPermissionViewController.swift in Sources */,
 				8BEDC86E1D50F1A500DD4812 /* AEApplicationEnvironments.swift in Sources */,
 				8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */,
 				8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */,

@@ -18,9 +18,12 @@ class IntroViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        introList.text = NSLocalizedString("Intro.Text", comment: "")
+        
+        letsGoButton.setTitle(NSLocalizedString("Intro.LetsGoButton", comment: ""), for: .normal)
+        
+        loginButton.setTitle(NSLocalizedString("Intro.LoginButton", comment: ""), for: .normal)
         loginButton.titleLabel?.textAlignment = .center
-        introList.text = "- Test1\n- Test2\n- Test3\n- Test4\n- Test5\n- Test6\n- Test7\n- Test8\n- Test9\n- Test10\n- Test11"
-        loginButton.setTitle("Ich besitze bereits ein Konto oder eine Pluscard", for: .normal)
     }
     // Mark: - Actions
 
@@ -28,4 +31,7 @@ class IntroViewController: UIViewController {
         self.performSegue(withIdentifier: "LoginSegue", sender: self)
     }
     
+    @IBAction func letsGoButtonTaped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "LetsGoSegue", sender: self)
+    }
 }

@@ -10,7 +10,7 @@
         <scene sceneID="xux-RP-KMv">
             <objects>
                 <navigationController id="vWU-UA-2sd" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="jJz-uc-eMA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jJz-uc-eMA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,7 +36,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JjR-Tj-u4k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V8k-14-Hta">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="2rT-m2-vpc">
@@ -64,6 +64,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Los gehts!"/>
+                                <connections>
+                                    <action selector="letsGoButtonTaped:" destination="L7j-wd-BWT" eventType="touchUpInside" id="pIB-ym-VOa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fj3-hF-7E8" customClass="UnderlineTextButton" customModule="Globus" customModuleProvider="target">
                                 <constraints>
@@ -100,7 +103,7 @@
                     <navigationItem key="navigationItem" id="Uvd-hs-FRD">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="Onx-gH-iw3">
-                            <rect key="frame" x="113" y="6" width="150" height="33"/>
+                            <rect key="frame" x="132" y="6" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Globus" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-ga-cyf"/>
@@ -120,6 +123,7 @@
                         <outlet property="letsGoButton" destination="4F2-F9-GRa" id="77O-96-q3p"/>
                         <outlet property="loginButton" destination="fj3-hF-7E8" id="T2L-OO-Kj5"/>
                         <segue destination="ECR-fQ-dOi" kind="show" identifier="LoginSegue" id="ode-ul-zkG"/>
+                        <segue destination="Ag0-Dy-fQQ" kind="show" identifier="LetsGoSegue" id="bk2-Kt-yH9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3q-uc-mAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,6 +137,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhZ-4z-yKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1375" y="-943"/>
+        </scene>
+        <!--PushPermission-->
+        <scene sceneID="lj7-Y6-005">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PushPermission" id="Ag0-Dy-fQQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZh-Bg-T0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="-655"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lRd-QP-ui5">
@@ -160,7 +172,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
