@@ -10,7 +10,7 @@
         <scene sceneID="xux-RP-KMv">
             <objects>
                 <navigationController id="vWU-UA-2sd" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="jJz-uc-eMA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jJz-uc-eMA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,6 +64,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Los gehts!"/>
+                                <connections>
+                                    <segue destination="9w7-PY-DR4" kind="show" id="uXh-Io-hMG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fj3-hF-7E8" customClass="UnderlineTextButton" customModule="Globus" customModuleProvider="target">
                                 <constraints>
@@ -125,6 +128,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3q-uc-mAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="833" y="-655"/>
+        </scene>
+        <!--TabsController-->
+        <scene sceneID="0NX-QC-URT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabsController" id="9w7-PY-DR4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTa-jw-Hba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458" y="-459"/>
         </scene>
         <!--Login-->
         <scene sceneID="0Tg-J6-aVN">

@@ -15,6 +15,10 @@
 		8B8350821D869A600052B671 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8350811D869A600052B671 /* Login.storyboard */; };
 		8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8350831D86A64C0052B671 /* CardScanViewController.swift */; };
 		8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8350851D86CABE0052B671 /* RegistrationViewController.swift */; };
+		8B8350891D86D4D70052B671 /* TabsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8350881D86D4D70052B671 /* TabsController.storyboard */; };
+		8B83508C1D86D8B90052B671 /* Stores.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B83508B1D86D8B90052B671 /* Stores.storyboard */; };
+		8BA5E5291D86E675005F6498 /* StoresListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */; };
+		8BA5E52C1D86EE7C005F6498 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA5E52B1D86EE7C005F6498 /* StoreTableViewCell.swift */; };
 		8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC84F1D50F01C00DD4812 /* AppDelegate.swift */; };
 		8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC8511D50F01C00DD4812 /* MainViewController.swift */; };
 		8BEDC8551D50F01C00DD4812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEDC8531D50F01C00DD4812 /* Main.storyboard */; };
@@ -67,6 +71,10 @@
 		8B8350811D869A600052B671 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8B8350831D86A64C0052B671 /* CardScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScanViewController.swift; sourceTree = "<group>"; };
 		8B8350851D86CABE0052B671 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8B8350881D86D4D70052B671 /* TabsController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabsController.storyboard; sourceTree = "<group>"; };
+		8B83508B1D86D8B90052B671 /* Stores.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stores.storyboard; sourceTree = "<group>"; };
+		8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresListTableViewController.swift; sourceTree = "<group>"; };
+		8BA5E52B1D86EE7C005F6498 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		8BEDC84C1D50F01C00DD4812 /* Globus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Globus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEDC84F1D50F01C00DD4812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEDC8511D50F01C00DD4812 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +169,32 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		8B8350871D86D4950052B671 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				8B8350881D86D4D70052B671 /* TabsController.storyboard */,
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
+		8B83508A1D86D8710052B671 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				8BA5E52A1D86EE60005F6498 /* Table Cells */,
+				8B83508B1D86D8B90052B671 /* Stores.storyboard */,
+				8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		8BA5E52A1D86EE60005F6498 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BA5E52B1D86EE7C005F6498 /* StoreTableViewCell.swift */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
 		8BEDC8431D50F01C00DD4812 = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +243,8 @@
 				8BEDC8581D50F01C00DD4812 /* LaunchScreen.storyboard */,
 				8B8350801D8699690052B671 /* Login */,
 				8BEDC8671D50F15500DD4812 /* Main */,
+				8B8350871D86D4950052B671 /* TabBarController */,
+				8B83508A1D86D8710052B671 /* Stores */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -398,7 +434,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8350891D86D4D70052B671 /* TabsController.storyboard in Resources */,
 				8B8350821D869A600052B671 /* Login.storyboard in Resources */,
+				8B83508C1D86D8B90052B671 /* Stores.storyboard in Resources */,
 				8BEDC85A1D50F01C00DD4812 /* LaunchScreen.storyboard in Resources */,
 				8BEDC8571D50F01C00DD4812 /* Assets.xcassets in Resources */,
 				8BEDC8551D50F01C00DD4812 /* Main.storyboard in Resources */,
@@ -429,11 +467,13 @@
 				8BEDC86B1D50F19600DD4812 /* AEApplicationInfo.swift in Sources */,
 				8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */,
 				E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */,
+				8BA5E52C1D86EE7C005F6498 /* StoreTableViewCell.swift in Sources */,
 				E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */,
 				8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
 				8BEDC8691D50F17D00DD4812 /* AEApplicationNetwork.swift in Sources */,
 				8BEDC86E1D50F1A500DD4812 /* AEApplicationEnvironments.swift in Sources */,
+				8BA5E5291D86E675005F6498 /* StoresListTableViewController.swift in Sources */,
 				8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */,
 				8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */,
 			);
