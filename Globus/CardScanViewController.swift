@@ -128,7 +128,7 @@ class CardScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     @IBAction func manualEnterTapped(_ sender: UIButton) {
         qrCodeRegister = ""
-        self.performSegue(withIdentifier: "RegistrationSegue", sender: self)
+        performSegue(withIdentifier: "RegistrationSegue", sender: self)
     }
     
 }

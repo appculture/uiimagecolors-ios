@@ -27,7 +27,7 @@ class IntroViewController: UIViewController {
     }
     // Mark: - Actions
 
-    @IBAction func loginButtonTaped(_ sender: UIButton) {
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "LoginSegue", sender: self)
     }
     
