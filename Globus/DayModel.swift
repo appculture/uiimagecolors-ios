@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DayModel: NSObject {
+class DayModel {
 
     var weekday = 0
     var hours = ""

@@ -10,25 +10,51 @@ import UIKit
 
 class StoresListTableViewController: UITableViewController {
     
+    var storesList = [Store]()
+    var selectedStore: Store? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getStoreList()
+    }
+    
+    func getStoreList() {
+        
+        guard
+            let storesFilePath = Bundle.main.path(forResource: "StoresList", ofType: "plist")
+        else {
+            print("No File at location")
+            return
+        }
+        let tempDictionary = NSDictionary(contentsOfFile: storesFilePath) as? [String : AnyObject]
+        guard
+            let storesArray = tempDictionary?["result"]?["stores"]
+            else {
+                print("No Array Data")
+                return
+        }
+        storesList = Store.initWithArray(storesArray: storesArray as! [[String : AnyObject]])
     }
 
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return storesList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StoreCell", for: indexPath) as! StoreTableViewCell
-        cell.configureCell()
+        let store = storesList[indexPath.row] as Store
+        cell.configureCell(withStore: store)
         return cell
     }
     
     // Mark: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedStore = storesList[indexPath.row] as Store
         performSegue(withIdentifier: "StoreDetailsSegue", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -40,16 +66,11 @@ class StoresListTableViewController: UITableViewController {
         UIApplication.shared.openURL(globusURL!)
     }
     
-
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let destination = segue.destination as! StoreDetailsTableViewController
+        destination.store = selectedStore
     }
-    */
 
 }

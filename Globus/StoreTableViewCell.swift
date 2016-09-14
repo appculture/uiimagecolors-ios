@@ -19,9 +19,48 @@ class StoreTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func configureCell() {
-        openingHoursLabel.text = "Heute: 9:00 - 20:00"
-        adressLabel.text = "Globus Zurich Bellevue \nTheatreStrasse 12 \n8001 Zurich"
+    func configureCell(withStore store: Store) {
+        setBackgroundImage(withStore: store)
+        setWorkingHours(withStore: store)
+        setAddressLabel(withStore: store)
+    }
+    
+    func setBackgroundImage(withStore store: Store) {
+        
     }
 
+    func setWorkingHours(withStore store: Store) {
+        let currentWeekDay = getCurrentDayOfWeek()
+        var openingTimeString = ""
+        let openingTimesArray = store.openingTimes
+        for dayItem in openingTimesArray {
+            if dayItem.weekday == currentWeekDay {
+                openingTimeString = dayItem.hours
+            }
+        }
+        if openingTimeString == "00:00 - 00:00" {
+            openingHoursLabel.text = "Heute: Geschlossen"
+        }
+        else{
+            openingHoursLabel.text = "Heute: \(openingTimeString)"
+        }
+        
+    }
+    
+    func getCurrentDayOfWeek() -> Int? {
+        let todayDate = Date()
+        var myCalendar = Calendar(identifier: .gregorian)
+        myCalendar.firstWeekday = 0
+        let weekDay = myCalendar.component(.weekday, from: todayDate)
+        return weekDay
+    }
+    
+    func setAddressLabel(withStore store: Store ) {
+        let storeName = store.name
+        let storeAddress = store.address
+        let storeZip  = "\(store.zip)"
+        let storeCity = store.city
+        adressLabel.text = "\(storeName) \n\(storeAddress) \n\(storeZip) \(storeCity)"
+    }
+    
 }

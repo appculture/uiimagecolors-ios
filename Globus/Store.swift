@@ -8,13 +8,13 @@
 
 import UIKit
 
-class Store: NSObject {
+class Store {
 
-    var id = ""
+    var id = 0
     var name = ""
     var channelName = ""
     var address = ""
-    var zip = ""
+    var zip = 0
     var city = ""
     var phone = ""
     var fax = ""
@@ -48,16 +48,21 @@ class Store: NSObject {
             let managerENString = json["manager"]?["en"],
             let imagesArray = json["images"],
             let shopClosedString = json["shopClosed"],
-            let openingTimesArray = json["openingTimes"],
-            let holidaysArray = json["holidays"]
+            let openingTimesArray = json["openingTimes"] as? [AnyObject],
+            let openingTimesDictionary = openingTimesArray.first as? [String : AnyObject],
+            let openingTimesDays = openingTimesDictionary["days"],
+            let holidaysArray = json["holidays"]  as? [AnyObject],
+            let holidaysDictionary = holidaysArray.first as? [String : AnyObject],
+            let holidayDays = holidaysDictionary["days"]
             else {
+                print("Error while reading model store")
                 return
         }
-        id = idString as! String
+        id = idString as! Int
         name = nameString as! String
         channelName = channelNameString as!String
         address = addressString as! String
-        zip = zipString as! String
+        zip = zipString as! Int
         city = cityString as! String
         phone = phoneString as! String
         fax = faxString as! String
@@ -69,9 +74,17 @@ class Store: NSObject {
         managerEN = managerENString as! String
         images = ImageModel.initWithArray(imagesArray: imagesArray as! [[String : AnyObject]])
         shopClosed = shopClosedString as! String
-        openingTimes = DayModel.initWithArray(daysArray: openingTimesArray as! [[String : AnyObject]])
-        holidays = DayModel.initWithArray(daysArray: holidaysArray as! [[String : AnyObject]])
+        openingTimes = DayModel.initWithArray(daysArray: openingTimesDays as! [[String : AnyObject]])
+        holidays = DayModel.initWithArray(daysArray: holidayDays as! [[String : AnyObject]])
     }
     
+    static func initWithArray(storesArray: [[String : AnyObject]]) -> [Store] {
+        var parsedArray = Array<Store>()
+        for storeItem in storesArray {
+            let tempStoreItem = Store(with: storeItem)
+            parsedArray.append(tempStoreItem)
+        }
+        return parsedArray
+    }
     
 }

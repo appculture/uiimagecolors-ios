@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageModel: NSObject {
+class ImageModel {
 
     var type = ""
     var url = ""
