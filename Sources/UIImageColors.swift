@@ -4,6 +4,7 @@
 //
 //  Created by Jathu Satkunarajah (@jathu) on 2015-06-11 - Toronto
 //  Original Cocoa version by Panic Inc. - Portland
+//  Rewrote and optimized for Swift 3.0 by Yves Landert
 //
 // Useage:
 // -------
@@ -36,7 +37,7 @@ class CountedColor {
 extension UIColor {
     
     public var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-        let ciColor = CIColor(cgColor: self.cgColor)
+        let ciColor = CIColor(cgColor: cgColor)
         return (ciColor.red, ciColor.green, ciColor.blue, ciColor.alpha)
     }
     
@@ -71,7 +72,7 @@ extension UIColor {
         var saturation: CGFloat = 0.0
         var brightness: CGFloat = 0.0
         var alpha: CGFloat = 0.0
-        self.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         
         if saturation < minSaturation {
             return UIColor(hue: hue, saturation: minSaturation, brightness: brightness, alpha: alpha)
@@ -96,22 +97,23 @@ extension UIImage {
     
     public func resize(newSize: CGSize) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0)
-        self.draw(in: CGRect(x: 0, y:0, width: newSize.width, height: newSize.height))
+        draw(in: CGRect(x: 0, y:0, width: newSize.width, height: newSize.height))
+        
         let result = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return result!
     }
     
     public func getColors() -> UIImageColors {
-        let ratio = self.size.width/self.size.height
+        let ratio = size.width/size.height
         let r_width: CGFloat = 250
-        return self.getColors(CGSize(width: r_width, height: r_width / ratio))
+        return getColors(CGSize(width: r_width, height: r_width / ratio))
     }
     
     public func getColors(_ scaleDownSize: CGSize) -> UIImageColors {
         var result = UIImageColors()
         
-        let cgImage = self.resize(newSize: scaleDownSize).cgImage
+        let cgImage = resize(newSize: scaleDownSize).cgImage
         let width = cgImage!.width
         let height = cgImage!.height
         
@@ -136,8 +138,13 @@ extension UIImage {
         let raw = malloc(bytesPerRow * height)
         let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
         let ctx = CGContext(data: raw, width: width, height: height, bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
-        ctx!.draw(in: CGRect(x: 0, y: 0, width: CGFloat(width), height: CGFloat(height)), image: cgImage!)
-        let data = UnsafePointer<UInt8>(ctx!.data)
+        ctx!.draw(cgImage!, in: CGRect(x: 0, y: 0, width: CGFloat(width), height: CGFloat(height)))
+        
+        guard let pixelData = ctx!.makeImage()?.dataProvider!.data else {
+            return result
+        }
+        let data = CFDataGetBytePtr(pixelData)
+
         
         let leftEdgeColors = NSCountedSet(capacity: height)
         let imageColors = NSCountedSet(capacity: width * height)
@@ -164,10 +171,10 @@ extension UIImage {
         // Get background color
         var enumerator = leftEdgeColors.objectEnumerator()
         var sortedColors = NSMutableArray(capacity: leftEdgeColors.count)
-        while let kolor = enumerator.nextObject() as? UIColor {
-            let colorCount = leftEdgeColors.count(for: kolor)
+        while let clr = enumerator.nextObject() as? UIColor {
+            let colorCount = leftEdgeColors.count(for: clr)
             if randomColorsThreshold < colorCount  {
-                sortedColors.add(CountedColor(color: kolor, count: colorCount))
+                sortedColors.add(CountedColor(color: clr, count: colorCount))
             }
         }
         sortedColors.sort(comparator: sortedColorComparator)
@@ -200,34 +207,34 @@ extension UIImage {
         sortedColors = NSMutableArray(capacity: imageColors.count)
         let findDarkTextColor = !result.backgroundColor.isDarkColor
         
-        while var kolor = enumerator.nextObject() as? UIColor {
-            kolor = kolor.colorWithMinimumSaturation(0.15)
-            if kolor.isDarkColor == findDarkTextColor {
-                let colorCount = imageColors.count(for: kolor)
-                sortedColors.add(CountedColor(color: kolor, count: colorCount))
+        while var clr = enumerator.nextObject() as? UIColor {
+            clr = clr.colorWithMinimumSaturation(0.15)
+            if clr.isDarkColor == findDarkTextColor {
+                let colorCount = imageColors.count(for: clr)
+                sortedColors.add(CountedColor(color: clr, count: colorCount))
             }
         }
         sortedColors.sort(comparator: sortedColorComparator)
         
         for curContainer in sortedColors {
-            let kolor = (curContainer as! CountedColor).color
+            let clr = (curContainer as! CountedColor).color
             
             if result.primaryColor == nil {
-                if kolor.isContrastingColor(result.backgroundColor) {
-                    result.primaryColor = kolor
+                if clr.isContrastingColor(result.backgroundColor) {
+                    result.primaryColor = clr
                 }
             } else if result.secondaryColor == nil {
-                if !result.primaryColor.isDistinct(kolor) || !kolor.isContrastingColor(result.backgroundColor) {
+                if !result.primaryColor.isDistinct(clr) || !clr.isContrastingColor(result.backgroundColor) {
                     continue
                 }
                 
-                result.secondaryColor = kolor
+                result.secondaryColor = clr
             } else if result.detailColor == nil {
-                if !result.secondaryColor.isDistinct(kolor) || !result.primaryColor.isDistinct(kolor) || !kolor.isContrastingColor(result.backgroundColor) {
+                if !result.secondaryColor.isDistinct(clr) || !result.primaryColor.isDistinct(clr) || !clr.isContrastingColor(result.backgroundColor) {
                     continue
                 }
                 
-                result.detailColor = kolor
+                result.detailColor = clr
                 break
             }
         }
@@ -248,7 +255,6 @@ extension UIImage {
         
         // Release the allocated memory
         free(raw)
-        
         return result
     }
 }
