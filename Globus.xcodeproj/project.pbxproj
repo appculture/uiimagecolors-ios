@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B035EBF1D8AC180009379CD /* StoreDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */; };
+		8B035EC31D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B035EC21D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift */; };
 		8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */; };
 		8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC11D882426002E76E5 /* ImageModel.swift */; };
 		8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC31D882F92002E76E5 /* Store.swift */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		8B035EC21D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayWorkHoursTableViewController.swift; sourceTree = "<group>"; };
 		8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewController.swift; sourceTree = "<group>"; };
 		8B2AEDC11D882426002E76E5 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8B2AEDC31D882F92002E76E5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				8B83508B1D86D8B90052B671 /* Stores.storyboard */,
 				8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */,
 				8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */,
+				8B035EC21D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift */,
 			);
 			name = Stores;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				E0544D361D86964500A5ADA3 /* UnderlineTextButton.swift in Sources */,
 				8BA5E52C1D86EE7C005F6498 /* StoreTableViewCell.swift in Sources */,
 				E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */,
+				8B035EC31D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift in Sources */,
 				8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
 				8B2AEDC61D883270002E76E5 /* DayModel.swift in Sources */,
