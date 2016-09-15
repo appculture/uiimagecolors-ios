@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B035EBF1D8AC180009379CD /* StoreDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */; };
 		8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */; };
 		8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC11D882426002E76E5 /* ImageModel.swift */; };
 		8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC31D882F92002E76E5 /* Store.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewController.swift; sourceTree = "<group>"; };
 		8B2AEDC11D882426002E76E5 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8B2AEDC31D882F92002E76E5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA5E52B1D86EE7C005F6498 /* StoreTableViewCell.swift */,
+				8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */,
 			);
 			name = "Table Cells";
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B035EBF1D8AC180009379CD /* StoreDetailsTableViewCell.swift in Sources */,
 				8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */,
 				8BEDC86B1D50F19600DD4812 /* AEApplicationInfo.swift in Sources */,
 				8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */,

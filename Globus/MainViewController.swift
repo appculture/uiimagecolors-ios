@@ -22,7 +22,8 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        showInto()
+       // showInto()
+        showTabController()
     }
     
     func configureUI() {
@@ -61,6 +62,10 @@ class MainViewController: UIViewController {
     
     func showInto() {
         performSegue(withIdentifier: "showIntro", sender: nil)
+    }
+    
+    func showTabController() {
+        performSegue(withIdentifier: "showTabController", sender: nil)
     }
 }
 
