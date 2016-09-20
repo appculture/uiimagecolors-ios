@@ -150,7 +150,7 @@
         <scene sceneID="lRd-QP-ui5">
             <objects>
                 <navigationController id="gy6-eV-heB" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="Hrg-qu-8FL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Hrg-qu-8FL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,7 +180,7 @@
                     <navigationItem key="navigationItem" id="k4U-Yr-ajt"/>
                     <connections>
                         <segue destination="vWU-UA-2sd" kind="presentation" identifier="showIntro" id="PIV-j6-tO9"/>
-                        <segue destination="NQT-2r-UXm" kind="show" identifier="showTabController" id="AUi-j5-Hex"/>
+                        <segue destination="NQT-2r-UXm" kind="presentation" identifier="showTabController" id="AUi-j5-Hex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,7 +193,7 @@
                 <viewControllerPlaceholder storyboardName="TabsController" id="NQT-2r-UXm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8o-t9-jC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="-173"/>
+            <point key="canvasLocation" x="642" y="114"/>
         </scene>
     </scenes>
     <resources>

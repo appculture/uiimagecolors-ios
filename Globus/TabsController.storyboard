@@ -22,7 +22,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xce-vy-u3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="273"/>
+            <point key="canvasLocation" x="270" y="-125"/>
+        </scene>
+        <!--Vouchers-->
+        <scene sceneID="HQ8-oY-u4d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vouchers" id="Ke5-Ga-7jy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gutscheine" id="wmm-yU-sxZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEg-n7-cAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="-218"/>
         </scene>
         <!--Stores-->
         <scene sceneID="P2Q-VM-toD">
@@ -32,26 +42,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v36-fv-8kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-403" y="154"/>
-        </scene>
-        <!--Gutscheine-->
-        <scene sceneID="480-t4-LG4">
-            <objects>
-                <viewController id="RAs-Co-kri" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8WE-iH-uLW"/>
-                        <viewControllerLayoutGuide type="bottom" id="HBo-dS-xpc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mkD-gc-OXI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.47946704330000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Gutscheine" id="94m-cF-QHX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sgc-i0-K7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="298" y="-382"/>
+            <point key="canvasLocation" x="-368" y="-48"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GEM-Fg-37v">
@@ -66,7 +57,7 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RAs-Co-kri" kind="relationship" relationship="viewControllers" id="Kap-uI-CEZ"/>
+                        <segue destination="Ke5-Ga-7jy" kind="relationship" relationship="viewControllers" id="LvG-2R-t23"/>
                         <segue destination="whL-b4-XbY" kind="relationship" relationship="viewControllers" id="BSs-GP-Kiz"/>
                         <segue destination="L7l-ZP-HOL" kind="relationship" relationship="viewControllers" id="Wz7-WG-S9h"/>
                     </connections>
