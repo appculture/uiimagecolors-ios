@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>vouchers</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Bonus Gutscheine</string>
+			<key>vouchertype</key>
+			<string>bonus</string>
+			<key>vouchers</key>
+			<array>
+				<dict>
+					<key>teaser</key>
+					<string> Rabatt auf das ganze Sortiment.</string>
+					<key>state</key>
+					<string>VALID</string>
+					<key>id</key>
+					<string>B-134938227</string>
+					<key>disclaimer</key>
+					<string>Gegen Abgabe dieses Gutscheins werden Ihnen beim nächsten Einkauf 10.- Rabatt abgezogen. Keine Teilrückvergütung, Barauszahlung oder Verrechnung mit rückwirkenden Käufen möglich. Wird von allen Globus-, und Herren Globus-Filalen in Zahlung genommen.</string>
+					<key>validFrom</key>
+					<string>20160630</string>
+					<key>typtext</key>
+					<string>Bonusgutschein</string>
+					<key>langIso</key>
+					<string>de</string>
+					<key>text</key>
+					<string> </string>
+					<key>value</key>
+					<string>10.-</string>
+					<key>barcodeAsText</key>
+					<string>5.555054300000183e+21</string>
+					<key>validTo</key>
+					<string>20170831</string>
+					<key>couponImageUrl</key>
+					<string>https://cardservice.globuscard.ch:443/gcard/image/06546.png</string>
+				</dict>
+				<dict>
+					<key>teaser</key>
+					<string> Rabatt auf das ganze Sortiment.</string>
+					<key>state</key>
+					<string>VALID</string>
+					<key>id</key>
+					<string>B-134938227</string>
+					<key>disclaimer</key>
+					<string>Gegen Abgabe dieses Gutscheins werden Ihnen beim nächsten Einkauf 10.- Rabatt abgezogen. Keine Teilrückvergütung, Barauszahlung oder Verrechnung mit rückwirkenden Käufen möglich. Wird von allen Globus-, und Herren Globus-Filalen in Zahlung genommen.</string>
+					<key>validFrom</key>
+					<string>20160630</string>
+					<key>typtext</key>
+					<string>Bonusgutschein</string>
+					<key>langIso</key>
+					<string>de</string>
+					<key>text</key>
+					<string> </string>
+					<key>value</key>
+					<string>10.-</string>
+					<key>barcodeAsText</key>
+					<string>5.555054300000183e+21</string>
+					<key>validTo</key>
+					<string>20170831</string>
+					<key>couponImageUrl</key>
+					<string>https://cardservice.globuscard.ch:443/gcard/image/06546.png</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Angebot Gutscheine</string>
+			<key>vouchertype</key>
+			<string>promo</string>
+			<key>vouchers</key>
+			<array>
+				<dict>
+					<key>state</key>
+					<string>VALID</string>
+					<key>id</key>
+					<string>6462149</string>
+					<key>disclaimer</key>
+					<string>* Beim Vorweisen dieses Gutscheins und Ihrer Globus Pluscard oder Ihrer GlobusCard erhalten Sie 10 % auf das gesamte Globus Sortiment.
+    Angebot gültig bis 18. September 2016. Ohne Spirituosen, Tabakwaren, Geschenkservice,
+    Dienstleistungen, Cadeau Card, Smartbox, Restaurant/Bar, Ladendekoration und
+    Globus Outlets Dietlikon und Sursee.
+    Nicht kumulierbar mit anderen Vergünstigungen,
+    Preisreduktionen und Rabatten.</string>
+					<key>value</key>
+					<string>10%</string>
+					<key>barcodeAsText</key>
+					<string>5.555054300000183e+21</string>
+					<key>validTo</key>
+					<string>20160918</string>
+					<key>validFrom</key>
+					<string>20160822</string>
+					<key>langIso</key>
+					<string>de</string>
+					<key>teaser</key>
+					<string>Rabatt auf das gesamte Globus Sortiment*.</string>
+					<key>text</key>
+					<string>Promotion</string>
+					<key>typtext</key>
+					<string>Gutschein</string>
+					<key>couponImageUrl</key>
+					<string>https://cardservice.globuscard.ch/gcard/image/05393.png</string>
+				</dict>
+				<dict>
+					<key>state</key>
+					<string>VALID</string>
+					<key>id</key>
+					<string>5175080</string>
+					<key>disclaimer</key>
+					<string>Beim Vorweisen dieses Gutscheins und Ihrer GlobusCard
+        erhalten Sie 20 % Rabatt auf Herrenmode und -Accessoires*.
+        * Der Gutschein ist ausschliesslich in Ihrem Herren Globus Fachgeschäft gültig. Einmalig einlösbar
+        bis 11. Juni 2016. Nicht kumulierbar mit anderen Vergünstigungen, Preisreduktionen und Rabatten.
+        Nicht gültig für Basisartikel und Herbstneuheiten der Marken BOSS und HUGO, im Online-Shop,
+        für Massbekleidung, Dienstleistungen und Cadeau Card.</string>
+					<key>value</key>
+					<string>20%</string>
+					<key>barcodeAsText</key>
+					<string>5.555053930000183e+21</string>
+					<key>validTo</key>
+					<string>20160612</string>
+					<key>validFrom</key>
+					<string>20160510</string>
+					<key>langIso</key>
+					<string>de</string>
+					<key>teaser</key>
+					<string>Rabatt auf Herrenmode und -Accessoires.*</string>
+					<key>text</key>
+					<string>Neu</string>
+					<key>typtext</key>
+					<string>Gutschein</string>
+					<key>couponImageUrl</key>
+					<string>https://cardservice.globuscard.ch:443/gcard/image/05393.png</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Entwertet</string>
+			<key>vouchertype</key>
+			<string>used</string>
+			<key>vouchers</key>
+			<array>
+				<dict>
+					<key>state</key>
+					<string>USED</string>
+					<key>id</key>
+					<string>B-134938226</string>
+					<key>redeemDate</key>
+					<string>20160713</string>
+					<key>disclaimer</key>
+					<string>Gegen Abgabe dieses Gutscheins werden Ihnen beim nächsten Einkauf 10.- Rabatt abgezogen. Keine Teilrückvergütung, Barauszahlung oder Verrechnung mit rückwirkenden Käufen möglich. Wird von allen Globus-, und Herren Globus-Filalen in Zahlung genommen.</string>
+					<key>value</key>
+					<string>10.-</string>
+					<key>validTo</key>
+					<string>20170831</string>
+					<key>validFrom</key>
+					<string>20160630</string>
+					<key>langIso</key>
+					<string>de</string>
+					<key>teaser</key>
+					<string> Rabatt auf das ganze Sortiment.</string>
+					<key>text</key>
+					<string> </string>
+					<key>typtext</key>
+					<string>Bonusgutschein</string>
+					<key>redeemStore</key>
+					<integer>107</integer>
+				</dict>
+				<dict>
+					<key>teaser</key>
+					<string>Rabatt auf den NUTRIBULLET Smoothie Maker</string>
+					<key>id</key>
+					<string>5445410</string>
+					<key>couponImageUrl</key>
+					<string>https://cardservice.globuscard.ch:443/gcard/image/06781.png</string>
+					<key>disclaimer</key>
+					<string>Beim Vorweisen dieses Gutscheins und Ihrer GlobusCard erhalten Sie den NUTRIBULLET Smoothie Maker, achtteilig, für 99.- statt bisher 119.-.
+            Angebot gültig bis 13. Juli 2016 und nur solange Vorrat.
+            Nicht kumulierbar mit anderen Vergünstigungen, Preisreduktionen und Rabatten. Der Gutschein ist im Online-Shop nicht gültig.</string>
+					<key>validFrom</key>
+					<string>20160614</string>
+					<key>text</key>
+					<string></string>
+					<key>value</key>
+					<string>20.-</string>
+					<key>validTo</key>
+					<string>20160713</string>
+					<key>langIso</key>
+					<string>de</string>
+					<key>state</key>
+					<string>IN_VALID</string>
+					<key>typtext</key>
+					<string>Gutschein</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

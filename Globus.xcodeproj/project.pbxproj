@@ -13,7 +13,6 @@
 		8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC31D882F92002E76E5 /* Store.swift */; };
 		8B2AEDC61D883270002E76E5 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC51D883270002E76E5 /* DayModel.swift */; };
 		8B2AEDC81D884160002E76E5 /* StoresList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC71D884160002E76E5 /* StoresList.plist */; };
-		8B5EB4DB1D8FDC5B00E94A3F /* Vouchers.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B5EB4DA1D8FDC5B00E94A3F /* Vouchers.json */; };
 		8B5EB4E11D8FE57800E94A3F /* Globus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EB4DF1D8FE57800E94A3F /* Globus.xcdatamodeld */; };
 		8B75D94C1D8295D0007FFC5E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D9491D8295D0007FFC5E /* CoreData.framework */; };
 		8B75D94D1D8295D0007FFC5E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B75D94A1D8295D0007FFC5E /* libsqlite3.tbd */; };
@@ -27,11 +26,13 @@
 		8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8350851D86CABE0052B671 /* RegistrationViewController.swift */; };
 		8B8350891D86D4D70052B671 /* TabsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8350881D86D4D70052B671 /* TabsController.storyboard */; };
 		8B83508C1D86D8B90052B671 /* Stores.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B83508B1D86D8B90052B671 /* Stores.storyboard */; };
+		8B8B6DE51D912E5F00BD8612 /* Vouchers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B8B6DE41D912E5F00BD8612 /* Vouchers.plist */; };
 		8BA5E5291D86E675005F6498 /* StoresListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */; };
 		8BA5E52C1D86EE7C005F6498 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA5E52B1D86EE7C005F6498 /* StoreTableViewCell.swift */; };
 		8BAA3E841D8BF51D00B87E0D /* VoucherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA3E831D8BF51D00B87E0D /* VoucherTableViewCell.swift */; };
 		8BBF0DF61D9005FF00CEC25E /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF0DF51D9005FF00CEC25E /* CoreDataController.swift */; };
 		8BBF0DF81D90168A00CEC25E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF0DF71D90168A00CEC25E /* CoreDataStack.swift */; };
+		8BBF0DFD1D901FB400CEC25E /* VoucherDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF0DFC1D901FB400CEC25E /* VoucherDetailsTableViewController.swift */; };
 		8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC84F1D50F01C00DD4812 /* AppDelegate.swift */; };
 		8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEDC8511D50F01C00DD4812 /* MainViewController.swift */; };
 		8BEDC8551D50F01C00DD4812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEDC8531D50F01C00DD4812 /* Main.storyboard */; };
@@ -74,7 +75,6 @@
 		8B2AEDC31D882F92002E76E5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		8B2AEDC51D883270002E76E5 /* DayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 		8B2AEDC71D884160002E76E5 /* StoresList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StoresList.plist; sourceTree = "<group>"; };
-		8B5EB4DA1D8FDC5B00E94A3F /* Vouchers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vouchers.json; sourceTree = "<group>"; };
 		8B5EB4E01D8FE57800E94A3F /* Globus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Globus.xcdatamodel; sourceTree = "<group>"; };
 		8B75D93E1D829288007FFC5E /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
 		8B75D93F1D829288007FFC5E /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
@@ -99,11 +99,13 @@
 		8B8350851D86CABE0052B671 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		8B8350881D86D4D70052B671 /* TabsController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabsController.storyboard; sourceTree = "<group>"; };
 		8B83508B1D86D8B90052B671 /* Stores.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Stores.storyboard; sourceTree = "<group>"; };
+		8B8B6DE41D912E5F00BD8612 /* Vouchers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Vouchers.plist; sourceTree = "<group>"; };
 		8BA5E5281D86E675005F6498 /* StoresListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresListTableViewController.swift; sourceTree = "<group>"; };
 		8BA5E52B1D86EE7C005F6498 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		8BAA3E831D8BF51D00B87E0D /* VoucherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherTableViewCell.swift; sourceTree = "<group>"; };
 		8BBF0DF51D9005FF00CEC25E /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		8BBF0DF71D90168A00CEC25E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8BBF0DFC1D901FB400CEC25E /* VoucherDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherDetailsTableViewController.swift; sourceTree = "<group>"; };
 		8BEDC84C1D50F01C00DD4812 /* Globus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Globus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEDC84F1D50F01C00DD4812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEDC8511D50F01C00DD4812 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				8B7E11C81D8BE72900EAB74D /* Vouchers.storyboard */,
 				8B7E11CA1D8BE87D00EAB74D /* VoucherListTableViewController.swift */,
+				8BBF0DFC1D901FB400CEC25E /* VoucherDetailsTableViewController.swift */,
 				8BAA3E821D8BF3EC00B87E0D /* Table Cells */,
 			);
 			name = Vouchers;
@@ -288,7 +291,7 @@
 				8B2AEDC11D882426002E76E5 /* ImageModel.swift */,
 				8B2AEDC31D882F92002E76E5 /* Store.swift */,
 				8B2AEDC51D883270002E76E5 /* DayModel.swift */,
-				8B5EB4DA1D8FDC5B00E94A3F /* Vouchers.json */,
+				8B8B6DE41D912E5F00BD8612 /* Vouchers.plist */,
 				8B2AEDC71D884160002E76E5 /* StoresList.plist */,
 				8B5EB4DF1D8FE57800E94A3F /* Globus.xcdatamodeld */,
 			);
@@ -506,7 +509,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5EB4DB1D8FDC5B00E94A3F /* Vouchers.json in Resources */,
 				8B2AEDC81D884160002E76E5 /* StoresList.plist in Resources */,
 				8B8350891D86D4D70052B671 /* TabsController.storyboard in Resources */,
 				E0AC3EB51D88213900DCC06E /* Localizable.strings in Resources */,
@@ -517,6 +519,7 @@
 				8B7E11C91D8BE72900EAB74D /* Vouchers.storyboard in Resources */,
 				8BEDC8571D50F01C00DD4812 /* Assets.xcassets in Resources */,
 				8BEDC8551D50F01C00DD4812 /* Main.storyboard in Resources */,
+				8B8B6DE51D912E5F00BD8612 /* Vouchers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +547,7 @@
 				8B035EBF1D8AC180009379CD /* StoreDetailsTableViewCell.swift in Sources */,
 				8BBF0DF81D90168A00CEC25E /* CoreDataStack.swift in Sources */,
 				8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */,
+				8BBF0DFD1D901FB400CEC25E /* VoucherDetailsTableViewController.swift in Sources */,
 				8BEDC86B1D50F19600DD4812 /* AEApplicationInfo.swift in Sources */,
 				8BEDC8521D50F01C00DD4812 /* MainViewController.swift in Sources */,
 				8B5EB4E11D8FE57800E94A3F /* Globus.xcdatamodeld in Sources */,

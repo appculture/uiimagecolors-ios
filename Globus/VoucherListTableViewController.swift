@@ -9,7 +9,7 @@
 import UIKit
 
 class VoucherListTableViewController: UITableViewController {
-
+    
     var promoArray = [[String : AnyObject]]()
     var bonusArray = [[String : AnyObject]]()
     var usedArray = [[String : AnyObject]]()
@@ -34,7 +34,7 @@ class VoucherListTableViewController: UITableViewController {
     func getVoucherList() {
         
         guard
-            let storesFilePath = Bundle.main.path(forResource: "Vouchers", ofType: "json")
+            let storesFilePath = Bundle.main.path(forResource: "Vouchers", ofType: "plist")
             else {
                 print("No File at location")
                 return
@@ -53,13 +53,13 @@ class VoucherListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return favoritesArray.count
+            return 4
         case 1:
-            return promoArray.count
+            return 4
         case 2:
-            return bonusArray.count
+            return 4
         case 3:
-            return usedArray.count
+            return 4
         default:
             return 0
         }
@@ -69,7 +69,11 @@ class VoucherListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VoucherCell", for: indexPath)
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showVoucherDetails", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 
