@@ -75,7 +75,7 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <state key="normal" title="Ich besitze bereits ein Konto oder eine Pluscard"/>
                                 <connections>
-                                    <action selector="loginButtonTaped:" destination="L7j-wd-BWT" eventType="touchUpInside" id="5eh-bW-h8f"/>
+                                    <action selector="loginButtonTapped:" destination="L7j-wd-BWT" eventType="touchUpInside" id="ScB-Ca-mkq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,7 +175,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kp-iJ-KJS">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="5dy-i6-Svy"/>
+                                </constraints>
+                                <state key="normal" title="Unregistered user">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uregisteredButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4h-E6-B6k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD6-EK-cMZ">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Jx2-VT-xu5"/>
+                                </constraints>
+                                <state key="normal" title="Registered user">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registeredButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cY0-1Y-APv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7kp-iJ-KJS" secondAttribute="trailing" constant="16" id="30q-Ip-VYc"/>
+                            <constraint firstItem="7kp-iJ-KJS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="3bK-Hl-KMK"/>
+                            <constraint firstAttribute="trailing" secondItem="rD6-EK-cMZ" secondAttribute="trailing" constant="16" id="9QZ-nH-7OL"/>
+                            <constraint firstItem="rD6-EK-cMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FTQ-Gk-tV8"/>
+                            <constraint firstItem="7kp-iJ-KJS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="oA5-8I-xmC"/>
+                            <constraint firstItem="rD6-EK-cMZ" firstAttribute="top" secondItem="7kp-iJ-KJS" secondAttribute="bottom" constant="8" id="tXK-U4-Akh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k4U-Yr-ajt"/>
                     <connections>
@@ -185,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="115"/>
+            <point key="canvasLocation" x="32.799999999999997" y="114.69265367316342"/>
         </scene>
         <!--TabsController-->
         <scene sceneID="nFv-pG-7Ru">
