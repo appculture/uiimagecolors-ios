@@ -249,8 +249,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="TX7-Rh-udT" secondAttribute="trailing" constant="16" id="0m4-Jb-FoL"/>
                                                 <constraint firstItem="TX7-Rh-udT" firstAttribute="leading" secondItem="z1c-ZB-wca" secondAttribute="leading" constant="16" id="B2P-fa-8dY"/>
-                                                <constraint firstItem="TX7-Rh-udT" firstAttribute="top" secondItem="z1c-ZB-wca" secondAttribute="top" id="JMX-te-NWR"/>
-                                                <constraint firstAttribute="bottom" secondItem="TX7-Rh-udT" secondAttribute="bottom" id="LfG-54-smC"/>
+                                                <constraint firstItem="TX7-Rh-udT" firstAttribute="top" secondItem="z1c-ZB-wca" secondAttribute="top" constant="16" id="JMX-te-NWR"/>
+                                                <constraint firstAttribute="bottom" secondItem="TX7-Rh-udT" secondAttribute="bottom" constant="16" id="LfG-54-smC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
