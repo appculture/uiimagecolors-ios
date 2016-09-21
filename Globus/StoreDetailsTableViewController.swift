@@ -150,7 +150,7 @@ class StoreDetailsTableViewController: UITableViewController {
         default:
             switch indexPath.row {
             case 1:
-                performSegue(withIdentifier: "", sender: self)
+                performSegue(withIdentifier: "showHolidayDays", sender: self)
             default:
                 break
             }
