@@ -43,7 +43,7 @@ class VoucherDetailsTableViewController: UITableViewController {
                 return 0.0
             }
             else {
-                return UITableViewAutomaticDimension
+                return 45
             }
         case 3:
             if (showBarcode == false) {
