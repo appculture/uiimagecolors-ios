@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B035EBF1D8AC180009379CD /* StoreDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */; };
+		8B0DB8371D92A69A00801B96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0DB8361D92A69A00801B96 /* CoreLocation.framework */; };
 		8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */; };
 		8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC11D882426002E76E5 /* ImageModel.swift */; };
 		8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC31D882F92002E76E5 /* Store.swift */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		8B0DB8361D92A69A00801B96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewController.swift; sourceTree = "<group>"; };
 		8B2AEDC11D882426002E76E5 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8B2AEDC31D882F92002E76E5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B0DB8371D92A69A00801B96 /* CoreLocation.framework in Frameworks */,
 				8B75D9501D8295DF007FFC5E /* SystemConfiguration.framework in Frameworks */,
 				8B75D94C1D8295D0007FFC5E /* CoreData.framework in Frameworks */,
 				8B75D94D1D8295D0007FFC5E /* libsqlite3.tbd in Frameworks */,
@@ -184,6 +187,7 @@
 		8B75D9481D8295D0007FFC5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B0DB8361D92A69A00801B96 /* CoreLocation.framework */,
 				8B75D9511D829600007FFC5E /* libGoogleAnalyticsServices.a */,
 				8B75D94F1D8295DF007FFC5E /* SystemConfiguration.framework */,
 				8B75D9491D8295D0007FFC5E /* CoreData.framework */,
