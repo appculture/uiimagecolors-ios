@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is needed for Card scaning</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location Service is needed to best determine your location.</string>
 	<key>NSLocationAlwaysUsageDescription</key>

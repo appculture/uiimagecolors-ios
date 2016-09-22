@@ -10,6 +10,7 @@
 		8B035EBF1D8AC180009379CD /* StoreDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */; };
 		8B035EC31D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B035EC21D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift */; };
 		8B0DB8371D92A69A00801B96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0DB8361D92A69A00801B96 /* CoreLocation.framework */; };
+		8B1CD91B1D94051300591805 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CD9191D94051300591805 /* UIImageColors.swift */; };
 		8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */; };
 		8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC11D882426002E76E5 /* ImageModel.swift */; };
 		8B2AEDC41D882F92002E76E5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AEDC31D882F92002E76E5 /* Store.swift */; };
@@ -51,7 +52,6 @@
 		E0AC3EB31D88211D00DCC06E /* PushPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3EB21D88211D00DCC06E /* PushPermissionViewController.swift */; };
 		E0AC3EB51D88213900DCC06E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3EB41D88213900DCC06E /* Localizable.strings */; };
 		E0AC3EB71D88214A00DCC06E /* PushPermission.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3EB61D88214A00DCC06E /* PushPermission.storyboard */; };
-		E0AC3EC01D88538800DCC06E /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3EBD1D88538800DCC06E /* UIImageColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +75,7 @@
 		8B035EBE1D8AC180009379CD /* StoreDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		8B035EC21D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayWorkHoursTableViewController.swift; sourceTree = "<group>"; };
 		8B0DB8361D92A69A00801B96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8B1CD9191D94051300591805 /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
 		8B2AEDBF1D87F716002E76E5 /* StoreDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailsTableViewController.swift; sourceTree = "<group>"; };
 		8B2AEDC11D882426002E76E5 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8B2AEDC31D882F92002E76E5 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -136,7 +137,6 @@
 		E0AC3EB21D88211D00DCC06E /* PushPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushPermissionViewController.swift; sourceTree = "<group>"; };
 		E0AC3EB41D88213900DCC06E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E0AC3EB61D88214A00DCC06E /* PushPermission.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushPermission.storyboard; sourceTree = "<group>"; };
-		E0AC3EBD1D88538800DCC06E /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +170,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B1CD9151D94051300591805 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8B1CD9161D94051300591805 /* UIImageColors-0.2.0 */,
+			);
+			name = Packages;
+			path = Globus/Packages;
+			sourceTree = "<group>";
+		};
+		8B1CD9161D94051300591805 /* UIImageColors-0.2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				8B1CD9181D94051300591805 /* Sources */,
+			);
+			path = "UIImageColors-0.2.0";
+			sourceTree = "<group>";
+		};
+		8B1CD9181D94051300591805 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8B1CD9191D94051300591805 /* UIImageColors.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		8B75D93D1D829236007FFC5E /* Google Analyticks */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				8BEDC84E1D50F01C00DD4812 /* Globus */,
-				E0AC3EB91D88538800DCC06E /* Packages */,
+				8B1CD9151D94051300591805 /* Packages */,
 				8BEDC8831D50F38300DD4812 /* Globus Tests */,
 				8BEDC8961D50F38E00DD4812 /* Globus UITests */,
 				8BEDC84D1D50F01C00DD4812 /* Products */,
@@ -407,30 +432,6 @@
 				E0AC3EB21D88211D00DCC06E /* PushPermissionViewController.swift */,
 			);
 			name = PushPermission;
-			sourceTree = "<group>";
-		};
-		E0AC3EB91D88538800DCC06E /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				E0AC3EBA1D88538800DCC06E /* UIImageColors-0.1.0 */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
-		E0AC3EBA1D88538800DCC06E /* UIImageColors-0.1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				E0AC3EBC1D88538800DCC06E /* Sources */,
-			);
-			path = "UIImageColors-0.1.0";
-			sourceTree = "<group>";
-		};
-		E0AC3EBC1D88538800DCC06E /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				E0AC3EBD1D88538800DCC06E /* UIImageColors.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,6 +591,7 @@
 				8BA5E52C1D86EE7C005F6498 /* StoreTableViewCell.swift in Sources */,
 				E0544D341D82B5E800A5ADA3 /* IntroViewController.swift in Sources */,
 				8B035EC31D8AEECC009379CD /* HolidayWorkHoursTableViewController.swift in Sources */,
+				8B1CD91B1D94051300591805 /* UIImageColors.swift in Sources */,
 				8B8350861D86CABE0052B671 /* RegistrationViewController.swift in Sources */,
 				8BEDC8701D50F1A900DD4812 /* AEApplicationConfig.swift in Sources */,
 				8B2AEDC61D883270002E76E5 /* DayModel.swift in Sources */,
@@ -601,7 +603,6 @@
 				8B2AEDC01D87F716002E76E5 /* StoreDetailsTableViewController.swift in Sources */,
 				8BAA3E841D8BF51D00B87E0D /* VoucherTableViewCell.swift in Sources */,
 				8B8350841D86A64C0052B671 /* CardScanViewController.swift in Sources */,
-				E0AC3EC01D88538800DCC06E /* UIImageColors.swift in Sources */,
 				8BEDC8501D50F01C00DD4812 /* AppDelegate.swift in Sources */,
 				8B2AEDC21D882426002E76E5 /* ImageModel.swift in Sources */,
 			);
