@@ -115,7 +115,7 @@
                                 <rect key="frame" x="16" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Filter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </barButtonItem>
@@ -124,14 +124,15 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Personal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="eZ1-8X-GDs" kind="show" identifier="StoreDetailsSegue" id="Uij-D9-JAx"/>
+                        <segue destination="eZ1-8X-GDs" kind="show" identifier="showStoreDetails" id="Uij-D9-JAx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAG-i2-4o6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +201,7 @@
                     </tableView>
                     <connections>
                         <outlet property="storeImage" destination="5oD-vh-wyF" id="UOq-HC-4BG"/>
-                        <segue destination="LkF-uR-EDb" kind="show" id="7Ou-2i-fEB"/>
+                        <segue destination="LkF-uR-EDb" kind="show" identifier="showHolidayHours" id="7Ou-2i-fEB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oap-a3-Dwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,7 +215,7 @@
                     <tabBarItem key="tabBarItem" title="Filialen" id="pY9-oZ-d3a"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ajE-u8-PoW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ajE-u8-PoW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,7 +271,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebc-Pt-no6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1502" y="70"/>
+            <point key="canvasLocation" x="2471" y="70"/>
         </scene>
     </scenes>
     <resources>

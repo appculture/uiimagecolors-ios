@@ -85,7 +85,7 @@ class StoresListTableViewController: UITableViewController, CLLocationManagerDel
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedStore = storesList[indexPath.row] as Store
-        performSegue(withIdentifier: "StoreDetailsSegue", sender: self)
+        performSegue(withIdentifier: "showStoreDetails", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
