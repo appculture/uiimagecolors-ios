@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "76C69C878058B8FC233BAF6275B38BBB10C0C6F6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C08131F285E5E2CDD1ACCA642B55BD417ECA0AE2" : 9223372036854775807,
+    "76C69C878058B8FC233BAF6275B38BBB10C0C6F6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5073F567-A92E-4F6E-A35C-C4BBC2C7FBC7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C08131F285E5E2CDD1ACCA642B55BD417ECA0AE2" : "globus-ios\/Packages\/UIImageColors-0.1.0\/",
+    "76C69C878058B8FC233BAF6275B38BBB10C0C6F6" : "globus-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Globus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Globus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/appculture\/globus-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76C69C878058B8FC233BAF6275B38BBB10C0C6F6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/appculture\/uiimagecolors-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C08131F285E5E2CDD1ACCA642B55BD417ECA0AE2"
+    }
+  ]
+}

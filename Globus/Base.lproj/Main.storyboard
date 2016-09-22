@@ -36,7 +36,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JjR-Tj-u4k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V8k-14-Hta">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="2rT-m2-vpc">
@@ -44,9 +44,6 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="479" id="cL8-rX-KNm"/>
                                 </constraints>
                             </imageView>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbK-9C-waD">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abw-xr-hai">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">- Gute wahl
@@ -82,13 +79,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4F2-F9-GRa" firstAttribute="top" secondItem="2rT-m2-vpc" secondAttribute="bottom" constant="44" id="1Yw-pO-kom"/>
-                            <constraint firstItem="lbK-9C-waD" firstAttribute="leading" secondItem="2rT-m2-vpc" secondAttribute="leading" id="7Ka-79-mG1"/>
                             <constraint firstItem="fj3-hF-7E8" firstAttribute="top" secondItem="4F2-F9-GRa" secondAttribute="bottom" constant="42" id="8K4-jF-eZ1"/>
                             <constraint firstItem="2rT-m2-vpc" firstAttribute="top" secondItem="7rt-T4-NXG" secondAttribute="bottom" id="Afn-WR-RiU"/>
-                            <constraint firstItem="lbK-9C-waD" firstAttribute="top" secondItem="Abw-xr-hai" secondAttribute="top" id="NwF-Ie-Vw6"/>
                             <constraint firstItem="Abw-xr-hai" firstAttribute="centerY" secondItem="2rT-m2-vpc" secondAttribute="centerY" id="UaW-MK-Rna"/>
                             <constraint firstItem="4F2-F9-GRa" firstAttribute="leading" secondItem="V8k-14-Hta" secondAttribute="leadingMargin" constant="51" id="Vsd-YT-Qbc"/>
-                            <constraint firstItem="lbK-9C-waD" firstAttribute="bottom" secondItem="Abw-xr-hai" secondAttribute="bottom" id="WIe-c1-Y84"/>
                             <constraint firstItem="fj3-hF-7E8" firstAttribute="leading" secondItem="V8k-14-Hta" secondAttribute="leadingMargin" constant="9" id="XGt-m0-EQv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fj3-hF-7E8" secondAttribute="trailing" constant="9" id="Xs6-fF-Nr1"/>
                             <constraint firstItem="Abw-xr-hai" firstAttribute="trailing" secondItem="2rT-m2-vpc" secondAttribute="trailing" constant="-29" id="ZCO-oz-qsF"/>
@@ -96,7 +90,6 @@
                             <constraint firstItem="Abw-xr-hai" firstAttribute="leading" secondItem="2rT-m2-vpc" secondAttribute="leading" constant="29" id="hXM-Aw-J19"/>
                             <constraint firstItem="JjR-Tj-u4k" firstAttribute="top" secondItem="fj3-hF-7E8" secondAttribute="bottom" constant="8" id="iXT-Rh-LQW"/>
                             <constraint firstItem="2rT-m2-vpc" firstAttribute="leading" secondItem="V8k-14-Hta" secondAttribute="leading" id="k3P-Wn-uTI"/>
-                            <constraint firstItem="lbK-9C-waD" firstAttribute="trailing" secondItem="2rT-m2-vpc" secondAttribute="trailing" id="tXk-Z5-87w"/>
                             <constraint firstAttribute="trailing" secondItem="2rT-m2-vpc" secondAttribute="trailing" id="yVp-BT-iSq"/>
                         </constraints>
                     </view>
@@ -173,7 +166,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kp-iJ-KJS">

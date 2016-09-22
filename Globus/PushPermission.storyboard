@@ -36,6 +36,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <state key="normal" title="Später"/>
+                                <connections>
+                                    <segue destination="3KA-u1-mdW" kind="presentation" identifier="showTabController" id="cfn-0I-AUm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,6 +59,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kza-ey-OY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-231.19999999999999" y="139.880059970015"/>
+        </scene>
+        <!--TabsController-->
+        <scene sceneID="PZ1-3D-hTT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabsController" id="3KA-u1-mdW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4y-f8-ayw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="155"/>
         </scene>
     </scenes>
 </document>

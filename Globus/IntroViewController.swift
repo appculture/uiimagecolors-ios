@@ -15,15 +15,22 @@ class IntroViewController: UIViewController {
     @IBOutlet weak var letsGoButton: UIButton!
     @IBOutlet weak var loginButton: UnderlineTextButton!
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        introList.text = NSLocalizedString("Intro.Text", comment: "")
+        introList.layer.shadowColor = UIColor.black.cgColor
+        introList.layer.shadowRadius = 0.8
+        introList.layer.shadowOpacity = 0.75
+        introList.layer.shadowOffset = CGSize(width: 1, height: 1)
         
         letsGoButton.setTitle(NSLocalizedString("Intro.LetsGoButton", comment: ""), for: .normal)
         
         loginButton.setTitle(NSLocalizedString("Intro.LoginButton", comment: ""), for: .normal)
         loginButton.titleLabel?.textAlignment = .center
+        
+        let colors = introImage.image?.getColors()
+        introList.textColor = colors?.secondaryColor
     }
     // Mark: - Actions
 
